@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Data Science project portfolio</title><link href="https://kasperweidick.github.io/" rel="alternate"></link><link href="https://kasperweidick.github.io/feeds/all.atom.xml" rel="self"></link><id>https://kasperweidick.github.io/</id><updated>2020-02-16T00:00:00+01:00</updated><subtitle>Data Scientist and big data developer</subtitle><entry><title>Pandas notebook</title><link href="https://kasperweidick.github.io/first-post.html" rel="alternate"></link><published>2020-02-16T00:00:00+01:00</published><updated>2020-02-16T00:00:00+01:00</updated><author><name>Kasper Weidick</name></author><id>tag:kasperweidick.github.io,2020-02-16:/first-post.html</id><summary type="html">&lt;p&gt;A project where I have solved various pandas exercises.&lt;/p&gt;</summary><content type="html">&lt;style type="text/css"&gt;/*!
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Data Science project portfolio</title><link href="https://kasperweidick.github.io/" rel="alternate"></link><link href="https://kasperweidick.github.io/feeds/all.atom.xml" rel="self"></link><id>https://kasperweidick.github.io/</id><updated>2020-02-16T00:00:00+01:00</updated><subtitle>Data Science project portfolio</subtitle><entry><title>Pandas notebook</title><link href="https://kasperweidick.github.io/first-post.html" rel="alternate"></link><published>2020-02-16T00:00:00+01:00</published><updated>2020-02-16T00:00:00+01:00</updated><author><name>Kasper Weidick</name></author><id>tag:kasperweidick.github.io,2020-02-16:/first-post.html</id><summary type="html">&lt;p&gt;A project where I have solved various pandas exercises.&lt;/p&gt;</summary><content type="html">&lt;style type="text/css"&gt;/*!
 *
 * IPython notebook
 *
@@ -2431,4 +2431,4 @@ dtype: object&lt;/pre&gt;
     (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
 }
 &lt;/script&gt;
-</content><category term="posts"></category><category term="Machine Learning"></category></entry></feed>
+</content><category term="posts"></category><category term="Machine Learning"></category><category term="Pandas"></category></entry></feed>
