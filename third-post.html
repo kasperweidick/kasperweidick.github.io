@@ -1210,7 +1210,7 @@ h6:hover .anchor-link {
 .highlight .vm { color: #19177C } /* Name.Variable.Magic */
 .highlight .il { color: #666666 } /* Literal.Number.Integer.Long */</style><div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[1]:</div>
+<div class="prompt input_prompt">In&nbsp;[64]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-python"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
@@ -1235,7 +1235,7 @@ h6:hover .anchor-link {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="prompt input_prompt">In&nbsp;[65]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-python"><pre><span></span><span class="o">%%</span><span class="n">HTML</span>
@@ -1280,7 +1280,7 @@ div.prompt {display:none}
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="prompt input_prompt">In&nbsp;[66]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-python"><pre><span></span><span class="k">def</span> <span class="nf">read_tab</span><span class="p">(</span><span class="n">sub</span><span class="p">):</span>
@@ -1317,7 +1317,7 @@ div.prompt {display:none}
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="prompt input_prompt">In&nbsp;[67]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-python"><pre><span></span><span class="c1"># download population data straight from world bank using pandas-datareader</span>
@@ -1341,7 +1341,7 @@ div.prompt {display:none}
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[48]:</div>
+<div class="prompt input_prompt">In&nbsp;[68]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-python"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Genereal info about dataframe:</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
@@ -1368,22 +1368,20 @@ div.prompt {display:none}
 <pre>Genereal info about dataframe:
 
 &lt;class &#39;pandas.core.frame.DataFrame&#39;&gt;
-Int64Index: 21465 entries, 0 to 21350
-Data columns (total 10 columns):
- #   Column          Non-Null Count  Dtype         
----  ------          --------------  -----         
- 0   country         21465 non-null  object        
- 1   state           6642 non-null   object        
- 2   lat             21384 non-null  float64       
- 3   long            21384 non-null  float64       
- 4   dates           21465 non-null  datetime64[ns]
- 5   confirmed       21384 non-null  float64       
- 6   deaths          21384 non-null  float64       
- 7   recovered       20250 non-null  float64       
- 8   population      18954 non-null  float64       
- 9   deaths_per_mio  18873 non-null  float64       
-dtypes: datetime64[ns](1), float64(7), object(2)
-memory usage: 1.8+ MB
+RangeIndex: 21465 entries, 0 to 21464
+Data columns (total 8 columns):
+ #   Column          Non-Null Count  Dtype  
+---  ------          --------------  -----  
+ 0   country_region  21465 non-null  object 
+ 1   province_state  6642 non-null   object 
+ 2   lat             21384 non-null  float64
+ 3   long            21384 non-null  float64
+ 4   dates           21465 non-null  object 
+ 5   confirmed       21384 non-null  float64
+ 6   deaths          21384 non-null  float64
+ 7   recovered       20250 non-null  float64
+dtypes: float64(5), object(3)
+memory usage: 1.3+ MB
 </pre>
 </div>
 </div>
@@ -1421,16 +1419,14 @@ NaN values in dataframe:
 
 
 <div class="output_text output_subarea ">
-<pre>country               0
-state             14823
+<pre>country_region        0
+province_state    14823
 lat                  81
 long                 81
 dates                 0
 confirmed            81
 deaths               81
 recovered          1215
-population         2511
-deaths_per_mio     2592
 dtype: int64</pre>
 </div>
 
@@ -1442,7 +1438,7 @@ dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="prompt input_prompt">In&nbsp;[69]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-python"><pre><span></span><span class="n">john_hopkins_df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
@@ -1458,7 +1454,7 @@ dtype: int64</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[7]:</div>
+    <div class="prompt output_prompt">Out[69]:</div>
 
 
 
@@ -1560,12 +1556,15 @@ dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="prompt input_prompt">In&nbsp;[70]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-python"><pre><span></span><span class="c1"># To date_time and rename columns</span>
 <span class="n">john_hopkins_df</span><span class="p">[</span><span class="s1">&#39;dates&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">to_datetime</span><span class="p">(</span><span class="n">john_hopkins_df</span><span class="p">[</span><span class="s1">&#39;dates&#39;</span><span class="p">])</span>
 <span class="n">john_hopkins_df</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;country_region&#39;</span><span class="p">:</span> <span class="s1">&#39;country&#39;</span><span class="p">,</span> <span class="s1">&#39;province_state&#39;</span><span class="p">:</span> <span class="s1">&#39;state&#39;</span><span class="p">},</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="c1"># Rename US to United States</span>
+<span class="n">john_hopkins_df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">john_hopkins_df</span><span class="p">[</span><span class="s1">&#39;country&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;US&#39;</span><span class="p">,</span> <span class="s1">&#39;country&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;United States&#39;</span>
 
 <span class="c1"># Merge population data for each country to the data frame</span>
 <span class="n">john_hopkins_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">john_hopkins_df</span><span class="p">,</span> <span class="n">population_df</span><span class="p">,</span> <span class="n">on</span><span class="o">=</span><span class="s1">&#39;country&#39;</span><span class="p">,</span> <span class="n">how</span><span class="o">=</span><span class="s1">&#39;left&#39;</span><span class="p">)</span>
@@ -1573,9 +1572,6 @@ dtype: int64</pre>
 
 <span class="c1"># New variables</span>
 <span class="n">john_hopkins_df</span><span class="p">[</span><span class="s1">&#39;deaths_per_mio&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">john_hopkins_df</span><span class="p">[</span><span class="s1">&#39;deaths&#39;</span><span class="p">]</span> <span class="o">/</span> <span class="p">(</span><span class="n">john_hopkins_df</span><span class="p">[</span><span class="s1">&#39;population&#39;</span><span class="p">]</span> <span class="o">/</span> <span class="mi">1000000</span><span class="p">)</span>
-
-<span class="c1"># Rename US to United States</span>
-<span class="n">john_hopkins_df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">john_hopkins_df</span><span class="p">[</span><span class="s1">&#39;country&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;US&#39;</span><span class="p">,</span> <span class="s1">&#39;country&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;United States&#39;</span>
 </pre></div>
 
     </div>
@@ -1605,7 +1601,7 @@ dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="prompt input_prompt">In&nbsp;[71]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-python"><pre><span></span><span class="n">dk_df</span> <span class="o">=</span> <span class="n">john_hopkins_df</span><span class="p">[</span><span class="n">john_hopkins_df</span><span class="p">[</span><span class="s1">&#39;country&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;Denmark&#39;</span><span class="p">]</span>
@@ -1619,7 +1615,7 @@ dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[33]:</div>
+<div class="prompt input_prompt">In&nbsp;[72]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-python"><pre><span></span><span class="n">fig</span><span class="p">,</span> <span class="n">axes</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">14</span><span class="p">,</span> <span class="mi">5</span><span class="p">),</span> <span class="n">sharey</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
@@ -1683,14 +1679,14 @@ z
    <g id="matplotlib.axis_1">
     <g id="xtick_1">
      <g id="line2d_1">
-      <path clip-path="url(#pe49306930c)" d="M 50.025469 293.743125 
+      <path clip-path="url(#pfa032ff653)" d="M 50.025469 293.743125 
 L 50.025469 21.943125 
 " style="fill:none;stroke:#ffffff;stroke-linecap:round;"/>
      </g>
     </g>
     <g id="xtick_2">
      <g id="line2d_2">
-      <path clip-path="url(#pe49306930c)" d="M 94.411832 293.743125 
+      <path clip-path="url(#pfa032ff653)" d="M 94.411832 293.743125 
 L 94.411832 21.943125 
 " style="fill:none;stroke:#ffffff;stroke-linecap:round;"/>
      </g>
@@ -1831,7 +1827,7 @@ z
     </g>
     <g id="xtick_3">
      <g id="line2d_3">
-      <path clip-path="url(#pe49306930c)" d="M 223.132287 293.743125 
+      <path clip-path="url(#pfa032ff653)" d="M 223.132287 293.743125 
 L 223.132287 21.943125 
 " style="fill:none;stroke:#ffffff;stroke-linecap:round;"/>
      </g>
@@ -1925,7 +1921,7 @@ z
     </g>
     <g id="xtick_4">
      <g id="line2d_4">
-      <path clip-path="url(#pe49306930c)" d="M 360.730014 293.743125 
+      <path clip-path="url(#pfa032ff653)" d="M 360.730014 293.743125 
 L 360.730014 21.943125 
 " style="fill:none;stroke:#ffffff;stroke-linecap:round;"/>
      </g>
@@ -1989,7 +1985,7 @@ z
     </g>
     <g id="xtick_5">
      <g id="line2d_5">
-      <path clip-path="url(#pe49306930c)" d="M 405.116378 293.743125 
+      <path clip-path="url(#pfa032ff653)" d="M 405.116378 293.743125 
 L 405.116378 21.943125 
 " style="fill:none;stroke:#ffffff;stroke-linecap:round;"/>
      </g>
@@ -2412,7 +2408,7 @@ z
    <g id="matplotlib.axis_2">
     <g id="ytick_1">
      <g id="line2d_6">
-      <path clip-path="url(#pe49306930c)" d="M 50.025469 281.38858 
+      <path clip-path="url(#pfa032ff653)" d="M 50.025469 281.38858 
 L 405.116378 281.38858 
 " style="fill:none;stroke:#ffffff;stroke-linecap:round;"/>
      </g>
@@ -2425,7 +2421,7 @@ L 405.116378 281.38858
     </g>
     <g id="ytick_2">
      <g id="line2d_7">
-      <path clip-path="url(#pe49306930c)" d="M 50.025469 225.674733 
+      <path clip-path="url(#pfa032ff653)" d="M 50.025469 225.674733 
 L 405.116378 225.674733 
 " style="fill:none;stroke:#ffffff;stroke-linecap:round;"/>
      </g>
@@ -2440,7 +2436,7 @@ L 405.116378 225.674733
     </g>
     <g id="ytick_3">
      <g id="line2d_8">
-      <path clip-path="url(#pe49306930c)" d="M 50.025469 169.960887 
+      <path clip-path="url(#pfa032ff653)" d="M 50.025469 169.960887 
 L 405.116378 169.960887 
 " style="fill:none;stroke:#ffffff;stroke-linecap:round;"/>
      </g>
@@ -2455,7 +2451,7 @@ L 405.116378 169.960887
     </g>
     <g id="ytick_4">
      <g id="line2d_9">
-      <path clip-path="url(#pe49306930c)" d="M 50.025469 114.24704 
+      <path clip-path="url(#pfa032ff653)" d="M 50.025469 114.24704 
 L 405.116378 114.24704 
 " style="fill:none;stroke:#ffffff;stroke-linecap:round;"/>
      </g>
@@ -2470,7 +2466,7 @@ L 405.116378 114.24704
     </g>
     <g id="ytick_5">
      <g id="line2d_10">
-      <path clip-path="url(#pe49306930c)" d="M 50.025469 58.533194 
+      <path clip-path="url(#pfa032ff653)" d="M 50.025469 58.533194 
 L 405.116378 58.533194 
 " style="fill:none;stroke:#ffffff;stroke-linecap:round;"/>
      </g>
@@ -2630,7 +2626,7 @@ z
     </g>
    </g>
    <g id="line2d_11">
-    <path clip-path="url(#pe49306930c)" d="M 50.025469 281.38858 
+    <path clip-path="url(#pfa032ff653)" d="M 50.025469 281.38858 
 L 54.464105 281.38858 
 L 58.902741 281.38858 
 L 63.341378 281.38858 
@@ -3053,14 +3049,14 @@ z
    <g id="matplotlib.axis_3">
     <g id="xtick_82">
      <g id="line2d_14">
-      <path clip-path="url(#pc24a76259c)" d="M 476.13456 293.743125 
+      <path clip-path="url(#p31f13a4708)" d="M 476.13456 293.743125 
 L 476.13456 21.943125 
 " style="fill:none;stroke:#ffffff;stroke-linecap:round;"/>
      </g>
     </g>
     <g id="xtick_83">
      <g id="line2d_15">
-      <path clip-path="url(#pc24a76259c)" d="M 520.520923 293.743125 
+      <path clip-path="url(#p31f13a4708)" d="M 520.520923 293.743125 
 L 520.520923 21.943125 
 " style="fill:none;stroke:#ffffff;stroke-linecap:round;"/>
      </g>
@@ -3086,7 +3082,7 @@ L 520.520923 21.943125
     </g>
     <g id="xtick_84">
      <g id="line2d_16">
-      <path clip-path="url(#pc24a76259c)" d="M 649.241378 293.743125 
+      <path clip-path="url(#p31f13a4708)" d="M 649.241378 293.743125 
 L 649.241378 21.943125 
 " style="fill:none;stroke:#ffffff;stroke-linecap:round;"/>
      </g>
@@ -3105,7 +3101,7 @@ L 649.241378 21.943125
     </g>
     <g id="xtick_85">
      <g id="line2d_17">
-      <path clip-path="url(#pc24a76259c)" d="M 786.839105 293.743125 
+      <path clip-path="url(#p31f13a4708)" d="M 786.839105 293.743125 
 L 786.839105 21.943125 
 " style="fill:none;stroke:#ffffff;stroke-linecap:round;"/>
      </g>
@@ -3124,7 +3120,7 @@ L 786.839105 21.943125
     </g>
     <g id="xtick_86">
      <g id="line2d_18">
-      <path clip-path="url(#pc24a76259c)" d="M 831.225469 293.743125 
+      <path clip-path="url(#p31f13a4708)" d="M 831.225469 293.743125 
 L 831.225469 21.943125 
 " style="fill:none;stroke:#ffffff;stroke-linecap:round;"/>
      </g>
@@ -3307,42 +3303,42 @@ L 831.225469 21.943125
    <g id="matplotlib.axis_4">
     <g id="ytick_6">
      <g id="line2d_19">
-      <path clip-path="url(#pc24a76259c)" d="M 476.13456 281.38858 
+      <path clip-path="url(#p31f13a4708)" d="M 476.13456 281.38858 
 L 831.225469 281.38858 
 " style="fill:none;stroke:#ffffff;stroke-linecap:round;"/>
      </g>
     </g>
     <g id="ytick_7">
      <g id="line2d_20">
-      <path clip-path="url(#pc24a76259c)" d="M 476.13456 225.674733 
+      <path clip-path="url(#p31f13a4708)" d="M 476.13456 225.674733 
 L 831.225469 225.674733 
 " style="fill:none;stroke:#ffffff;stroke-linecap:round;"/>
      </g>
     </g>
     <g id="ytick_8">
      <g id="line2d_21">
-      <path clip-path="url(#pc24a76259c)" d="M 476.13456 169.960887 
+      <path clip-path="url(#p31f13a4708)" d="M 476.13456 169.960887 
 L 831.225469 169.960887 
 " style="fill:none;stroke:#ffffff;stroke-linecap:round;"/>
      </g>
     </g>
     <g id="ytick_9">
      <g id="line2d_22">
-      <path clip-path="url(#pc24a76259c)" d="M 476.13456 114.24704 
+      <path clip-path="url(#p31f13a4708)" d="M 476.13456 114.24704 
 L 831.225469 114.24704 
 " style="fill:none;stroke:#ffffff;stroke-linecap:round;"/>
      </g>
     </g>
     <g id="ytick_10">
      <g id="line2d_23">
-      <path clip-path="url(#pc24a76259c)" d="M 476.13456 58.533194 
+      <path clip-path="url(#p31f13a4708)" d="M 476.13456 58.533194 
 L 831.225469 58.533194 
 " style="fill:none;stroke:#ffffff;stroke-linecap:round;"/>
      </g>
     </g>
    </g>
    <g id="line2d_24">
-    <path clip-path="url(#pc24a76259c)" d="M 476.13456 281.38858 
+    <path clip-path="url(#p31f13a4708)" d="M 476.13456 281.38858 
 L 480.573196 281.38858 
 L 485.011832 281.38858 
 L 489.450469 281.38858 
@@ -3595,10 +3591,10 @@ L 508.03456 35.866719
   </g>
  </g>
  <defs>
-  <clipPath id="pe49306930c">
+  <clipPath id="pfa032ff653">
    <rect height="271.8" width="355.090909" x="50.025469" y="21.943125"/>
   </clipPath>
-  <clipPath id="pc24a76259c">
+  <clipPath id="p31f13a4708">
    <rect height="271.8" width="355.090909" x="476.13456" y="21.943125"/>
   </clipPath>
  </defs>
@@ -3614,7 +3610,7 @@ L 508.03456 35.866719
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[34]:</div>
+<div class="prompt input_prompt">In&nbsp;[73]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-python"><pre><span></span><span class="n">fig</span><span class="p">,</span> <span class="n">axes</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">14</span><span class="p">,</span><span class="mi">5</span><span class="p">))</span>
@@ -3681,7 +3677,7 @@ z
    <g id="matplotlib.axis_1">
     <g id="xtick_1">
      <g id="line2d_1">
-      <path clip-path="url(#p0fa1853edd)" d="M 80.014077 293.589375 
+      <path clip-path="url(#p0145b2774f)" d="M 80.014077 293.589375 
 L 80.014077 21.789375 
 " style="fill:none;stroke:#ffffff;stroke-linecap:round;"/>
      </g>
@@ -3948,7 +3944,7 @@ z
     </g>
     <g id="xtick_2">
      <g id="line2d_2">
-      <path clip-path="url(#p0fa1853edd)" d="M 115.523168 293.589375 
+      <path clip-path="url(#p0145b2774f)" d="M 115.523168 293.589375 
 L 115.523168 21.789375 
 " style="fill:none;stroke:#ffffff;stroke-linecap:round;"/>
      </g>
@@ -4000,7 +3996,7 @@ z
     </g>
     <g id="xtick_3">
      <g id="line2d_3">
-      <path clip-path="url(#p0fa1853edd)" d="M 151.032259 293.589375 
+      <path clip-path="url(#p0145b2774f)" d="M 151.032259 293.589375 
 L 151.032259 21.789375 
 " style="fill:none;stroke:#ffffff;stroke-linecap:round;"/>
      </g>
@@ -4046,7 +4042,7 @@ z
     </g>
     <g id="xtick_4">
      <g id="line2d_4">
-      <path clip-path="url(#p0fa1853edd)" d="M 186.541349 293.589375 
+      <path clip-path="url(#p0145b2774f)" d="M 186.541349 293.589375 
 L 186.541349 21.789375 
 " style="fill:none;stroke:#ffffff;stroke-linecap:round;"/>
      </g>
@@ -4115,7 +4111,7 @@ z
     </g>
     <g id="xtick_5">
      <g id="line2d_5">
-      <path clip-path="url(#p0fa1853edd)" d="M 222.05044 293.589375 
+      <path clip-path="url(#p0145b2774f)" d="M 222.05044 293.589375 
 L 222.05044 21.789375 
 " style="fill:none;stroke:#ffffff;stroke-linecap:round;"/>
      </g>
@@ -4243,7 +4239,7 @@ z
     </g>
     <g id="xtick_6">
      <g id="line2d_6">
-      <path clip-path="url(#p0fa1853edd)" d="M 257.559531 293.589375 
+      <path clip-path="url(#p0145b2774f)" d="M 257.559531 293.589375 
 L 257.559531 21.789375 
 " style="fill:none;stroke:#ffffff;stroke-linecap:round;"/>
      </g>
@@ -4259,7 +4255,7 @@ L 257.559531 21.789375
     </g>
     <g id="xtick_7">
      <g id="line2d_7">
-      <path clip-path="url(#p0fa1853edd)" d="M 293.068622 293.589375 
+      <path clip-path="url(#p0145b2774f)" d="M 293.068622 293.589375 
 L 293.068622 21.789375 
 " style="fill:none;stroke:#ffffff;stroke-linecap:round;"/>
      </g>
@@ -4338,7 +4334,7 @@ z
     </g>
     <g id="xtick_8">
      <g id="line2d_8">
-      <path clip-path="url(#p0fa1853edd)" d="M 328.577713 293.589375 
+      <path clip-path="url(#p0145b2774f)" d="M 328.577713 293.589375 
 L 328.577713 21.789375 
 " style="fill:none;stroke:#ffffff;stroke-linecap:round;"/>
      </g>
@@ -4401,7 +4397,7 @@ z
     </g>
     <g id="xtick_9">
      <g id="line2d_9">
-      <path clip-path="url(#p0fa1853edd)" d="M 364.086804 293.589375 
+      <path clip-path="url(#p0145b2774f)" d="M 364.086804 293.589375 
 L 364.086804 21.789375 
 " style="fill:none;stroke:#ffffff;stroke-linecap:round;"/>
      </g>
@@ -4453,7 +4449,7 @@ z
     </g>
     <g id="xtick_10">
      <g id="line2d_10">
-      <path clip-path="url(#p0fa1853edd)" d="M 399.595895 293.589375 
+      <path clip-path="url(#p0145b2774f)" d="M 399.595895 293.589375 
 L 399.595895 21.789375 
 " style="fill:none;stroke:#ffffff;stroke-linecap:round;"/>
      </g>
@@ -4504,7 +4500,7 @@ z
    <g id="matplotlib.axis_2">
     <g id="ytick_1">
      <g id="line2d_11">
-      <path clip-path="url(#p0fa1853edd)" d="M 62.259531 293.589375 
+      <path clip-path="url(#p0145b2774f)" d="M 62.259531 293.589375 
 L 417.35044 293.589375 
 " style="fill:none;stroke:#ffffff;stroke-linecap:round;"/>
      </g>
@@ -4544,7 +4540,7 @@ z
     </g>
     <g id="ytick_2">
      <g id="line2d_12">
-      <path clip-path="url(#p0fa1853edd)" d="M 62.259531 261.964351 
+      <path clip-path="url(#p0145b2774f)" d="M 62.259531 261.964351 
 L 417.35044 261.964351 
 " style="fill:none;stroke:#ffffff;stroke-linecap:round;"/>
      </g>
@@ -4611,7 +4607,7 @@ z
     </g>
     <g id="ytick_3">
      <g id="line2d_13">
-      <path clip-path="url(#p0fa1853edd)" d="M 62.259531 230.339328 
+      <path clip-path="url(#p0145b2774f)" d="M 62.259531 230.339328 
 L 417.35044 230.339328 
 " style="fill:none;stroke:#ffffff;stroke-linecap:round;"/>
      </g>
@@ -4627,7 +4623,7 @@ L 417.35044 230.339328
     </g>
     <g id="ytick_4">
      <g id="line2d_14">
-      <path clip-path="url(#p0fa1853edd)" d="M 62.259531 198.714304 
+      <path clip-path="url(#p0145b2774f)" d="M 62.259531 198.714304 
 L 417.35044 198.714304 
 " style="fill:none;stroke:#ffffff;stroke-linecap:round;"/>
      </g>
@@ -4658,7 +4654,7 @@ z
     </g>
     <g id="ytick_5">
      <g id="line2d_15">
-      <path clip-path="url(#p0fa1853edd)" d="M 62.259531 167.089281 
+      <path clip-path="url(#p0145b2774f)" d="M 62.259531 167.089281 
 L 417.35044 167.089281 
 " style="fill:none;stroke:#ffffff;stroke-linecap:round;"/>
      </g>
@@ -4688,7 +4684,7 @@ z
     </g>
     <g id="ytick_6">
      <g id="line2d_16">
-      <path clip-path="url(#p0fa1853edd)" d="M 62.259531 135.464257 
+      <path clip-path="url(#p0145b2774f)" d="M 62.259531 135.464257 
 L 417.35044 135.464257 
 " style="fill:none;stroke:#ffffff;stroke-linecap:round;"/>
      </g>
@@ -4705,7 +4701,7 @@ L 417.35044 135.464257
     </g>
     <g id="ytick_7">
      <g id="line2d_17">
-      <path clip-path="url(#p0fa1853edd)" d="M 62.259531 103.839234 
+      <path clip-path="url(#p0145b2774f)" d="M 62.259531 103.839234 
 L 417.35044 103.839234 
 " style="fill:none;stroke:#ffffff;stroke-linecap:round;"/>
      </g>
@@ -4722,7 +4718,7 @@ L 417.35044 103.839234
     </g>
     <g id="ytick_8">
      <g id="line2d_18">
-      <path clip-path="url(#p0fa1853edd)" d="M 62.259531 72.21421 
+      <path clip-path="url(#p0145b2774f)" d="M 62.259531 72.21421 
 L 417.35044 72.21421 
 " style="fill:none;stroke:#ffffff;stroke-linecap:round;"/>
      </g>
@@ -4739,7 +4735,7 @@ L 417.35044 72.21421
     </g>
     <g id="ytick_9">
      <g id="line2d_19">
-      <path clip-path="url(#p0fa1853edd)" d="M 62.259531 40.589187 
+      <path clip-path="url(#p0145b2774f)" d="M 62.259531 40.589187 
 L 417.35044 40.589187 
 " style="fill:none;stroke:#ffffff;stroke-linecap:round;"/>
      </g>
@@ -4785,7 +4781,7 @@ z
     </g>
    </g>
    <g id="patch_3">
-    <path clip-path="url(#p0fa1853edd)" d="M 71.136804 293.589375 
+    <path clip-path="url(#p0145b2774f)" d="M 71.136804 293.589375 
 L 88.891349 293.589375 
 L 88.891349 34.732232 
 L 71.136804 34.732232 
@@ -4793,7 +4789,7 @@ z
 " style="fill:#8dd3c7;stroke:#ffffff;stroke-linejoin:miter;"/>
    </g>
    <g id="patch_4">
-    <path clip-path="url(#p0fa1853edd)" d="M 106.645895 293.589375 
+    <path clip-path="url(#p0145b2774f)" d="M 106.645895 293.589375 
 L 124.40044 293.589375 
 L 124.40044 47.318992 
 L 106.645895 47.318992 
@@ -4801,7 +4797,7 @@ z
 " style="fill:#8dd3c7;stroke:#ffffff;stroke-linejoin:miter;"/>
    </g>
    <g id="patch_5">
-    <path clip-path="url(#p0fa1853edd)" d="M 142.154986 293.589375 
+    <path clip-path="url(#p0145b2774f)" d="M 142.154986 293.589375 
 L 159.909531 293.589375 
 L 159.909531 83.523318 
 L 142.154986 83.523318 
@@ -4809,7 +4805,7 @@ z
 " style="fill:#8dd3c7;stroke:#ffffff;stroke-linejoin:miter;"/>
    </g>
    <g id="patch_6">
-    <path clip-path="url(#p0fa1853edd)" d="M 177.664077 293.589375 
+    <path clip-path="url(#p0145b2774f)" d="M 177.664077 293.589375 
 L 195.418622 293.589375 
 L 195.418622 118.614445 
 L 177.664077 118.614445 
@@ -4817,7 +4813,7 @@ z
 " style="fill:#8dd3c7;stroke:#ffffff;stroke-linejoin:miter;"/>
    </g>
    <g id="patch_7">
-    <path clip-path="url(#p0fa1853edd)" d="M 213.173168 293.589375 
+    <path clip-path="url(#p0145b2774f)" d="M 213.173168 293.589375 
 L 230.927713 293.589375 
 L 230.927713 168.670532 
 L 213.173168 168.670532 
@@ -4825,7 +4821,7 @@ z
 " style="fill:#8dd3c7;stroke:#ffffff;stroke-linejoin:miter;"/>
    </g>
    <g id="patch_8">
-    <path clip-path="url(#p0fa1853edd)" d="M 248.682259 293.589375 
+    <path clip-path="url(#p0145b2774f)" d="M 248.682259 293.589375 
 L 266.436804 293.589375 
 L 266.436804 238.473284 
 L 248.682259 238.473284 
@@ -4833,7 +4829,7 @@ z
 " style="fill:#8dd3c7;stroke:#ffffff;stroke-linejoin:miter;"/>
    </g>
    <g id="patch_9">
-    <path clip-path="url(#p0fa1853edd)" d="M 284.191349 293.589375 
+    <path clip-path="url(#p0145b2774f)" d="M 284.191349 293.589375 
 L 301.945895 293.589375 
 L 301.945895 251.262443 
 L 284.191349 251.262443 
@@ -4841,7 +4837,7 @@ z
 " style="fill:#8dd3c7;stroke:#ffffff;stroke-linejoin:miter;"/>
    </g>
    <g id="patch_10">
-    <path clip-path="url(#p0fa1853edd)" d="M 319.70044 293.589375 
+    <path clip-path="url(#p0145b2774f)" d="M 319.70044 293.589375 
 L 337.454986 293.589375 
 L 337.454986 252.868995 
 L 319.70044 252.868995 
@@ -4849,7 +4845,7 @@ z
 " style="fill:#8dd3c7;stroke:#ffffff;stroke-linejoin:miter;"/>
    </g>
    <g id="patch_11">
-    <path clip-path="url(#p0fa1853edd)" d="M 355.209531 293.589375 
+    <path clip-path="url(#p0145b2774f)" d="M 355.209531 293.589375 
 L 372.964077 293.589375 
 L 372.964077 258.586799 
 L 355.209531 258.586799 
@@ -4857,7 +4853,7 @@ z
 " style="fill:#8dd3c7;stroke:#ffffff;stroke-linejoin:miter;"/>
    </g>
    <g id="patch_12">
-    <path clip-path="url(#p0fa1853edd)" d="M 390.718622 293.589375 
+    <path clip-path="url(#p0145b2774f)" d="M 390.718622 293.589375 
 L 408.473168 293.589375 
 L 408.473168 260.1554 
 L 390.718622 260.1554 
@@ -4931,7 +4927,7 @@ z
    <g id="matplotlib.axis_3">
     <g id="xtick_11">
      <g id="line2d_20">
-      <path clip-path="url(#p9887ac000e)" d="M 506.123168 293.589375 
+      <path clip-path="url(#p94f583df37)" d="M 506.123168 293.589375 
 L 506.123168 21.789375 
 " style="fill:none;stroke:#ffffff;stroke-linecap:round;"/>
      </g>
@@ -4972,7 +4968,7 @@ z
     </g>
     <g id="xtick_12">
      <g id="line2d_21">
-      <path clip-path="url(#p9887ac000e)" d="M 541.632259 293.589375 
+      <path clip-path="url(#p94f583df37)" d="M 541.632259 293.589375 
 L 541.632259 21.789375 
 " style="fill:none;stroke:#ffffff;stroke-linecap:round;"/>
      </g>
@@ -4989,7 +4985,7 @@ L 541.632259 21.789375
     </g>
     <g id="xtick_13">
      <g id="line2d_22">
-      <path clip-path="url(#p9887ac000e)" d="M 577.141349 293.589375 
+      <path clip-path="url(#p94f583df37)" d="M 577.141349 293.589375 
 L 577.141349 21.789375 
 " style="fill:none;stroke:#ffffff;stroke-linecap:round;"/>
      </g>
@@ -5026,7 +5022,7 @@ z
     </g>
     <g id="xtick_14">
      <g id="line2d_23">
-      <path clip-path="url(#p9887ac000e)" d="M 612.65044 293.589375 
+      <path clip-path="url(#p94f583df37)" d="M 612.65044 293.589375 
 L 612.65044 21.789375 
 " style="fill:none;stroke:#ffffff;stroke-linecap:round;"/>
      </g>
@@ -5043,7 +5039,7 @@ L 612.65044 21.789375
     </g>
     <g id="xtick_15">
      <g id="line2d_24">
-      <path clip-path="url(#p9887ac000e)" d="M 648.159531 293.589375 
+      <path clip-path="url(#p94f583df37)" d="M 648.159531 293.589375 
 L 648.159531 21.789375 
 " style="fill:none;stroke:#ffffff;stroke-linecap:round;"/>
      </g>
@@ -5062,7 +5058,7 @@ L 648.159531 21.789375
     </g>
     <g id="xtick_16">
      <g id="line2d_25">
-      <path clip-path="url(#p9887ac000e)" d="M 683.668622 293.589375 
+      <path clip-path="url(#p94f583df37)" d="M 683.668622 293.589375 
 L 683.668622 21.789375 
 " style="fill:none;stroke:#ffffff;stroke-linecap:round;"/>
      </g>
@@ -5080,7 +5076,7 @@ L 683.668622 21.789375
     </g>
     <g id="xtick_17">
      <g id="line2d_26">
-      <path clip-path="url(#p9887ac000e)" d="M 719.177713 293.589375 
+      <path clip-path="url(#p94f583df37)" d="M 719.177713 293.589375 
 L 719.177713 21.789375 
 " style="fill:none;stroke:#ffffff;stroke-linecap:round;"/>
      </g>
@@ -5103,7 +5099,7 @@ L 719.177713 21.789375
     </g>
     <g id="xtick_18">
      <g id="line2d_27">
-      <path clip-path="url(#p9887ac000e)" d="M 754.686804 293.589375 
+      <path clip-path="url(#p94f583df37)" d="M 754.686804 293.589375 
 L 754.686804 21.789375 
 " style="fill:none;stroke:#ffffff;stroke-linecap:round;"/>
      </g>
@@ -5129,7 +5125,7 @@ L 754.686804 21.789375
     </g>
     <g id="xtick_19">
      <g id="line2d_28">
-      <path clip-path="url(#p9887ac000e)" d="M 790.195895 293.589375 
+      <path clip-path="url(#p94f583df37)" d="M 790.195895 293.589375 
 L 790.195895 21.789375 
 " style="fill:none;stroke:#ffffff;stroke-linecap:round;"/>
      </g>
@@ -5189,7 +5185,7 @@ z
     </g>
     <g id="xtick_20">
      <g id="line2d_29">
-      <path clip-path="url(#p9887ac000e)" d="M 825.704986 293.589375 
+      <path clip-path="url(#p94f583df37)" d="M 825.704986 293.589375 
 L 825.704986 21.789375 
 " style="fill:none;stroke:#ffffff;stroke-linecap:round;"/>
      </g>
@@ -5277,7 +5273,7 @@ z
    <g id="matplotlib.axis_4">
     <g id="ytick_10">
      <g id="line2d_30">
-      <path clip-path="url(#p9887ac000e)" d="M 488.368622 293.589375 
+      <path clip-path="url(#p94f583df37)" d="M 488.368622 293.589375 
 L 843.459531 293.589375 
 " style="fill:none;stroke:#ffffff;stroke-linecap:round;"/>
      </g>
@@ -5290,7 +5286,7 @@ L 843.459531 293.589375
     </g>
     <g id="ytick_11">
      <g id="line2d_31">
-      <path clip-path="url(#p9887ac000e)" d="M 488.368622 243.615155 
+      <path clip-path="url(#p94f583df37)" d="M 488.368622 243.615155 
 L 843.459531 243.615155 
 " style="fill:none;stroke:#ffffff;stroke-linecap:round;"/>
      </g>
@@ -5305,7 +5301,7 @@ L 843.459531 243.615155
     </g>
     <g id="ytick_12">
      <g id="line2d_32">
-      <path clip-path="url(#p9887ac000e)" d="M 488.368622 193.640934 
+      <path clip-path="url(#p94f583df37)" d="M 488.368622 193.640934 
 L 843.459531 193.640934 
 " style="fill:none;stroke:#ffffff;stroke-linecap:round;"/>
      </g>
@@ -5339,7 +5335,7 @@ z
     </g>
     <g id="ytick_13">
      <g id="line2d_33">
-      <path clip-path="url(#p9887ac000e)" d="M 488.368622 143.666714 
+      <path clip-path="url(#p94f583df37)" d="M 488.368622 143.666714 
 L 843.459531 143.666714 
 " style="fill:none;stroke:#ffffff;stroke-linecap:round;"/>
      </g>
@@ -5389,7 +5385,7 @@ z
     </g>
     <g id="ytick_14">
      <g id="line2d_34">
-      <path clip-path="url(#p9887ac000e)" d="M 488.368622 93.692493 
+      <path clip-path="url(#p94f583df37)" d="M 488.368622 93.692493 
 L 843.459531 93.692493 
 " style="fill:none;stroke:#ffffff;stroke-linecap:round;"/>
      </g>
@@ -5446,7 +5442,7 @@ z
     </g>
     <g id="ytick_15">
      <g id="line2d_35">
-      <path clip-path="url(#p9887ac000e)" d="M 488.368622 43.718273 
+      <path clip-path="url(#p94f583df37)" d="M 488.368622 43.718273 
 L 843.459531 43.718273 
 " style="fill:none;stroke:#ffffff;stroke-linecap:round;"/>
      </g>
@@ -5508,7 +5504,7 @@ L 843.459531 43.718273
     </g>
    </g>
    <g id="patch_18">
-    <path clip-path="url(#p9887ac000e)" d="M 497.245895 293.589375 
+    <path clip-path="url(#p94f583df37)" d="M 497.245895 293.589375 
 L 515.00044 293.589375 
 L 515.00044 34.732232 
 L 497.245895 34.732232 
@@ -5516,7 +5512,7 @@ z
 " style="fill:#80b1d3;stroke:#ffffff;stroke-linejoin:miter;"/>
    </g>
    <g id="patch_19">
-    <path clip-path="url(#p9887ac000e)" d="M 532.754986 293.589375 
+    <path clip-path="url(#p94f583df37)" d="M 532.754986 293.589375 
 L 550.509531 293.589375 
 L 550.509531 204.921291 
 L 532.754986 204.921291 
@@ -5524,7 +5520,7 @@ z
 " style="fill:#80b1d3;stroke:#ffffff;stroke-linejoin:miter;"/>
    </g>
    <g id="patch_20">
-    <path clip-path="url(#p9887ac000e)" d="M 568.264077 293.589375 
+    <path clip-path="url(#p94f583df37)" d="M 568.264077 293.589375 
 L 586.018622 293.589375 
 L 586.018622 209.223889 
 L 568.264077 209.223889 
@@ -5532,7 +5528,7 @@ z
 " style="fill:#80b1d3;stroke:#ffffff;stroke-linejoin:miter;"/>
    </g>
    <g id="patch_21">
-    <path clip-path="url(#p9887ac000e)" d="M 603.773168 293.589375 
+    <path clip-path="url(#p94f583df37)" d="M 603.773168 293.589375 
 L 621.527713 293.589375 
 L 621.527713 213.080455 
 L 603.773168 213.080455 
@@ -5540,7 +5536,7 @@ z
 " style="fill:#80b1d3;stroke:#ffffff;stroke-linejoin:miter;"/>
    </g>
    <g id="patch_22">
-    <path clip-path="url(#p9887ac000e)" d="M 639.282259 293.589375 
+    <path clip-path="url(#p94f583df37)" d="M 639.282259 293.589375 
 L 657.036804 293.589375 
 L 657.036804 220.463337 
 L 639.282259 220.463337 
@@ -5548,7 +5544,7 @@ z
 " style="fill:#80b1d3;stroke:#ffffff;stroke-linejoin:miter;"/>
    </g>
    <g id="patch_23">
-    <path clip-path="url(#p9887ac000e)" d="M 674.791349 293.589375 
+    <path clip-path="url(#p94f583df37)" d="M 674.791349 293.589375 
 L 692.545895 293.589375 
 L 692.545895 241.986413 
 L 674.791349 241.986413 
@@ -5556,7 +5552,7 @@ z
 " style="fill:#80b1d3;stroke:#ffffff;stroke-linejoin:miter;"/>
    </g>
    <g id="patch_24">
-    <path clip-path="url(#p9887ac000e)" d="M 710.30044 293.589375 
+    <path clip-path="url(#p94f583df37)" d="M 710.30044 293.589375 
 L 728.054986 293.589375 
 L 728.054986 255.263949 
 L 710.30044 255.263949 
@@ -5564,7 +5560,7 @@ z
 " style="fill:#80b1d3;stroke:#ffffff;stroke-linejoin:miter;"/>
    </g>
    <g id="patch_25">
-    <path clip-path="url(#p9887ac000e)" d="M 745.809531 293.589375 
+    <path clip-path="url(#p94f583df37)" d="M 745.809531 293.589375 
 L 763.564077 293.589375 
 L 763.564077 256.462316 
 L 745.809531 256.462316 
@@ -5572,7 +5568,7 @@ z
 " style="fill:#80b1d3;stroke:#ffffff;stroke-linejoin:miter;"/>
    </g>
    <g id="patch_26">
-    <path clip-path="url(#p9887ac000e)" d="M 781.318622 293.589375 
+    <path clip-path="url(#p94f583df37)" d="M 781.318622 293.589375 
 L 799.073168 293.589375 
 L 799.073168 263.181815 
 L 781.318622 263.181815 
@@ -5580,7 +5576,7 @@ z
 " style="fill:#80b1d3;stroke:#ffffff;stroke-linejoin:miter;"/>
    </g>
    <g id="patch_27">
-    <path clip-path="url(#p9887ac000e)" d="M 816.827713 293.589375 
+    <path clip-path="url(#p94f583df37)" d="M 816.827713 293.589375 
 L 834.582259 293.589375 
 L 834.582259 268.107003 
 L 816.827713 268.107003 
@@ -5682,10 +5678,10 @@ L 843.459531 21.789375
   </g>
  </g>
  <defs>
-  <clipPath id="p0fa1853edd">
+  <clipPath id="p0145b2774f">
    <rect height="271.8" width="355.090909" x="62.259531" y="21.789375"/>
   </clipPath>
-  <clipPath id="p9887ac000e">
+  <clipPath id="p94f583df37">
    <rect height="271.8" width="355.090909" x="488.368622" y="21.789375"/>
   </clipPath>
  </defs>
@@ -5701,7 +5697,7 @@ L 843.459531 21.789375
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[13]:</div>
+<div class="prompt input_prompt">In&nbsp;[74]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-python"><pre><span></span><span class="c1"># Find the mean death per day for the country with the most deaths</span>
