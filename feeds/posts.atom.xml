@@ -1112,7 +1112,7 @@ h6:hover .anchor-link {
 .highlight .vm { color: #19177C } /* Name.Variable.Magic */
 .highlight .il { color: #666666 } /* Literal.Number.Integer.Long */&lt;/style&gt;&lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[1]:&lt;/div&gt;
+&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[225]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
     &lt;div class="input_area"&gt;
 &lt;div class=" highlight hl-python"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;numpy&lt;/span&gt; &lt;span class="k"&gt;as&lt;/span&gt; &lt;span class="nn"&gt;np&lt;/span&gt;
@@ -1137,7 +1137,7 @@ h6:hover .anchor-link {
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[2]:&lt;/div&gt;
+&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[226]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
     &lt;div class="input_area"&gt;
 &lt;div class=" highlight hl-python"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="o"&gt;%%&lt;/span&gt;&lt;span class="n"&gt;HTML&lt;/span&gt;
@@ -1182,7 +1182,7 @@ div.prompt {display:none}
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[3]:&lt;/div&gt;
+&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[227]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
     &lt;div class="input_area"&gt;
 &lt;div class=" highlight hl-python"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;read_tab&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;sub&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
@@ -1206,7 +1206,7 @@ div.prompt {display:none}
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[4]:&lt;/div&gt;
+&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[228]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
     &lt;div class="input_area"&gt;
 &lt;div class=" highlight hl-python"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;johns_hopkins_df&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;head&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
@@ -1222,7 +1222,7 @@ div.prompt {display:none}
 
 &lt;div class="output_area"&gt;
 
-    &lt;div class="prompt output_prompt"&gt;Out[4]:&lt;/div&gt;
+    &lt;div class="prompt output_prompt"&gt;Out[228]:&lt;/div&gt;
 
 
 
@@ -1348,7 +1348,7 @@ div.prompt {display:none}
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[5]:&lt;/div&gt;
+&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[229]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
     &lt;div class="input_area"&gt;
 &lt;div class=" highlight hl-python"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;# download population data straight from world bank using pandas-datareader&lt;/span&gt;
@@ -1365,7 +1365,7 @@ div.prompt {display:none}
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[6]:&lt;/div&gt;
+&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[230]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
     &lt;div class="input_area"&gt;
 &lt;div class=" highlight hl-python"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;population_df&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;rename&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;columns&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;country&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;Country&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;population&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;Population&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;},&lt;/span&gt; &lt;span class="n"&gt;inplace&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="kc"&gt;True&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
@@ -1378,7 +1378,7 @@ div.prompt {display:none}
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[7]:&lt;/div&gt;
+&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[231]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
     &lt;div class="input_area"&gt;
 &lt;div class=" highlight hl-python"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;population_df&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;head&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
@@ -1394,7 +1394,7 @@ div.prompt {display:none}
 
 &lt;div class="output_area"&gt;
 
-    &lt;div class="prompt output_prompt"&gt;Out[7]:&lt;/div&gt;
+    &lt;div class="prompt output_prompt"&gt;Out[231]:&lt;/div&gt;
 
 
 
@@ -1465,16 +1465,20 @@ div.prompt {display:none}
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
+&lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;&lt;div class="inner_cell"&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;p&gt;Get generel infor about dataframe:&lt;/p&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[8]:&lt;/div&gt;
+&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[232]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
     &lt;div class="input_area"&gt;
-&lt;div class=" highlight hl-python"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;Genereal info about dataframe:&lt;/span&gt;&lt;span class="se"&gt;\n&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;span class="n"&gt;display&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;johns_hopkins_df&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;info&lt;/span&gt;&lt;span class="p"&gt;())&lt;/span&gt;
-
-&lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;&lt;/span&gt;&lt;span class="se"&gt;\n&lt;/span&gt;&lt;span class="s1"&gt;NaN values in dataframe:&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;span class="n"&gt;display&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;johns_hopkins_df&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;isnull&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;sum&lt;/span&gt;&lt;span class="p"&gt;())&lt;/span&gt;
+&lt;div class=" highlight hl-python"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;display&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;johns_hopkins_df&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;info&lt;/span&gt;&lt;span class="p"&gt;())&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
     &lt;/div&gt;
@@ -1491,9 +1495,7 @@ div.prompt {display:none}
 
 
 &lt;div class="output_subarea output_stream output_stdout output_text"&gt;
-&lt;pre&gt;Genereal info about dataframe:
-
-&amp;lt;class &amp;#39;pandas.core.frame.DataFrame&amp;#39;&amp;gt;
+&lt;pre&gt;&amp;lt;class &amp;#39;pandas.core.frame.DataFrame&amp;#39;&amp;gt;
 RangeIndex: 789872 entries, 0 to 789871
 Data columns (total 12 columns):
  #   Column       Non-Null Count   Dtype              
@@ -1529,17 +1531,33 @@ memory usage: 72.3+ MB
 
 &lt;/div&gt;
 
-&lt;div class="output_area"&gt;
-
-    &lt;div class="prompt"&gt;&lt;/div&gt;
-
-
-&lt;div class="output_subarea output_stream output_stdout output_text"&gt;
-&lt;pre&gt;
-NaN values in dataframe:
-&lt;/pre&gt;
 &lt;/div&gt;
 &lt;/div&gt;
+
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;&lt;div class="inner_cell"&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;p&gt;Find Nan values in dataframe:&lt;/p&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+&lt;div class="input"&gt;
+&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[233]:&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+    &lt;div class="input_area"&gt;
+&lt;div class=" highlight hl-python"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;display&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;johns_hopkins_df&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;isnull&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;sum&lt;/span&gt;&lt;span class="p"&gt;())&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="output_wrapper"&gt;
+&lt;div class="output"&gt;
+
 
 &lt;div class="output_area"&gt;
 
@@ -1572,7 +1590,7 @@ dtype: int64&lt;/pre&gt;
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[9]:&lt;/div&gt;
+&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[234]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
     &lt;div class="input_area"&gt;
 &lt;div class=" highlight hl-python"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;johns_hopkins_df&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;head&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
@@ -1588,7 +1606,7 @@ dtype: int64&lt;/pre&gt;
 
 &lt;div class="output_area"&gt;
 
-    &lt;div class="prompt output_prompt"&gt;Out[9]:&lt;/div&gt;
+    &lt;div class="prompt output_prompt"&gt;Out[234]:&lt;/div&gt;
 
 
 
@@ -1714,20 +1732,7 @@ dtype: int64&lt;/pre&gt;
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[&amp;nbsp;]:&lt;/div&gt;
-&lt;div class="inner_cell"&gt;
-    &lt;div class="input_area"&gt;
-&lt;div class=" highlight hl-python"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-    &lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;/div&gt;
-&lt;div class="cell border-box-sizing code_cell rendered"&gt;
-&lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[10]:&lt;/div&gt;
+&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[235]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
     &lt;div class="input_area"&gt;
 &lt;div class=" highlight hl-python"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;# To date_time and rename columns&lt;/span&gt;
@@ -1753,7 +1758,7 @@ dtype: int64&lt;/pre&gt;
 
 &lt;div class="output_area"&gt;
 
-    &lt;div class="prompt output_prompt"&gt;Out[10]:&lt;/div&gt;
+    &lt;div class="prompt output_prompt"&gt;Out[235]:&lt;/div&gt;
 
 
 
@@ -1889,19 +1894,6 @@ dtype: int64&lt;/pre&gt;
 &lt;/div&gt;
 
 &lt;/div&gt;
-&lt;div class="cell border-box-sizing code_cell rendered"&gt;
-&lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[11]:&lt;/div&gt;
-&lt;div class="inner_cell"&gt;
-    &lt;div class="input_area"&gt;
-&lt;div class=" highlight hl-python"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;johns_hopkins_df&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;Deaths_per_mio&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;johns_hopkins_df&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;Deaths&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;johns_hopkins_df&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;Population&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt; &lt;span class="mi"&gt;1000000&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-    &lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;/div&gt;
 &lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
 &lt;/div&gt;&lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
@@ -1919,7 +1911,7 @@ dtype: int64&lt;/pre&gt;
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[12]:&lt;/div&gt;
+&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[237]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
     &lt;div class="input_area"&gt;
 &lt;div class=" highlight hl-python"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;dk_df&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;johns_hopkins_df&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;johns_hopkins_df&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;Country&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;Denmark&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
@@ -1934,7 +1926,7 @@ dtype: int64&lt;/pre&gt;
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[13]:&lt;/div&gt;
+&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[238]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
     &lt;div class="input_area"&gt;
 &lt;div class=" highlight hl-python"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;fig&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;axes&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;plt&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;subplots&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;figsize&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;14&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;5&lt;/span&gt;&lt;span class="p"&gt;),&lt;/span&gt; &lt;span class="n"&gt;sharey&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="kc"&gt;True&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
@@ -1998,14 +1990,14 @@ z
    &lt;g id="matplotlib.axis_1"&gt;
     &lt;g id="xtick_1"&gt;
      &lt;g id="line2d_1"&gt;
-      &lt;path clip-path="url(#pdce5c0e6f0)" d="M 56.1425 293.743125 
+      &lt;path clip-path="url(#p7c11f8a3ee)" d="M 56.1425 293.743125 
 L 56.1425 21.943125 
 " style="fill:none;stroke:#ffffff;stroke-linecap:round;"/&gt;
      &lt;/g&gt;
     &lt;/g&gt;
     &lt;g id="xtick_2"&gt;
      &lt;g id="line2d_2"&gt;
-      &lt;path clip-path="url(#pdce5c0e6f0)" d="M 72.431074 293.743125 
+      &lt;path clip-path="url(#p7c11f8a3ee)" d="M 72.431074 293.743125 
 L 72.431074 21.943125 
 " style="fill:none;stroke:#ffffff;stroke-linecap:round;"/&gt;
      &lt;/g&gt;
@@ -2142,7 +2134,7 @@ z
     &lt;/g&gt;
     &lt;g id="xtick_3"&gt;
      &lt;g id="line2d_3"&gt;
-      &lt;path clip-path="url(#pdce5c0e6f0)" d="M 119.667938 293.743125 
+      &lt;path clip-path="url(#p7c11f8a3ee)" d="M 119.667938 293.743125 
 L 119.667938 21.943125 
 " style="fill:none;stroke:#ffffff;stroke-linecap:round;"/&gt;
      &lt;/g&gt;
@@ -2232,7 +2224,7 @@ z
     &lt;/g&gt;
     &lt;g id="xtick_4"&gt;
      &lt;g id="line2d_4"&gt;
-      &lt;path clip-path="url(#pdce5c0e6f0)" d="M 170.162517 293.743125 
+      &lt;path clip-path="url(#p7c11f8a3ee)" d="M 170.162517 293.743125 
 L 170.162517 21.943125 
 " style="fill:none;stroke:#ffffff;stroke-linecap:round;"/&gt;
      &lt;/g&gt;
@@ -2292,7 +2284,7 @@ z
     &lt;/g&gt;
     &lt;g id="xtick_5"&gt;
      &lt;g id="line2d_5"&gt;
-      &lt;path clip-path="url(#pdce5c0e6f0)" d="M 219.028238 293.743125 
+      &lt;path clip-path="url(#p7c11f8a3ee)" d="M 219.028238 293.743125 
 L 219.028238 21.943125 
 " style="fill:none;stroke:#ffffff;stroke-linecap:round;"/&gt;
      &lt;/g&gt;
@@ -2330,7 +2322,7 @@ z
     &lt;/g&gt;
     &lt;g id="xtick_6"&gt;
      &lt;g id="line2d_6"&gt;
-      &lt;path clip-path="url(#pdce5c0e6f0)" d="M 269.522817 293.743125 
+      &lt;path clip-path="url(#p7c11f8a3ee)" d="M 269.522817 293.743125 
 L 269.522817 21.943125 
 " style="fill:none;stroke:#ffffff;stroke-linecap:round;"/&gt;
      &lt;/g&gt;
@@ -2405,7 +2397,7 @@ z
     &lt;/g&gt;
     &lt;g id="xtick_7"&gt;
      &lt;g id="line2d_7"&gt;
-      &lt;path clip-path="url(#pdce5c0e6f0)" d="M 318.388538 293.743125 
+      &lt;path clip-path="url(#p7c11f8a3ee)" d="M 318.388538 293.743125 
 L 318.388538 21.943125 
 " style="fill:none;stroke:#ffffff;stroke-linecap:round;"/&gt;
      &lt;/g&gt;
@@ -2428,7 +2420,7 @@ z
     &lt;/g&gt;
     &lt;g id="xtick_8"&gt;
      &lt;g id="line2d_8"&gt;
-      &lt;path clip-path="url(#pdce5c0e6f0)" d="M 368.883117 293.743125 
+      &lt;path clip-path="url(#p7c11f8a3ee)" d="M 368.883117 293.743125 
 L 368.883117 21.943125 
 " style="fill:none;stroke:#ffffff;stroke-linecap:round;"/&gt;
      &lt;/g&gt;
@@ -2479,7 +2471,7 @@ z
     &lt;/g&gt;
     &lt;g id="xtick_9"&gt;
      &lt;g id="line2d_9"&gt;
-      &lt;path clip-path="url(#pdce5c0e6f0)" d="M 411.233409 293.743125 
+      &lt;path clip-path="url(#p7c11f8a3ee)" d="M 411.233409 293.743125 
 L 411.233409 21.943125 
 " style="fill:none;stroke:#ffffff;stroke-linecap:round;"/&gt;
      &lt;/g&gt;
@@ -2577,7 +2569,7 @@ z
    &lt;g id="matplotlib.axis_2"&gt;
     &lt;g id="ytick_1"&gt;
      &lt;g id="line2d_10"&gt;
-      &lt;path clip-path="url(#pdce5c0e6f0)" d="M 56.1425 281.38858 
+      &lt;path clip-path="url(#p7c11f8a3ee)" d="M 56.1425 281.38858 
 L 411.233409 281.38858 
 " style="fill:none;stroke:#ffffff;stroke-linecap:round;"/&gt;
      &lt;/g&gt;
@@ -2590,7 +2582,7 @@ L 411.233409 281.38858
     &lt;/g&gt;
     &lt;g id="ytick_2"&gt;
      &lt;g id="line2d_11"&gt;
-      &lt;path clip-path="url(#pdce5c0e6f0)" d="M 56.1425 238.933097 
+      &lt;path clip-path="url(#p7c11f8a3ee)" d="M 56.1425 238.933097 
 L 411.233409 238.933097 
 " style="fill:none;stroke:#ffffff;stroke-linecap:round;"/&gt;
      &lt;/g&gt;
@@ -2619,7 +2611,7 @@ z
     &lt;/g&gt;
     &lt;g id="ytick_3"&gt;
      &lt;g id="line2d_12"&gt;
-      &lt;path clip-path="url(#pdce5c0e6f0)" d="M 56.1425 196.477614 
+      &lt;path clip-path="url(#p7c11f8a3ee)" d="M 56.1425 196.477614 
 L 411.233409 196.477614 
 " style="fill:none;stroke:#ffffff;stroke-linecap:round;"/&gt;
      &lt;/g&gt;
@@ -2635,7 +2627,7 @@ L 411.233409 196.477614
     &lt;/g&gt;
     &lt;g id="ytick_4"&gt;
      &lt;g id="line2d_13"&gt;
-      &lt;path clip-path="url(#pdce5c0e6f0)" d="M 56.1425 154.022132 
+      &lt;path clip-path="url(#p7c11f8a3ee)" d="M 56.1425 154.022132 
 L 411.233409 154.022132 
 " style="fill:none;stroke:#ffffff;stroke-linecap:round;"/&gt;
      &lt;/g&gt;
@@ -2686,7 +2678,7 @@ z
     &lt;/g&gt;
     &lt;g id="ytick_5"&gt;
      &lt;g id="line2d_14"&gt;
-      &lt;path clip-path="url(#pdce5c0e6f0)" d="M 56.1425 111.566649 
+      &lt;path clip-path="url(#p7c11f8a3ee)" d="M 56.1425 111.566649 
 L 411.233409 111.566649 
 " style="fill:none;stroke:#ffffff;stroke-linecap:round;"/&gt;
      &lt;/g&gt;
@@ -2721,7 +2713,7 @@ z
     &lt;/g&gt;
     &lt;g id="ytick_6"&gt;
      &lt;g id="line2d_15"&gt;
-      &lt;path clip-path="url(#pdce5c0e6f0)" d="M 56.1425 69.111166 
+      &lt;path clip-path="url(#p7c11f8a3ee)" d="M 56.1425 69.111166 
 L 411.233409 69.111166 
 " style="fill:none;stroke:#ffffff;stroke-linecap:round;"/&gt;
      &lt;/g&gt;
@@ -2764,7 +2756,7 @@ z
     &lt;/g&gt;
     &lt;g id="ytick_7"&gt;
      &lt;g id="line2d_16"&gt;
-      &lt;path clip-path="url(#pdce5c0e6f0)" d="M 56.1425 26.655684 
+      &lt;path clip-path="url(#p7c11f8a3ee)" d="M 56.1425 26.655684 
 L 411.233409 26.655684 
 " style="fill:none;stroke:#ffffff;stroke-linecap:round;"/&gt;
      &lt;/g&gt;
@@ -2922,7 +2914,7 @@ z
     &lt;/g&gt;
    &lt;/g&gt;
    &lt;g id="line2d_17"&gt;
-    &lt;path clip-path="url(#pdce5c0e6f0)" d="M 56.1425 281.38858 
+    &lt;path clip-path="url(#p7c11f8a3ee)" d="M 56.1425 281.38858 
 L 142.471941 281.303669 
 L 150.616228 281.00648 
 L 152.245085 280.836658 
@@ -3329,14 +3321,14 @@ z
    &lt;g id="matplotlib.axis_3"&gt;
     &lt;g id="xtick_40"&gt;
      &lt;g id="line2d_20"&gt;
-      &lt;path clip-path="url(#p04093f624a)" d="M 482.251591 293.743125 
+      &lt;path clip-path="url(#p6b90f91895)" d="M 482.251591 293.743125 
 L 482.251591 21.943125 
 " style="fill:none;stroke:#ffffff;stroke-linecap:round;"/&gt;
      &lt;/g&gt;
     &lt;/g&gt;
     &lt;g id="xtick_41"&gt;
      &lt;g id="line2d_21"&gt;
-      &lt;path clip-path="url(#p04093f624a)" d="M 498.540165 293.743125 
+      &lt;path clip-path="url(#p6b90f91895)" d="M 498.540165 293.743125 
 L 498.540165 21.943125 
 " style="fill:none;stroke:#ffffff;stroke-linecap:round;"/&gt;
      &lt;/g&gt;
@@ -3358,7 +3350,7 @@ L 498.540165 21.943125
     &lt;/g&gt;
     &lt;g id="xtick_42"&gt;
      &lt;g id="line2d_22"&gt;
-      &lt;path clip-path="url(#p04093f624a)" d="M 545.777029 293.743125 
+      &lt;path clip-path="url(#p6b90f91895)" d="M 545.777029 293.743125 
 L 545.777029 21.943125 
 " style="fill:none;stroke:#ffffff;stroke-linecap:round;"/&gt;
      &lt;/g&gt;
@@ -3373,7 +3365,7 @@ L 545.777029 21.943125
     &lt;/g&gt;
     &lt;g id="xtick_43"&gt;
      &lt;g id="line2d_23"&gt;
-      &lt;path clip-path="url(#p04093f624a)" d="M 596.271608 293.743125 
+      &lt;path clip-path="url(#p6b90f91895)" d="M 596.271608 293.743125 
 L 596.271608 21.943125 
 " style="fill:none;stroke:#ffffff;stroke-linecap:round;"/&gt;
      &lt;/g&gt;
@@ -3388,7 +3380,7 @@ L 596.271608 21.943125
     &lt;/g&gt;
     &lt;g id="xtick_44"&gt;
      &lt;g id="line2d_24"&gt;
-      &lt;path clip-path="url(#p04093f624a)" d="M 645.137329 293.743125 
+      &lt;path clip-path="url(#p6b90f91895)" d="M 645.137329 293.743125 
 L 645.137329 21.943125 
 " style="fill:none;stroke:#ffffff;stroke-linecap:round;"/&gt;
      &lt;/g&gt;
@@ -3403,7 +3395,7 @@ L 645.137329 21.943125
     &lt;/g&gt;
     &lt;g id="xtick_45"&gt;
      &lt;g id="line2d_25"&gt;
-      &lt;path clip-path="url(#p04093f624a)" d="M 695.631908 293.743125 
+      &lt;path clip-path="url(#p6b90f91895)" d="M 695.631908 293.743125 
 L 695.631908 21.943125 
 " style="fill:none;stroke:#ffffff;stroke-linecap:round;"/&gt;
      &lt;/g&gt;
@@ -3418,7 +3410,7 @@ L 695.631908 21.943125
     &lt;/g&gt;
     &lt;g id="xtick_46"&gt;
      &lt;g id="line2d_26"&gt;
-      &lt;path clip-path="url(#p04093f624a)" d="M 744.497629 293.743125 
+      &lt;path clip-path="url(#p6b90f91895)" d="M 744.497629 293.743125 
 L 744.497629 21.943125 
 " style="fill:none;stroke:#ffffff;stroke-linecap:round;"/&gt;
      &lt;/g&gt;
@@ -3433,7 +3425,7 @@ L 744.497629 21.943125
     &lt;/g&gt;
     &lt;g id="xtick_47"&gt;
      &lt;g id="line2d_27"&gt;
-      &lt;path clip-path="url(#p04093f624a)" d="M 794.992208 293.743125 
+      &lt;path clip-path="url(#p6b90f91895)" d="M 794.992208 293.743125 
 L 794.992208 21.943125 
 " style="fill:none;stroke:#ffffff;stroke-linecap:round;"/&gt;
      &lt;/g&gt;
@@ -3448,7 +3440,7 @@ L 794.992208 21.943125
     &lt;/g&gt;
     &lt;g id="xtick_48"&gt;
      &lt;g id="line2d_28"&gt;
-      &lt;path clip-path="url(#p04093f624a)" d="M 837.3425 293.743125 
+      &lt;path clip-path="url(#p6b90f91895)" d="M 837.3425 293.743125 
 L 837.3425 21.943125 
 " style="fill:none;stroke:#ffffff;stroke-linecap:round;"/&gt;
      &lt;/g&gt;
@@ -3496,56 +3488,56 @@ L 837.3425 21.943125
    &lt;g id="matplotlib.axis_4"&gt;
     &lt;g id="ytick_8"&gt;
      &lt;g id="line2d_29"&gt;
-      &lt;path clip-path="url(#p04093f624a)" d="M 482.251591 281.38858 
+      &lt;path clip-path="url(#p6b90f91895)" d="M 482.251591 281.38858 
 L 837.3425 281.38858 
 " style="fill:none;stroke:#ffffff;stroke-linecap:round;"/&gt;
      &lt;/g&gt;
     &lt;/g&gt;
     &lt;g id="ytick_9"&gt;
      &lt;g id="line2d_30"&gt;
-      &lt;path clip-path="url(#p04093f624a)" d="M 482.251591 238.933097 
+      &lt;path clip-path="url(#p6b90f91895)" d="M 482.251591 238.933097 
 L 837.3425 238.933097 
 " style="fill:none;stroke:#ffffff;stroke-linecap:round;"/&gt;
      &lt;/g&gt;
     &lt;/g&gt;
     &lt;g id="ytick_10"&gt;
      &lt;g id="line2d_31"&gt;
-      &lt;path clip-path="url(#p04093f624a)" d="M 482.251591 196.477614 
+      &lt;path clip-path="url(#p6b90f91895)" d="M 482.251591 196.477614 
 L 837.3425 196.477614 
 " style="fill:none;stroke:#ffffff;stroke-linecap:round;"/&gt;
      &lt;/g&gt;
     &lt;/g&gt;
     &lt;g id="ytick_11"&gt;
      &lt;g id="line2d_32"&gt;
-      &lt;path clip-path="url(#p04093f624a)" d="M 482.251591 154.022132 
+      &lt;path clip-path="url(#p6b90f91895)" d="M 482.251591 154.022132 
 L 837.3425 154.022132 
 " style="fill:none;stroke:#ffffff;stroke-linecap:round;"/&gt;
      &lt;/g&gt;
     &lt;/g&gt;
     &lt;g id="ytick_12"&gt;
      &lt;g id="line2d_33"&gt;
-      &lt;path clip-path="url(#p04093f624a)" d="M 482.251591 111.566649 
+      &lt;path clip-path="url(#p6b90f91895)" d="M 482.251591 111.566649 
 L 837.3425 111.566649 
 " style="fill:none;stroke:#ffffff;stroke-linecap:round;"/&gt;
      &lt;/g&gt;
     &lt;/g&gt;
     &lt;g id="ytick_13"&gt;
      &lt;g id="line2d_34"&gt;
-      &lt;path clip-path="url(#p04093f624a)" d="M 482.251591 69.111166 
+      &lt;path clip-path="url(#p6b90f91895)" d="M 482.251591 69.111166 
 L 837.3425 69.111166 
 " style="fill:none;stroke:#ffffff;stroke-linecap:round;"/&gt;
      &lt;/g&gt;
     &lt;/g&gt;
     &lt;g id="ytick_14"&gt;
      &lt;g id="line2d_35"&gt;
-      &lt;path clip-path="url(#p04093f624a)" d="M 482.251591 26.655684 
+      &lt;path clip-path="url(#p6b90f91895)" d="M 482.251591 26.655684 
 L 837.3425 26.655684 
 " style="fill:none;stroke:#ffffff;stroke-linecap:round;"/&gt;
      &lt;/g&gt;
     &lt;/g&gt;
    &lt;/g&gt;
    &lt;g id="line2d_36"&gt;
-    &lt;path clip-path="url(#p04093f624a)" d="M 482.251591 281.38858 
+    &lt;path clip-path="url(#p6b90f91895)" d="M 482.251591 281.38858 
 L 566.952175 281.303669 
 L 571.838747 281.091391 
 L 581.611891 280.327192 
@@ -3853,10 +3845,10 @@ L 514.151591 35.866719
   &lt;/g&gt;
  &lt;/g&gt;
  &lt;defs&gt;
-  &lt;clipPath id="pdce5c0e6f0"&gt;
+  &lt;clipPath id="p7c11f8a3ee"&gt;
    &lt;rect height="271.8" width="355.090909" x="56.1425" y="21.943125"/&gt;
   &lt;/clipPath&gt;
-  &lt;clipPath id="p04093f624a"&gt;
+  &lt;clipPath id="p6b90f91895"&gt;
    &lt;rect height="271.8" width="355.090909" x="482.251591" y="21.943125"/&gt;
   &lt;/clipPath&gt;
  &lt;/defs&gt;
@@ -3872,7 +3864,7 @@ L 514.151591 35.866719
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[14]:&lt;/div&gt;
+&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[239]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
     &lt;div class="input_area"&gt;
 &lt;div class=" highlight hl-python"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;fig&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;axes&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;plt&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;subplots&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;figsize&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;14&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;5&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
@@ -3939,7 +3931,7 @@ z
    &lt;g id="matplotlib.axis_1"&gt;
     &lt;g id="xtick_1"&gt;
      &lt;g id="line2d_1"&gt;
-      &lt;path clip-path="url(#p71f6f6400c)" d="M 86.131108 293.589375 
+      &lt;path clip-path="url(#p6f5170b5c7)" d="M 86.131108 293.589375 
 L 86.131108 21.789375 
 " style="fill:none;stroke:#ffffff;stroke-linecap:round;"/&gt;
      &lt;/g&gt;
@@ -4343,7 +4335,7 @@ z
     &lt;/g&gt;
     &lt;g id="xtick_2"&gt;
      &lt;g id="line2d_2"&gt;
-      &lt;path clip-path="url(#p71f6f6400c)" d="M 121.640199 293.589375 
+      &lt;path clip-path="url(#p6f5170b5c7)" d="M 121.640199 293.589375 
 L 121.640199 21.789375 
 " style="fill:none;stroke:#ffffff;stroke-linecap:round;"/&gt;
      &lt;/g&gt;
@@ -4421,7 +4413,7 @@ z
     &lt;/g&gt;
     &lt;g id="xtick_3"&gt;
      &lt;g id="line2d_3"&gt;
-      &lt;path clip-path="url(#p71f6f6400c)" d="M 157.14929 293.589375 
+      &lt;path clip-path="url(#p6f5170b5c7)" d="M 157.14929 293.589375 
 L 157.14929 21.789375 
 " style="fill:none;stroke:#ffffff;stroke-linecap:round;"/&gt;
      &lt;/g&gt;
@@ -4475,7 +4467,7 @@ z
     &lt;/g&gt;
     &lt;g id="xtick_4"&gt;
      &lt;g id="line2d_4"&gt;
-      &lt;path clip-path="url(#p71f6f6400c)" d="M 192.658381 293.589375 
+      &lt;path clip-path="url(#p6f5170b5c7)" d="M 192.658381 293.589375 
 L 192.658381 21.789375 
 " style="fill:none;stroke:#ffffff;stroke-linecap:round;"/&gt;
      &lt;/g&gt;
@@ -4500,7 +4492,7 @@ z
     &lt;/g&gt;
     &lt;g id="xtick_5"&gt;
      &lt;g id="line2d_5"&gt;
-      &lt;path clip-path="url(#p71f6f6400c)" d="M 228.167472 293.589375 
+      &lt;path clip-path="url(#p6f5170b5c7)" d="M 228.167472 293.589375 
 L 228.167472 21.789375 
 " style="fill:none;stroke:#ffffff;stroke-linecap:round;"/&gt;
      &lt;/g&gt;
@@ -4576,7 +4568,7 @@ z
     &lt;/g&gt;
     &lt;g id="xtick_6"&gt;
      &lt;g id="line2d_6"&gt;
-      &lt;path clip-path="url(#p71f6f6400c)" d="M 263.676562 293.589375 
+      &lt;path clip-path="url(#p6f5170b5c7)" d="M 263.676562 293.589375 
 L 263.676562 21.789375 
 " style="fill:none;stroke:#ffffff;stroke-linecap:round;"/&gt;
      &lt;/g&gt;
@@ -4616,7 +4608,7 @@ z
     &lt;/g&gt;
     &lt;g id="xtick_7"&gt;
      &lt;g id="line2d_7"&gt;
-      &lt;path clip-path="url(#p71f6f6400c)" d="M 299.185653 293.589375 
+      &lt;path clip-path="url(#p6f5170b5c7)" d="M 299.185653 293.589375 
 L 299.185653 21.789375 
 " style="fill:none;stroke:#ffffff;stroke-linecap:round;"/&gt;
      &lt;/g&gt;
@@ -4648,7 +4640,7 @@ z
     &lt;/g&gt;
     &lt;g id="xtick_8"&gt;
      &lt;g id="line2d_8"&gt;
-      &lt;path clip-path="url(#p71f6f6400c)" d="M 334.694744 293.589375 
+      &lt;path clip-path="url(#p6f5170b5c7)" d="M 334.694744 293.589375 
 L 334.694744 21.789375 
 " style="fill:none;stroke:#ffffff;stroke-linecap:round;"/&gt;
      &lt;/g&gt;
@@ -4694,7 +4686,7 @@ z
     &lt;/g&gt;
     &lt;g id="xtick_9"&gt;
      &lt;g id="line2d_9"&gt;
-      &lt;path clip-path="url(#p71f6f6400c)" d="M 370.203835 293.589375 
+      &lt;path clip-path="url(#p6f5170b5c7)" d="M 370.203835 293.589375 
 L 370.203835 21.789375 
 " style="fill:none;stroke:#ffffff;stroke-linecap:round;"/&gt;
      &lt;/g&gt;
@@ -4755,7 +4747,7 @@ z
     &lt;/g&gt;
     &lt;g id="xtick_10"&gt;
      &lt;g id="line2d_10"&gt;
-      &lt;path clip-path="url(#p71f6f6400c)" d="M 405.712926 293.589375 
+      &lt;path clip-path="url(#p6f5170b5c7)" d="M 405.712926 293.589375 
 L 405.712926 21.789375 
 " style="fill:none;stroke:#ffffff;stroke-linecap:round;"/&gt;
      &lt;/g&gt;
@@ -4901,7 +4893,7 @@ z
    &lt;g id="matplotlib.axis_2"&gt;
     &lt;g id="ytick_1"&gt;
      &lt;g id="line2d_11"&gt;
-      &lt;path clip-path="url(#p71f6f6400c)" d="M 68.376563 293.589375 
+      &lt;path clip-path="url(#p6f5170b5c7)" d="M 68.376563 293.589375 
 L 423.467472 293.589375 
 " style="fill:none;stroke:#ffffff;stroke-linecap:round;"/&gt;
      &lt;/g&gt;
@@ -4941,7 +4933,7 @@ z
     &lt;/g&gt;
     &lt;g id="ytick_2"&gt;
      &lt;g id="line2d_12"&gt;
-      &lt;path clip-path="url(#p71f6f6400c)" d="M 68.376563 257.800826 
+      &lt;path clip-path="url(#p6f5170b5c7)" d="M 68.376563 257.800826 
 L 423.467472 257.800826 
 " style="fill:none;stroke:#ffffff;stroke-linecap:round;"/&gt;
      &lt;/g&gt;
@@ -5009,7 +5001,7 @@ z
     &lt;/g&gt;
     &lt;g id="ytick_3"&gt;
      &lt;g id="line2d_13"&gt;
-      &lt;path clip-path="url(#p71f6f6400c)" d="M 68.376563 222.012277 
+      &lt;path clip-path="url(#p6f5170b5c7)" d="M 68.376563 222.012277 
 L 423.467472 222.012277 
 " style="fill:none;stroke:#ffffff;stroke-linecap:round;"/&gt;
      &lt;/g&gt;
@@ -5026,7 +5018,7 @@ L 423.467472 222.012277
     &lt;/g&gt;
     &lt;g id="ytick_4"&gt;
      &lt;g id="line2d_14"&gt;
-      &lt;path clip-path="url(#p71f6f6400c)" d="M 68.376563 186.223728 
+      &lt;path clip-path="url(#p6f5170b5c7)" d="M 68.376563 186.223728 
 L 423.467472 186.223728 
 " style="fill:none;stroke:#ffffff;stroke-linecap:round;"/&gt;
      &lt;/g&gt;
@@ -5058,7 +5050,7 @@ z
     &lt;/g&gt;
     &lt;g id="ytick_5"&gt;
      &lt;g id="line2d_15"&gt;
-      &lt;path clip-path="url(#p71f6f6400c)" d="M 68.376563 150.435179 
+      &lt;path clip-path="url(#p6f5170b5c7)" d="M 68.376563 150.435179 
 L 423.467472 150.435179 
 " style="fill:none;stroke:#ffffff;stroke-linecap:round;"/&gt;
      &lt;/g&gt;
@@ -5089,7 +5081,7 @@ z
     &lt;/g&gt;
     &lt;g id="ytick_6"&gt;
      &lt;g id="line2d_16"&gt;
-      &lt;path clip-path="url(#p71f6f6400c)" d="M 68.376563 114.64663 
+      &lt;path clip-path="url(#p6f5170b5c7)" d="M 68.376563 114.64663 
 L 423.467472 114.64663 
 " style="fill:none;stroke:#ffffff;stroke-linecap:round;"/&gt;
      &lt;/g&gt;
@@ -5107,7 +5099,7 @@ L 423.467472 114.64663
     &lt;/g&gt;
     &lt;g id="ytick_7"&gt;
      &lt;g id="line2d_17"&gt;
-      &lt;path clip-path="url(#p71f6f6400c)" d="M 68.376563 78.858081 
+      &lt;path clip-path="url(#p6f5170b5c7)" d="M 68.376563 78.858081 
 L 423.467472 78.858081 
 " style="fill:none;stroke:#ffffff;stroke-linecap:round;"/&gt;
      &lt;/g&gt;
@@ -5125,7 +5117,7 @@ L 423.467472 78.858081
     &lt;/g&gt;
     &lt;g id="ytick_8"&gt;
      &lt;g id="line2d_18"&gt;
-      &lt;path clip-path="url(#p71f6f6400c)" d="M 68.376563 43.069533 
+      &lt;path clip-path="url(#p6f5170b5c7)" d="M 68.376563 43.069533 
 L 423.467472 43.069533 
 " style="fill:none;stroke:#ffffff;stroke-linecap:round;"/&gt;
      &lt;/g&gt;
@@ -5191,7 +5183,7 @@ z
     &lt;/g&gt;
    &lt;/g&gt;
    &lt;g id="patch_3"&gt;
-    &lt;path clip-path="url(#p71f6f6400c)" d="M 77.253835 293.589375 
+    &lt;path clip-path="url(#p6f5170b5c7)" d="M 77.253835 293.589375 
 L 95.008381 293.589375 
 L 95.008381 34.732232 
 L 77.253835 34.732232 
@@ -5199,7 +5191,7 @@ z
 " style="fill:#8dd3c7;stroke:#ffffff;stroke-linejoin:miter;"/&gt;
    &lt;/g&gt;
    &lt;g id="patch_4"&gt;
-    &lt;path clip-path="url(#p71f6f6400c)" d="M 112.762926 293.589375 
+    &lt;path clip-path="url(#p6f5170b5c7)" d="M 112.762926 293.589375 
 L 130.517472 293.589375 
 L 130.517472 123.738353 
 L 112.762926 123.738353 
@@ -5207,7 +5199,7 @@ z
 " style="fill:#8dd3c7;stroke:#ffffff;stroke-linejoin:miter;"/&gt;
    &lt;/g&gt;
    &lt;g id="patch_5"&gt;
-    &lt;path clip-path="url(#p71f6f6400c)" d="M 148.272017 293.589375 
+    &lt;path clip-path="url(#p6f5170b5c7)" d="M 148.272017 293.589375 
 L 166.026563 293.589375 
 L 166.026563 203.983438 
 L 148.272017 203.983438 
@@ -5215,7 +5207,7 @@ z
 " style="fill:#8dd3c7;stroke:#ffffff;stroke-linejoin:miter;"/&gt;
    &lt;/g&gt;
    &lt;g id="patch_6"&gt;
-    &lt;path clip-path="url(#p71f6f6400c)" d="M 183.781108 293.589375 
+    &lt;path clip-path="url(#p6f5170b5c7)" d="M 183.781108 293.589375 
 L 201.535653 293.589375 
 L 201.535653 205.50803 
 L 183.781108 205.50803 
@@ -5223,7 +5215,7 @@ z
 " style="fill:#8dd3c7;stroke:#ffffff;stroke-linejoin:miter;"/&gt;
    &lt;/g&gt;
    &lt;g id="patch_7"&gt;
-    &lt;path clip-path="url(#p71f6f6400c)" d="M 219.290199 293.589375 
+    &lt;path clip-path="url(#p6f5170b5c7)" d="M 219.290199 293.589375 
 L 237.044744 293.589375 
 L 237.044744 230.608687 
 L 219.290199 230.608687 
@@ -5231,7 +5223,7 @@ z
 " style="fill:#8dd3c7;stroke:#ffffff;stroke-linejoin:miter;"/&gt;
    &lt;/g&gt;
    &lt;g id="patch_8"&gt;
-    &lt;path clip-path="url(#p71f6f6400c)" d="M 254.79929 293.589375 
+    &lt;path clip-path="url(#p6f5170b5c7)" d="M 254.79929 293.589375 
 L 272.553835 293.589375 
 L 272.553835 242.822603 
 L 254.79929 242.822603 
@@ -5239,7 +5231,7 @@ z
 " style="fill:#8dd3c7;stroke:#ffffff;stroke-linejoin:miter;"/&gt;
    &lt;/g&gt;
    &lt;g id="patch_9"&gt;
-    &lt;path clip-path="url(#p71f6f6400c)" d="M 290.308381 293.589375 
+    &lt;path clip-path="url(#p6f5170b5c7)" d="M 290.308381 293.589375 
 L 308.062926 293.589375 
 L 308.062926 250.011806 
 L 290.308381 250.011806 
@@ -5247,7 +5239,7 @@ z
 " style="fill:#8dd3c7;stroke:#ffffff;stroke-linejoin:miter;"/&gt;
    &lt;/g&gt;
    &lt;g id="patch_10"&gt;
-    &lt;path clip-path="url(#p71f6f6400c)" d="M 325.817472 293.589375 
+    &lt;path clip-path="url(#p6f5170b5c7)" d="M 325.817472 293.589375 
 L 343.572017 293.589375 
 L 343.572017 252.080384 
 L 325.817472 252.080384 
@@ -5255,7 +5247,7 @@ z
 " style="fill:#8dd3c7;stroke:#ffffff;stroke-linejoin:miter;"/&gt;
    &lt;/g&gt;
    &lt;g id="patch_11"&gt;
-    &lt;path clip-path="url(#p71f6f6400c)" d="M 361.326563 293.589375 
+    &lt;path clip-path="url(#p6f5170b5c7)" d="M 361.326563 293.589375 
 L 379.081108 293.589375 
 L 379.081108 253.328689 
 L 361.326563 253.328689 
@@ -5263,7 +5255,7 @@ z
 " style="fill:#8dd3c7;stroke:#ffffff;stroke-linejoin:miter;"/&gt;
    &lt;/g&gt;
    &lt;g id="patch_12"&gt;
-    &lt;path clip-path="url(#p71f6f6400c)" d="M 396.835653 293.589375 
+    &lt;path clip-path="url(#p6f5170b5c7)" d="M 396.835653 293.589375 
 L 414.590199 293.589375 
 L 414.590199 263.330873 
 L 396.835653 263.330873 
@@ -5337,7 +5329,7 @@ z
    &lt;g id="matplotlib.axis_3"&gt;
     &lt;g id="xtick_11"&gt;
      &lt;g id="line2d_19"&gt;
-      &lt;path clip-path="url(#pa6f60f0003)" d="M 512.240199 293.589375 
+      &lt;path clip-path="url(#p0c8f23ec68)" d="M 512.240199 293.589375 
 L 512.240199 21.789375 
 " style="fill:none;stroke:#ffffff;stroke-linecap:round;"/&gt;
      &lt;/g&gt;
@@ -5359,7 +5351,7 @@ L 512.240199 21.789375
     &lt;/g&gt;
     &lt;g id="xtick_12"&gt;
      &lt;g id="line2d_20"&gt;
-      &lt;path clip-path="url(#pa6f60f0003)" d="M 547.74929 293.589375 
+      &lt;path clip-path="url(#p0c8f23ec68)" d="M 547.74929 293.589375 
 L 547.74929 21.789375 
 " style="fill:none;stroke:#ffffff;stroke-linecap:round;"/&gt;
      &lt;/g&gt;
@@ -5375,7 +5367,7 @@ L 547.74929 21.789375
     &lt;/g&gt;
     &lt;g id="xtick_13"&gt;
      &lt;g id="line2d_21"&gt;
-      &lt;path clip-path="url(#pa6f60f0003)" d="M 583.258381 293.589375 
+      &lt;path clip-path="url(#p0c8f23ec68)" d="M 583.258381 293.589375 
 L 583.258381 21.789375 
 " style="fill:none;stroke:#ffffff;stroke-linecap:round;"/&gt;
      &lt;/g&gt;
@@ -5394,7 +5386,7 @@ L 583.258381 21.789375
     &lt;/g&gt;
     &lt;g id="xtick_14"&gt;
      &lt;g id="line2d_22"&gt;
-      &lt;path clip-path="url(#pa6f60f0003)" d="M 618.767472 293.589375 
+      &lt;path clip-path="url(#p0c8f23ec68)" d="M 618.767472 293.589375 
 L 618.767472 21.789375 
 " style="fill:none;stroke:#ffffff;stroke-linecap:round;"/&gt;
      &lt;/g&gt;
@@ -5413,7 +5405,7 @@ L 618.767472 21.789375
     &lt;/g&gt;
     &lt;g id="xtick_15"&gt;
      &lt;g id="line2d_23"&gt;
-      &lt;path clip-path="url(#pa6f60f0003)" d="M 654.276562 293.589375 
+      &lt;path clip-path="url(#p0c8f23ec68)" d="M 654.276562 293.589375 
 L 654.276562 21.789375 
 " style="fill:none;stroke:#ffffff;stroke-linecap:round;"/&gt;
      &lt;/g&gt;
@@ -5439,7 +5431,7 @@ L 654.276562 21.789375
     &lt;/g&gt;
     &lt;g id="xtick_16"&gt;
      &lt;g id="line2d_24"&gt;
-      &lt;path clip-path="url(#pa6f60f0003)" d="M 689.785653 293.589375 
+      &lt;path clip-path="url(#p0c8f23ec68)" d="M 689.785653 293.589375 
 L 689.785653 21.789375 
 " style="fill:none;stroke:#ffffff;stroke-linecap:round;"/&gt;
      &lt;/g&gt;
@@ -5456,7 +5448,7 @@ L 689.785653 21.789375
     &lt;/g&gt;
     &lt;g id="xtick_17"&gt;
      &lt;g id="line2d_25"&gt;
-      &lt;path clip-path="url(#pa6f60f0003)" d="M 725.294744 293.589375 
+      &lt;path clip-path="url(#p0c8f23ec68)" d="M 725.294744 293.589375 
 L 725.294744 21.789375 
 " style="fill:none;stroke:#ffffff;stroke-linecap:round;"/&gt;
      &lt;/g&gt;
@@ -5473,7 +5465,7 @@ L 725.294744 21.789375
     &lt;/g&gt;
     &lt;g id="xtick_18"&gt;
      &lt;g id="line2d_26"&gt;
-      &lt;path clip-path="url(#pa6f60f0003)" d="M 760.803835 293.589375 
+      &lt;path clip-path="url(#p0c8f23ec68)" d="M 760.803835 293.589375 
 L 760.803835 21.789375 
 " style="fill:none;stroke:#ffffff;stroke-linecap:round;"/&gt;
      &lt;/g&gt;
@@ -5490,7 +5482,7 @@ L 760.803835 21.789375
     &lt;/g&gt;
     &lt;g id="xtick_19"&gt;
      &lt;g id="line2d_27"&gt;
-      &lt;path clip-path="url(#pa6f60f0003)" d="M 796.312926 293.589375 
+      &lt;path clip-path="url(#p0c8f23ec68)" d="M 796.312926 293.589375 
 L 796.312926 21.789375 
 " style="fill:none;stroke:#ffffff;stroke-linecap:round;"/&gt;
      &lt;/g&gt;
@@ -5530,7 +5522,7 @@ z
     &lt;/g&gt;
     &lt;g id="xtick_20"&gt;
      &lt;g id="line2d_28"&gt;
-      &lt;path clip-path="url(#pa6f60f0003)" d="M 831.822017 293.589375 
+      &lt;path clip-path="url(#p0c8f23ec68)" d="M 831.822017 293.589375 
 L 831.822017 21.789375 
 " style="fill:none;stroke:#ffffff;stroke-linecap:round;"/&gt;
      &lt;/g&gt;
@@ -5562,7 +5554,7 @@ L 831.822017 21.789375
    &lt;g id="matplotlib.axis_4"&gt;
     &lt;g id="ytick_9"&gt;
      &lt;g id="line2d_29"&gt;
-      &lt;path clip-path="url(#pa6f60f0003)" d="M 494.485653 293.589375 
+      &lt;path clip-path="url(#p0c8f23ec68)" d="M 494.485653 293.589375 
 L 849.576562 293.589375 
 " style="fill:none;stroke:#ffffff;stroke-linecap:round;"/&gt;
      &lt;/g&gt;
@@ -5575,7 +5567,7 @@ L 849.576562 293.589375
     &lt;/g&gt;
     &lt;g id="ytick_10"&gt;
      &lt;g id="line2d_30"&gt;
-      &lt;path clip-path="url(#pa6f60f0003)" d="M 494.485653 251.944191 
+      &lt;path clip-path="url(#p0c8f23ec68)" d="M 494.485653 251.944191 
 L 849.576562 251.944191 
 " style="fill:none;stroke:#ffffff;stroke-linecap:round;"/&gt;
      &lt;/g&gt;
@@ -5590,7 +5582,7 @@ L 849.576562 251.944191
     &lt;/g&gt;
     &lt;g id="ytick_11"&gt;
      &lt;g id="line2d_31"&gt;
-      &lt;path clip-path="url(#pa6f60f0003)" d="M 494.485653 210.299008 
+      &lt;path clip-path="url(#p0c8f23ec68)" d="M 494.485653 210.299008 
 L 849.576562 210.299008 
 " style="fill:none;stroke:#ffffff;stroke-linecap:round;"/&gt;
      &lt;/g&gt;
@@ -5624,7 +5616,7 @@ z
     &lt;/g&gt;
     &lt;g id="ytick_12"&gt;
      &lt;g id="line2d_32"&gt;
-      &lt;path clip-path="url(#pa6f60f0003)" d="M 494.485653 168.653824 
+      &lt;path clip-path="url(#p0c8f23ec68)" d="M 494.485653 168.653824 
 L 849.576562 168.653824 
 " style="fill:none;stroke:#ffffff;stroke-linecap:round;"/&gt;
      &lt;/g&gt;
@@ -5674,7 +5666,7 @@ z
     &lt;/g&gt;
     &lt;g id="ytick_13"&gt;
      &lt;g id="line2d_33"&gt;
-      &lt;path clip-path="url(#pa6f60f0003)" d="M 494.485653 127.00864 
+      &lt;path clip-path="url(#p0c8f23ec68)" d="M 494.485653 127.00864 
 L 849.576562 127.00864 
 " style="fill:none;stroke:#ffffff;stroke-linecap:round;"/&gt;
      &lt;/g&gt;
@@ -5731,7 +5723,7 @@ z
     &lt;/g&gt;
     &lt;g id="ytick_14"&gt;
      &lt;g id="line2d_34"&gt;
-      &lt;path clip-path="url(#pa6f60f0003)" d="M 494.485653 85.363457 
+      &lt;path clip-path="url(#p0c8f23ec68)" d="M 494.485653 85.363457 
 L 849.576562 85.363457 
 " style="fill:none;stroke:#ffffff;stroke-linecap:round;"/&gt;
      &lt;/g&gt;
@@ -5747,7 +5739,7 @@ L 849.576562 85.363457
     &lt;/g&gt;
     &lt;g id="ytick_15"&gt;
      &lt;g id="line2d_35"&gt;
-      &lt;path clip-path="url(#pa6f60f0003)" d="M 494.485653 43.718273 
+      &lt;path clip-path="url(#p0c8f23ec68)" d="M 494.485653 43.718273 
 L 849.576562 43.718273 
 " style="fill:none;stroke:#ffffff;stroke-linecap:round;"/&gt;
      &lt;/g&gt;
@@ -5809,7 +5801,7 @@ L 849.576562 43.718273
     &lt;/g&gt;
    &lt;/g&gt;
    &lt;g id="patch_18"&gt;
-    &lt;path clip-path="url(#pa6f60f0003)" d="M 503.362926 293.589375 
+    &lt;path clip-path="url(#p0c8f23ec68)" d="M 503.362926 293.589375 
 L 521.117472 293.589375 
 L 521.117472 34.732232 
 L 503.362926 34.732232 
@@ -5817,7 +5809,7 @@ z
 " style="fill:#80b1d3;stroke:#ffffff;stroke-linejoin:miter;"/&gt;
    &lt;/g&gt;
    &lt;g id="patch_19"&gt;
-    &lt;path clip-path="url(#pa6f60f0003)" d="M 538.872017 293.589375 
+    &lt;path clip-path="url(#p0c8f23ec68)" d="M 538.872017 293.589375 
 L 556.626562 293.589375 
 L 556.626562 110.523357 
 L 538.872017 110.523357 
@@ -5825,7 +5817,7 @@ z
 " style="fill:#80b1d3;stroke:#ffffff;stroke-linejoin:miter;"/&gt;
    &lt;/g&gt;
    &lt;g id="patch_20"&gt;
-    &lt;path clip-path="url(#pa6f60f0003)" d="M 574.381108 293.589375 
+    &lt;path clip-path="url(#p0c8f23ec68)" d="M 574.381108 293.589375 
 L 592.135653 293.589375 
 L 592.135653 111.440391 
 L 574.381108 111.440391 
@@ -5833,7 +5825,7 @@ z
 " style="fill:#80b1d3;stroke:#ffffff;stroke-linejoin:miter;"/&gt;
    &lt;/g&gt;
    &lt;g id="patch_21"&gt;
-    &lt;path clip-path="url(#pa6f60f0003)" d="M 609.890199 293.589375 
+    &lt;path clip-path="url(#p0c8f23ec68)" d="M 609.890199 293.589375 
 L 627.644744 293.589375 
 L 627.644744 150.276209 
 L 609.890199 150.276209 
@@ -5841,7 +5833,7 @@ z
 " style="fill:#80b1d3;stroke:#ffffff;stroke-linejoin:miter;"/&gt;
    &lt;/g&gt;
    &lt;g id="patch_22"&gt;
-    &lt;path clip-path="url(#pa6f60f0003)" d="M 645.39929 293.589375 
+    &lt;path clip-path="url(#p0c8f23ec68)" d="M 645.39929 293.589375 
 L 663.153835 293.589375 
 L 663.153835 155.749293 
 L 645.39929 155.749293 
@@ -5849,7 +5841,7 @@ z
 " style="fill:#80b1d3;stroke:#ffffff;stroke-linejoin:miter;"/&gt;
    &lt;/g&gt;
    &lt;g id="patch_23"&gt;
-    &lt;path clip-path="url(#pa6f60f0003)" d="M 680.908381 293.589375 
+    &lt;path clip-path="url(#p0c8f23ec68)" d="M 680.908381 293.589375 
 L 698.662926 293.589375 
 L 698.662926 164.572099 
 L 680.908381 164.572099 
@@ -5857,7 +5849,7 @@ z
 " style="fill:#80b1d3;stroke:#ffffff;stroke-linejoin:miter;"/&gt;
    &lt;/g&gt;
    &lt;g id="patch_24"&gt;
-    &lt;path clip-path="url(#pa6f60f0003)" d="M 716.417472 293.589375 
+    &lt;path clip-path="url(#p0c8f23ec68)" d="M 716.417472 293.589375 
 L 734.172017 293.589375 
 L 734.172017 170.493765 
 L 716.417472 170.493765 
@@ -5865,7 +5857,7 @@ z
 " style="fill:#80b1d3;stroke:#ffffff;stroke-linejoin:miter;"/&gt;
    &lt;/g&gt;
    &lt;g id="patch_25"&gt;
-    &lt;path clip-path="url(#pa6f60f0003)" d="M 751.926563 293.589375 
+    &lt;path clip-path="url(#p0c8f23ec68)" d="M 751.926563 293.589375 
 L 769.681108 293.589375 
 L 769.681108 171.376521 
 L 751.926563 171.376521 
@@ -5873,7 +5865,7 @@ z
 " style="fill:#80b1d3;stroke:#ffffff;stroke-linejoin:miter;"/&gt;
    &lt;/g&gt;
    &lt;g id="patch_26"&gt;
-    &lt;path clip-path="url(#pa6f60f0003)" d="M 787.435653 293.589375 
+    &lt;path clip-path="url(#p0c8f23ec68)" d="M 787.435653 293.589375 
 L 805.190199 293.589375 
 L 805.190199 174.488701 
 L 787.435653 174.488701 
@@ -5881,7 +5873,7 @@ z
 " style="fill:#80b1d3;stroke:#ffffff;stroke-linejoin:miter;"/&gt;
    &lt;/g&gt;
    &lt;g id="patch_27"&gt;
-    &lt;path clip-path="url(#pa6f60f0003)" d="M 822.944744 293.589375 
+    &lt;path clip-path="url(#p0c8f23ec68)" d="M 822.944744 293.589375 
 L 840.69929 293.589375 
 L 840.69929 175.644678 
 L 822.944744 175.644678 
@@ -5983,10 +5975,10 @@ L 849.576562 21.789375
   &lt;/g&gt;
  &lt;/g&gt;
  &lt;defs&gt;
-  &lt;clipPath id="p71f6f6400c"&gt;
+  &lt;clipPath id="p6f5170b5c7"&gt;
    &lt;rect height="271.8" width="355.090909" x="68.376563" y="21.789375"/&gt;
   &lt;/clipPath&gt;
-  &lt;clipPath id="pa6f60f0003"&gt;
+  &lt;clipPath id="p0c8f23ec68"&gt;
    &lt;rect height="271.8" width="355.090909" x="494.485653" y="21.789375"/&gt;
   &lt;/clipPath&gt;
  &lt;/defs&gt;
@@ -6002,7 +5994,7 @@ L 849.576562 21.789375
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[56]:&lt;/div&gt;
+&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[240]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
     &lt;div class="input_area"&gt;
 &lt;div class=" highlight hl-python"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;# Find the mean death per day for the country with the most deaths&lt;/span&gt;
@@ -6041,7 +6033,7 @@ L 849.576562 21.789375
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[195]:&lt;/div&gt;
+&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[241]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
     &lt;div class="input_area"&gt;
 &lt;div class=" highlight hl-python"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;dk_df_deaths&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;dk_df&lt;/span&gt;&lt;span class="p"&gt;[[&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;Date&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;Deaths&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;]]&lt;/span&gt;
@@ -6070,19 +6062,6 @@ L 849.576562 21.789375
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;/div&gt;
-&lt;div class="cell border-box-sizing code_cell rendered"&gt;
-&lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[&amp;nbsp;]:&lt;/div&gt;
-&lt;div class="inner_cell"&gt;
-    &lt;div class="input_area"&gt;
-&lt;div class=" highlight hl-python"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-    &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
