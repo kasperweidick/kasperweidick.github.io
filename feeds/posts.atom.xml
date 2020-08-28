@@ -1112,7 +1112,7 @@ h6:hover .anchor-link {
 .highlight .vm { color: #19177C } /* Name.Variable.Magic */
 .highlight .il { color: #666666 } /* Literal.Number.Integer.Long */&lt;/style&gt;&lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[45]:&lt;/div&gt;
+&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[1]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
     &lt;div class="input_area"&gt;
 &lt;div class=" highlight hl-python"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;numpy&lt;/span&gt; &lt;span class="k"&gt;as&lt;/span&gt; &lt;span class="nn"&gt;np&lt;/span&gt;
@@ -1137,7 +1137,7 @@ h6:hover .anchor-link {
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[46]:&lt;/div&gt;
+&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[2]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
     &lt;div class="input_area"&gt;
 &lt;div class=" highlight hl-python"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="o"&gt;%%&lt;/span&gt;&lt;span class="n"&gt;HTML&lt;/span&gt;
@@ -1182,13 +1182,13 @@ div.prompt {display:none}
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[47]:&lt;/div&gt;
+&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[3]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
     &lt;div class="input_area"&gt;
 &lt;div class=" highlight hl-python"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;def&lt;/span&gt; &lt;span class="nf"&gt;read_tab&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;sub&lt;/span&gt;&lt;span class="p"&gt;):&lt;/span&gt;
     &lt;span class="sd"&gt;&amp;quot;&amp;quot;&amp;quot;&lt;/span&gt;
 &lt;span class="sd"&gt;        ARGS &lt;/span&gt;
-&lt;span class="sd"&gt;            sub must be one of the sub-tables under api.covid19data.dk&lt;/span&gt;
+&lt;span class="sd"&gt;            sub must be one of the sub-tables under https://api.covid19api.com/&lt;/span&gt;
 &lt;span class="sd"&gt;        RETURNS&lt;/span&gt;
 &lt;span class="sd"&gt;            Pandas dataframe &lt;/span&gt;
 &lt;span class="sd"&gt;    &amp;quot;&amp;quot;&amp;quot;&lt;/span&gt;
@@ -1196,7 +1196,7 @@ div.prompt {display:none}
     &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;pd&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;read_json&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;r&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;content&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 
 &lt;span class="c1"&gt;# download Corona data&lt;/span&gt;
-&lt;span class="n"&gt;john_hopkins_df&lt;/span&gt;          &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;read_tab&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;all&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="n"&gt;johns_hopkins_df&lt;/span&gt;          &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;read_tab&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;all&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
     &lt;/div&gt;
@@ -1206,10 +1206,10 @@ div.prompt {display:none}
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[48]:&lt;/div&gt;
+&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[4]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
     &lt;div class="input_area"&gt;
-&lt;div class=" highlight hl-python"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;john_hopkins_df&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;head&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;div class=" highlight hl-python"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;johns_hopkins_df&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;head&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
     &lt;/div&gt;
@@ -1222,7 +1222,7 @@ div.prompt {display:none}
 
 &lt;div class="output_area"&gt;
 
-    &lt;div class="prompt output_prompt"&gt;Out[48]:&lt;/div&gt;
+    &lt;div class="prompt output_prompt"&gt;Out[4]:&lt;/div&gt;
 
 
 
@@ -1348,7 +1348,7 @@ div.prompt {display:none}
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[49]:&lt;/div&gt;
+&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[5]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
     &lt;div class="input_area"&gt;
 &lt;div class=" highlight hl-python"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;# download population data straight from world bank using pandas-datareader&lt;/span&gt;
@@ -1365,7 +1365,7 @@ div.prompt {display:none}
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[50]:&lt;/div&gt;
+&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[6]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
     &lt;div class="input_area"&gt;
 &lt;div class=" highlight hl-python"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;population_df&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;rename&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;columns&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;country&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;Country&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;population&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;Population&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;},&lt;/span&gt; &lt;span class="n"&gt;inplace&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="kc"&gt;True&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
@@ -1378,7 +1378,7 @@ div.prompt {display:none}
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[69]:&lt;/div&gt;
+&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[7]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
     &lt;div class="input_area"&gt;
 &lt;div class=" highlight hl-python"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;population_df&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;head&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
@@ -1394,7 +1394,7 @@ div.prompt {display:none}
 
 &lt;div class="output_area"&gt;
 
-    &lt;div class="prompt output_prompt"&gt;Out[69]:&lt;/div&gt;
+    &lt;div class="prompt output_prompt"&gt;Out[7]:&lt;/div&gt;
 
 
 
@@ -1467,14 +1467,14 @@ div.prompt {display:none}
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[52]:&lt;/div&gt;
+&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[8]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
     &lt;div class="input_area"&gt;
 &lt;div class=" highlight hl-python"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;Genereal info about dataframe:&lt;/span&gt;&lt;span class="se"&gt;\n&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;span class="n"&gt;display&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;john_hopkins_df&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;info&lt;/span&gt;&lt;span class="p"&gt;())&lt;/span&gt;
+&lt;span class="n"&gt;display&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;johns_hopkins_df&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;info&lt;/span&gt;&lt;span class="p"&gt;())&lt;/span&gt;
 
 &lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;&lt;/span&gt;&lt;span class="se"&gt;\n&lt;/span&gt;&lt;span class="s1"&gt;NaN values in dataframe:&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;span class="n"&gt;display&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;john_hopkins_df&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;isnull&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;sum&lt;/span&gt;&lt;span class="p"&gt;())&lt;/span&gt;
+&lt;span class="n"&gt;display&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;johns_hopkins_df&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;isnull&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;sum&lt;/span&gt;&lt;span class="p"&gt;())&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
     &lt;/div&gt;
@@ -1494,24 +1494,24 @@ div.prompt {display:none}
 &lt;pre&gt;Genereal info about dataframe:
 
 &amp;lt;class &amp;#39;pandas.core.frame.DataFrame&amp;#39;&amp;gt;
-RangeIndex: 615297 entries, 0 to 615296
+RangeIndex: 789872 entries, 0 to 789871
 Data columns (total 12 columns):
  #   Column       Non-Null Count   Dtype              
 ---  ------       --------------   -----              
- 0   Country      615297 non-null  object             
- 1   CountryCode  615297 non-null  object             
- 2   Province     615297 non-null  object             
- 3   City         615297 non-null  object             
- 4   CityCode     615297 non-null  object             
- 5   Lat          615297 non-null  float64            
- 6   Lon          615297 non-null  float64            
- 7   Confirmed    615297 non-null  int64              
- 8   Deaths       615297 non-null  int64              
- 9   Recovered    615297 non-null  int64              
- 10  Active       615297 non-null  int64              
- 11  Date         615297 non-null  datetime64[ns, UTC]
+ 0   Country      789872 non-null  object             
+ 1   CountryCode  789872 non-null  object             
+ 2   Province     789872 non-null  object             
+ 3   City         789872 non-null  object             
+ 4   CityCode     789872 non-null  object             
+ 5   Lat          789872 non-null  float64            
+ 6   Lon          789872 non-null  float64            
+ 7   Confirmed    789872 non-null  int64              
+ 8   Deaths       789872 non-null  int64              
+ 9   Recovered    789872 non-null  int64              
+ 10  Active       789872 non-null  int64              
+ 11  Date         789872 non-null  datetime64[ns, UTC]
 dtypes: datetime64[ns, UTC](1), float64(2), int64(4), object(5)
-memory usage: 56.3+ MB
+memory usage: 72.3+ MB
 &lt;/pre&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -1572,10 +1572,10 @@ dtype: int64&lt;/pre&gt;
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[53]:&lt;/div&gt;
+&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[9]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
     &lt;div class="input_area"&gt;
-&lt;div class=" highlight hl-python"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;john_hopkins_df&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;head&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;div class=" highlight hl-python"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;johns_hopkins_df&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;head&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
     &lt;/div&gt;
@@ -1588,7 +1588,7 @@ dtype: int64&lt;/pre&gt;
 
 &lt;div class="output_area"&gt;
 
-    &lt;div class="prompt output_prompt"&gt;Out[53]:&lt;/div&gt;
+    &lt;div class="prompt output_prompt"&gt;Out[9]:&lt;/div&gt;
 
 
 
@@ -1714,20 +1714,33 @@ dtype: int64&lt;/pre&gt;
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[54]:&lt;/div&gt;
+&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[&amp;nbsp;]:&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+    &lt;div class="input_area"&gt;
+&lt;div class=" highlight hl-python"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+&lt;div class="input"&gt;
+&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[10]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
     &lt;div class="input_area"&gt;
 &lt;div class=" highlight hl-python"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;# To date_time and rename columns&lt;/span&gt;
-&lt;span class="n"&gt;john_hopkins_df&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;Date&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;pd&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;to_datetime&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;john_hopkins_df&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;Date&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;])&lt;/span&gt;
+&lt;span class="n"&gt;johns_hopkins_df&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;Date&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;pd&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;to_datetime&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;johns_hopkins_df&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;Date&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;])&lt;/span&gt;
 
 &lt;span class="c1"&gt;# Merge population data for each country to the data frame&lt;/span&gt;
-&lt;span class="n"&gt;john_hopkins_df&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;pd&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;merge&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;john_hopkins_df&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;population_df&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;on&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;Country&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;how&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;left&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
-&lt;span class="n"&gt;john_hopkins_df&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;sort_values&lt;/span&gt;&lt;span class="p"&gt;([&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;Country&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;Province&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;Date&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt; &lt;span class="n"&gt;inplace&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="kc"&gt;True&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="n"&gt;johns_hopkins_df&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;pd&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;merge&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;johns_hopkins_df&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;population_df&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;on&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;Country&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;how&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;left&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="n"&gt;johns_hopkins_df&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;sort_values&lt;/span&gt;&lt;span class="p"&gt;([&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;Country&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;Province&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;Date&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt; &lt;span class="n"&gt;inplace&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="kc"&gt;True&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 
 &lt;span class="c1"&gt;# New variables&lt;/span&gt;
-&lt;span class="n"&gt;john_hopkins_df&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;Deaths_per_mio&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;john_hopkins_df&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;Deaths&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;john_hopkins_df&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;Population&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt; &lt;span class="mi"&gt;1000000&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="n"&gt;johns_hopkins_df&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;Deaths_per_mio&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;johns_hopkins_df&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;Deaths&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;johns_hopkins_df&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;Population&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt; &lt;span class="mi"&gt;1000000&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 
-&lt;span class="n"&gt;john_hopkins_df&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;head&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;span class="n"&gt;johns_hopkins_df&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;head&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
     &lt;/div&gt;
@@ -1740,7 +1753,7 @@ dtype: int64&lt;/pre&gt;
 
 &lt;div class="output_area"&gt;
 
-    &lt;div class="prompt output_prompt"&gt;Out[54]:&lt;/div&gt;
+    &lt;div class="prompt output_prompt"&gt;Out[10]:&lt;/div&gt;
 
 
 
@@ -1776,6 +1789,7 @@ dtype: int64&lt;/pre&gt;
       &lt;th&gt;Active&lt;/th&gt;
       &lt;th&gt;Date&lt;/th&gt;
       &lt;th&gt;Population&lt;/th&gt;
+      &lt;th&gt;Deaths_per_mio&lt;/th&gt;
     &lt;/tr&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;
@@ -1794,6 +1808,7 @@ dtype: int64&lt;/pre&gt;
       &lt;td&gt;0&lt;/td&gt;
       &lt;td&gt;2020-01-22 00:00:00+00:00&lt;/td&gt;
       &lt;td&gt;37172386.0&lt;/td&gt;
+      &lt;td&gt;0.0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
       &lt;th&gt;1&lt;/th&gt;
@@ -1810,6 +1825,7 @@ dtype: int64&lt;/pre&gt;
       &lt;td&gt;0&lt;/td&gt;
       &lt;td&gt;2020-01-23 00:00:00+00:00&lt;/td&gt;
       &lt;td&gt;37172386.0&lt;/td&gt;
+      &lt;td&gt;0.0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
       &lt;th&gt;2&lt;/th&gt;
@@ -1826,6 +1842,7 @@ dtype: int64&lt;/pre&gt;
       &lt;td&gt;0&lt;/td&gt;
       &lt;td&gt;2020-01-24 00:00:00+00:00&lt;/td&gt;
       &lt;td&gt;37172386.0&lt;/td&gt;
+      &lt;td&gt;0.0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
       &lt;th&gt;3&lt;/th&gt;
@@ -1842,6 +1859,7 @@ dtype: int64&lt;/pre&gt;
       &lt;td&gt;0&lt;/td&gt;
       &lt;td&gt;2020-01-25 00:00:00+00:00&lt;/td&gt;
       &lt;td&gt;37172386.0&lt;/td&gt;
+      &lt;td&gt;0.0&lt;/td&gt;
     &lt;/tr&gt;
     &lt;tr&gt;
       &lt;th&gt;4&lt;/th&gt;
@@ -1858,6 +1876,7 @@ dtype: int64&lt;/pre&gt;
       &lt;td&gt;0&lt;/td&gt;
       &lt;td&gt;2020-01-26 00:00:00+00:00&lt;/td&gt;
       &lt;td&gt;37172386.0&lt;/td&gt;
+      &lt;td&gt;0.0&lt;/td&gt;
     &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;
@@ -1872,10 +1891,10 @@ dtype: int64&lt;/pre&gt;
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[61]:&lt;/div&gt;
+&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[11]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
     &lt;div class="input_area"&gt;
-&lt;div class=" highlight hl-python"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;john_hopkins_df&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;Deaths_per_mio&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;john_hopkins_df&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;Deaths&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;john_hopkins_df&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;Population&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt; &lt;span class="mi"&gt;1000000&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;div class=" highlight hl-python"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;johns_hopkins_df&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;Deaths_per_mio&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;johns_hopkins_df&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;Deaths&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;johns_hopkins_df&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;Population&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt; &lt;span class="mi"&gt;1000000&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
     &lt;/div&gt;
@@ -1888,12 +1907,11 @@ dtype: int64&lt;/pre&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
 &lt;h2 id="Analysis-and-visualisation"&gt;Analysis and visualisation&lt;a class="anchor-link" href="#Analysis-and-visualisation"&gt;&amp;#182;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Research questions about the corona virus we want answered with the data:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;How has the number of deaths developed over time in Denmark?&lt;/li&gt;
+&lt;li&gt;How has the number of deaths developed over time in Denmark compared to Sweden?&lt;/li&gt;
 &lt;li&gt;Which country has the most deaths? Both in total and per capita?&lt;/li&gt;
 &lt;li&gt;Which country has the most steep increase in deaths in the period?&lt;/li&gt;
-&lt;li&gt;Which country has the highest death rate?&lt;/li&gt;
-&lt;li&gt;Which dates has been the worst in terms of deaths world wide?&lt;/li&gt;
-&lt;li&gt;How has deaths developed over time?&lt;/li&gt;
+&lt;li&gt;Which country has the most deaths per day since the first day of corona?&lt;/li&gt;
+&lt;li&gt;Which date has been the worst in terms of deaths in Denmark?&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;/div&gt;
@@ -1901,11 +1919,12 @@ dtype: int64&lt;/pre&gt;
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[59]:&lt;/div&gt;
+&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[12]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
     &lt;div class="input_area"&gt;
-&lt;div class=" highlight hl-python"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;dk_df&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;john_hopkins_df&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;john_hopkins_df&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;Country&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;Denmark&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
-&lt;span class="n"&gt;sw_df&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;john_hopkins_df&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;john_hopkins_df&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;Country&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;Sweden&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+&lt;div class=" highlight hl-python"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;dk_df&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;johns_hopkins_df&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;johns_hopkins_df&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;Country&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;Denmark&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+&lt;span class="n"&gt;dk_df&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;dk_df&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;dk_df&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;Province&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+&lt;span class="n"&gt;sw_df&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;johns_hopkins_df&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;johns_hopkins_df&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;Country&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;Sweden&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
     &lt;/div&gt;
@@ -1915,7 +1934,7 @@ dtype: int64&lt;/pre&gt;
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[64]:&lt;/div&gt;
+&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[13]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
     &lt;div class="input_area"&gt;
 &lt;div class=" highlight hl-python"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;fig&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;axes&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;plt&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;subplots&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;figsize&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;14&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="mi"&gt;5&lt;/span&gt;&lt;span class="p"&gt;),&lt;/span&gt; &lt;span class="n"&gt;sharey&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="kc"&gt;True&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
@@ -1979,15 +1998,15 @@ z
    &lt;g id="matplotlib.axis_1"&gt;
     &lt;g id="xtick_1"&gt;
      &lt;g id="line2d_1"&gt;
-      &lt;path clip-path="url(#p11ca064fec)" d="M 56.1425 293.743125 
+      &lt;path clip-path="url(#pdce5c0e6f0)" d="M 56.1425 293.743125 
 L 56.1425 21.943125 
 " style="fill:none;stroke:#ffffff;stroke-linecap:round;"/&gt;
      &lt;/g&gt;
     &lt;/g&gt;
     &lt;g id="xtick_2"&gt;
      &lt;g id="line2d_2"&gt;
-      &lt;path clip-path="url(#p11ca064fec)" d="M 76.550024 293.743125 
-L 76.550024 21.943125 
+      &lt;path clip-path="url(#pdce5c0e6f0)" d="M 72.431074 293.743125 
+L 72.431074 21.943125 
 " style="fill:none;stroke:#ffffff;stroke-linecap:round;"/&gt;
      &lt;/g&gt;
      &lt;g id="text_1"&gt;
@@ -2056,7 +2075,7 @@ Q 14.59375 35.796875 14.59375 26.3125
 z
 " id="ArialMT-98"/&gt;
       &lt;/defs&gt;
-      &lt;g style="fill:#262626;" transform="translate(67.073695 311.116719)scale(0.11 -0.11)"&gt;
+      &lt;g style="fill:#262626;" transform="translate(62.954746 311.116719)scale(0.11 -0.11)"&gt;
        &lt;use xlink:href="#ArialMT-70"/&gt;
        &lt;use x="61.083984" xlink:href="#ArialMT-101"/&gt;
        &lt;use x="116.699219" xlink:href="#ArialMT-98"/&gt;
@@ -2113,7 +2132,7 @@ Q 13.1875 52.9375 13.1875 35.296875
 z
 " id="ArialMT-48"/&gt;
       &lt;/defs&gt;
-      &lt;g style="fill:#262626;" transform="translate(64.315961 322.751281)scale(0.11 -0.11)"&gt;
+      &lt;g style="fill:#262626;" transform="translate(60.197011 322.751281)scale(0.11 -0.11)"&gt;
        &lt;use xlink:href="#ArialMT-50"/&gt;
        &lt;use x="55.615234" xlink:href="#ArialMT-48"/&gt;
        &lt;use x="111.230469" xlink:href="#ArialMT-50"/&gt;
@@ -2123,8 +2142,8 @@ z
     &lt;/g&gt;
     &lt;g id="xtick_3"&gt;
      &lt;g id="line2d_3"&gt;
-      &lt;path clip-path="url(#p11ca064fec)" d="M 135.731842 293.743125 
-L 135.731842 21.943125 
+      &lt;path clip-path="url(#pdce5c0e6f0)" d="M 119.667938 293.743125 
+L 119.667938 21.943125 
 " style="fill:none;stroke:#ffffff;stroke-linecap:round;"/&gt;
      &lt;/g&gt;
      &lt;g id="text_2"&gt;
@@ -2204,7 +2223,7 @@ L 15.28125 0
 z
 " id="ArialMT-114"/&gt;
       &lt;/defs&gt;
-      &lt;g style="fill:#262626;" transform="translate(126.26067 311.116719)scale(0.11 -0.11)"&gt;
+      &lt;g style="fill:#262626;" transform="translate(110.196766 311.116719)scale(0.11 -0.11)"&gt;
        &lt;use xlink:href="#ArialMT-77"/&gt;
        &lt;use x="83.300781" xlink:href="#ArialMT-97"/&gt;
        &lt;use x="138.916016" xlink:href="#ArialMT-114"/&gt;
@@ -2213,8 +2232,8 @@ z
     &lt;/g&gt;
     &lt;g id="xtick_4"&gt;
      &lt;g id="line2d_4"&gt;
-      &lt;path clip-path="url(#p11ca064fec)" d="M 198.995165 293.743125 
-L 198.995165 21.943125 
+      &lt;path clip-path="url(#pdce5c0e6f0)" d="M 170.162517 293.743125 
+L 170.162517 21.943125 
 " style="fill:none;stroke:#ffffff;stroke-linecap:round;"/&gt;
      &lt;/g&gt;
      &lt;g id="text_3"&gt;
@@ -2264,7 +2283,7 @@ Q 14.546875 35.640625 14.546875 25.640625
 z
 " id="ArialMT-112"/&gt;
       &lt;/defs&gt;
-      &lt;g style="fill:#262626;" transform="translate(190.436649 311.116719)scale(0.11 -0.11)"&gt;
+      &lt;g style="fill:#262626;" transform="translate(161.604001 311.116719)scale(0.11 -0.11)"&gt;
        &lt;use xlink:href="#ArialMT-65"/&gt;
        &lt;use x="66.699219" xlink:href="#ArialMT-112"/&gt;
        &lt;use x="122.314453" xlink:href="#ArialMT-114"/&gt;
@@ -2273,8 +2292,8 @@ z
     &lt;/g&gt;
     &lt;g id="xtick_5"&gt;
      &lt;g id="line2d_5"&gt;
-      &lt;path clip-path="url(#p11ca064fec)" d="M 260.217735 293.743125 
-L 260.217735 21.943125 
+      &lt;path clip-path="url(#pdce5c0e6f0)" d="M 219.028238 293.743125 
+L 219.028238 21.943125 
 " style="fill:none;stroke:#ffffff;stroke-linecap:round;"/&gt;
      &lt;/g&gt;
      &lt;g id="text_4"&gt;
@@ -2302,7 +2321,7 @@ Q 9.328125 -21.046875 6.203125 -19.96875
 z
 " id="ArialMT-121"/&gt;
       &lt;/defs&gt;
-      &lt;g style="fill:#262626;" transform="translate(249.827891 311.116719)scale(0.11 -0.11)"&gt;
+      &lt;g style="fill:#262626;" transform="translate(208.638394 311.116719)scale(0.11 -0.11)"&gt;
        &lt;use xlink:href="#ArialMT-77"/&gt;
        &lt;use x="83.300781" xlink:href="#ArialMT-97"/&gt;
        &lt;use x="138.916016" xlink:href="#ArialMT-121"/&gt;
@@ -2311,8 +2330,8 @@ z
     &lt;/g&gt;
     &lt;g id="xtick_6"&gt;
      &lt;g id="line2d_6"&gt;
-      &lt;path clip-path="url(#p11ca064fec)" d="M 323.481058 293.743125 
-L 323.481058 21.943125 
+      &lt;path clip-path="url(#pdce5c0e6f0)" d="M 269.522817 293.743125 
+L 269.522817 21.943125 
 " style="fill:none;stroke:#ffffff;stroke-linecap:round;"/&gt;
      &lt;/g&gt;
      &lt;g id="text_5"&gt;
@@ -2377,7 +2396,7 @@ L 15.375 0
 z
 " id="ArialMT-110"/&gt;
       &lt;/defs&gt;
-      &lt;g style="fill:#262626;" transform="translate(314.614027 311.116719)scale(0.11 -0.11)"&gt;
+      &lt;g style="fill:#262626;" transform="translate(260.655786 311.116719)scale(0.11 -0.11)"&gt;
        &lt;use xlink:href="#ArialMT-74"/&gt;
        &lt;use x="50" xlink:href="#ArialMT-117"/&gt;
        &lt;use x="105.615234" xlink:href="#ArialMT-110"/&gt;
@@ -2386,8 +2405,8 @@ z
     &lt;/g&gt;
     &lt;g id="xtick_7"&gt;
      &lt;g id="line2d_7"&gt;
-      &lt;path clip-path="url(#p11ca064fec)" d="M 384.703629 293.743125 
-L 384.703629 21.943125 
+      &lt;path clip-path="url(#pdce5c0e6f0)" d="M 318.388538 293.743125 
+L 318.388538 21.943125 
 " style="fill:none;stroke:#ffffff;stroke-linecap:round;"/&gt;
      &lt;/g&gt;
      &lt;g id="text_6"&gt;
@@ -2400,7 +2419,7 @@ L 15.1875 0
 z
 " id="ArialMT-108"/&gt;
       &lt;/defs&gt;
-      &lt;g style="fill:#262626;" transform="translate(377.673082 311.116719)scale(0.11 -0.11)"&gt;
+      &lt;g style="fill:#262626;" transform="translate(311.357991 311.116719)scale(0.11 -0.11)"&gt;
        &lt;use xlink:href="#ArialMT-74"/&gt;
        &lt;use x="50" xlink:href="#ArialMT-117"/&gt;
        &lt;use x="105.615234" xlink:href="#ArialMT-108"/&gt;
@@ -2409,12 +2428,62 @@ z
     &lt;/g&gt;
     &lt;g id="xtick_8"&gt;
      &lt;g id="line2d_8"&gt;
-      &lt;path clip-path="url(#p11ca064fec)" d="M 411.233409 293.743125 
+      &lt;path clip-path="url(#pdce5c0e6f0)" d="M 368.883117 293.743125 
+L 368.883117 21.943125 
+" style="fill:none;stroke:#ffffff;stroke-linecap:round;"/&gt;
+     &lt;/g&gt;
+     &lt;g id="text_7"&gt;
+      &lt;!-- Aug --&gt;
+      &lt;defs&gt;
+       &lt;path d="M 4.984375 -4.296875 
+L 13.53125 -5.5625 
+Q 14.0625 -9.515625 16.5 -11.328125 
+Q 19.78125 -13.765625 25.4375 -13.765625 
+Q 31.546875 -13.765625 34.859375 -11.328125 
+Q 38.1875 -8.890625 39.359375 -4.5 
+Q 40.046875 -1.8125 39.984375 6.78125 
+Q 34.234375 0 25.640625 0 
+Q 14.9375 0 9.078125 7.71875 
+Q 3.21875 15.4375 3.21875 26.21875 
+Q 3.21875 33.640625 5.90625 39.90625 
+Q 8.59375 46.1875 13.6875 49.609375 
+Q 18.796875 53.03125 25.6875 53.03125 
+Q 34.859375 53.03125 40.828125 45.609375 
+L 40.828125 51.859375 
+L 48.921875 51.859375 
+L 48.921875 7.03125 
+Q 48.921875 -5.078125 46.453125 -10.125 
+Q 44 -15.1875 38.640625 -18.109375 
+Q 33.296875 -21.046875 25.484375 -21.046875 
+Q 16.21875 -21.046875 10.5 -16.875 
+Q 4.78125 -12.703125 4.984375 -4.296875 
+z
+M 12.25 26.859375 
+Q 12.25 16.65625 16.296875 11.96875 
+Q 20.359375 7.28125 26.46875 7.28125 
+Q 32.515625 7.28125 36.609375 11.9375 
+Q 40.71875 16.609375 40.71875 26.5625 
+Q 40.71875 36.078125 36.5 40.90625 
+Q 32.28125 45.75 26.3125 45.75 
+Q 20.453125 45.75 16.34375 40.984375 
+Q 12.25 36.234375 12.25 26.859375 
+z
+" id="ArialMT-103"/&gt;
+      &lt;/defs&gt;
+      &lt;g style="fill:#262626;" transform="translate(359.097414 311.116719)scale(0.11 -0.11)"&gt;
+       &lt;use xlink:href="#ArialMT-65"/&gt;
+       &lt;use x="66.699219" xlink:href="#ArialMT-117"/&gt;
+       &lt;use x="122.314453" xlink:href="#ArialMT-103"/&gt;
+      &lt;/g&gt;
+     &lt;/g&gt;
+    &lt;/g&gt;
+    &lt;g id="xtick_9"&gt;
+     &lt;g id="line2d_9"&gt;
+      &lt;path clip-path="url(#pdce5c0e6f0)" d="M 411.233409 293.743125 
 L 411.233409 21.943125 
 " style="fill:none;stroke:#ffffff;stroke-linecap:round;"/&gt;
      &lt;/g&gt;
     &lt;/g&gt;
-    &lt;g id="xtick_9"/&gt;
     &lt;g id="xtick_10"/&gt;
     &lt;g id="xtick_11"/&gt;
     &lt;g id="xtick_12"/&gt;
@@ -2438,7 +2507,14 @@ L 411.233409 21.943125
     &lt;g id="xtick_30"/&gt;
     &lt;g id="xtick_31"/&gt;
     &lt;g id="xtick_32"/&gt;
-    &lt;g id="text_7"&gt;
+    &lt;g id="xtick_33"/&gt;
+    &lt;g id="xtick_34"/&gt;
+    &lt;g id="xtick_35"/&gt;
+    &lt;g id="xtick_36"/&gt;
+    &lt;g id="xtick_37"/&gt;
+    &lt;g id="xtick_38"/&gt;
+    &lt;g id="xtick_39"/&gt;
+    &lt;g id="text_8"&gt;
      &lt;!-- Date --&gt;
      &lt;defs&gt;
       &lt;path d="M 7.71875 0 
@@ -2500,12 +2576,12 @@ z
    &lt;/g&gt;
    &lt;g id="matplotlib.axis_2"&gt;
     &lt;g id="ytick_1"&gt;
-     &lt;g id="line2d_9"&gt;
-      &lt;path clip-path="url(#p11ca064fec)" d="M 56.1425 281.38858 
+     &lt;g id="line2d_10"&gt;
+      &lt;path clip-path="url(#pdce5c0e6f0)" d="M 56.1425 281.38858 
 L 411.233409 281.38858 
 " style="fill:none;stroke:#ffffff;stroke-linecap:round;"/&gt;
      &lt;/g&gt;
-     &lt;g id="text_8"&gt;
+     &lt;g id="text_9"&gt;
       &lt;!-- 0 --&gt;
       &lt;g style="fill:#262626;" transform="translate(40.525469 285.325376)scale(0.11 -0.11)"&gt;
        &lt;use xlink:href="#ArialMT-48"/&gt;
@@ -2513,12 +2589,12 @@ L 411.233409 281.38858
      &lt;/g&gt;
     &lt;/g&gt;
     &lt;g id="ytick_2"&gt;
-     &lt;g id="line2d_10"&gt;
-      &lt;path clip-path="url(#p11ca064fec)" d="M 56.1425 236.82755 
-L 411.233409 236.82755 
+     &lt;g id="line2d_11"&gt;
+      &lt;path clip-path="url(#pdce5c0e6f0)" d="M 56.1425 238.933097 
+L 411.233409 238.933097 
 " style="fill:none;stroke:#ffffff;stroke-linecap:round;"/&gt;
      &lt;/g&gt;
-     &lt;g id="text_9"&gt;
+     &lt;g id="text_10"&gt;
       &lt;!-- 1000 --&gt;
       &lt;defs&gt;
        &lt;path d="M 37.25 0 
@@ -2533,7 +2609,7 @@ L 37.25 71.875
 z
 " id="ArialMT-49"/&gt;
       &lt;/defs&gt;
-      &lt;g style="fill:#262626;" transform="translate(22.174375 240.764347)scale(0.11 -0.11)"&gt;
+      &lt;g style="fill:#262626;" transform="translate(22.174375 242.869894)scale(0.11 -0.11)"&gt;
        &lt;use xlink:href="#ArialMT-49"/&gt;
        &lt;use x="55.615234" xlink:href="#ArialMT-48"/&gt;
        &lt;use x="111.230469" xlink:href="#ArialMT-48"/&gt;
@@ -2542,14 +2618,14 @@ z
      &lt;/g&gt;
     &lt;/g&gt;
     &lt;g id="ytick_3"&gt;
-     &lt;g id="line2d_11"&gt;
-      &lt;path clip-path="url(#p11ca064fec)" d="M 56.1425 192.26652 
-L 411.233409 192.26652 
+     &lt;g id="line2d_12"&gt;
+      &lt;path clip-path="url(#pdce5c0e6f0)" d="M 56.1425 196.477614 
+L 411.233409 196.477614 
 " style="fill:none;stroke:#ffffff;stroke-linecap:round;"/&gt;
      &lt;/g&gt;
-     &lt;g id="text_10"&gt;
+     &lt;g id="text_11"&gt;
       &lt;!-- 2000 --&gt;
-      &lt;g style="fill:#262626;" transform="translate(22.174375 196.203317)scale(0.11 -0.11)"&gt;
+      &lt;g style="fill:#262626;" transform="translate(22.174375 200.414411)scale(0.11 -0.11)"&gt;
        &lt;use xlink:href="#ArialMT-50"/&gt;
        &lt;use x="55.615234" xlink:href="#ArialMT-48"/&gt;
        &lt;use x="111.230469" xlink:href="#ArialMT-48"/&gt;
@@ -2558,12 +2634,12 @@ L 411.233409 192.26652
      &lt;/g&gt;
     &lt;/g&gt;
     &lt;g id="ytick_4"&gt;
-     &lt;g id="line2d_12"&gt;
-      &lt;path clip-path="url(#p11ca064fec)" d="M 56.1425 147.705491 
-L 411.233409 147.705491 
+     &lt;g id="line2d_13"&gt;
+      &lt;path clip-path="url(#pdce5c0e6f0)" d="M 56.1425 154.022132 
+L 411.233409 154.022132 
 " style="fill:none;stroke:#ffffff;stroke-linecap:round;"/&gt;
      &lt;/g&gt;
-     &lt;g id="text_11"&gt;
+     &lt;g id="text_12"&gt;
       &lt;!-- 3000 --&gt;
       &lt;defs&gt;
        &lt;path d="M 4.203125 18.890625 
@@ -2600,7 +2676,7 @@ Q 5.078125 9.96875 4.203125 18.890625
 z
 " id="ArialMT-51"/&gt;
       &lt;/defs&gt;
-      &lt;g style="fill:#262626;" transform="translate(22.174375 151.642288)scale(0.11 -0.11)"&gt;
+      &lt;g style="fill:#262626;" transform="translate(22.174375 157.958928)scale(0.11 -0.11)"&gt;
        &lt;use xlink:href="#ArialMT-51"/&gt;
        &lt;use x="55.615234" xlink:href="#ArialMT-48"/&gt;
        &lt;use x="111.230469" xlink:href="#ArialMT-48"/&gt;
@@ -2609,12 +2685,12 @@ z
      &lt;/g&gt;
     &lt;/g&gt;
     &lt;g id="ytick_5"&gt;
-     &lt;g id="line2d_13"&gt;
-      &lt;path clip-path="url(#p11ca064fec)" d="M 56.1425 103.144461 
-L 411.233409 103.144461 
+     &lt;g id="line2d_14"&gt;
+      &lt;path clip-path="url(#pdce5c0e6f0)" d="M 56.1425 111.566649 
+L 411.233409 111.566649 
 " style="fill:none;stroke:#ffffff;stroke-linecap:round;"/&gt;
      &lt;/g&gt;
-     &lt;g id="text_12"&gt;
+     &lt;g id="text_13"&gt;
       &lt;!-- 4000 --&gt;
       &lt;defs&gt;
        &lt;path d="M 32.328125 0 
@@ -2635,7 +2711,7 @@ L 9.90625 25.203125
 z
 " id="ArialMT-52"/&gt;
       &lt;/defs&gt;
-      &lt;g style="fill:#262626;" transform="translate(22.174375 107.081258)scale(0.11 -0.11)"&gt;
+      &lt;g style="fill:#262626;" transform="translate(22.174375 115.503446)scale(0.11 -0.11)"&gt;
        &lt;use xlink:href="#ArialMT-52"/&gt;
        &lt;use x="55.615234" xlink:href="#ArialMT-48"/&gt;
        &lt;use x="111.230469" xlink:href="#ArialMT-48"/&gt;
@@ -2644,12 +2720,12 @@ z
      &lt;/g&gt;
     &lt;/g&gt;
     &lt;g id="ytick_6"&gt;
-     &lt;g id="line2d_14"&gt;
-      &lt;path clip-path="url(#p11ca064fec)" d="M 56.1425 58.583432 
-L 411.233409 58.583432 
+     &lt;g id="line2d_15"&gt;
+      &lt;path clip-path="url(#pdce5c0e6f0)" d="M 56.1425 69.111166 
+L 411.233409 69.111166 
 " style="fill:none;stroke:#ffffff;stroke-linecap:round;"/&gt;
      &lt;/g&gt;
-     &lt;g id="text_13"&gt;
+     &lt;g id="text_14"&gt;
       &lt;!-- 5000 --&gt;
       &lt;defs&gt;
        &lt;path d="M 4.15625 18.75 
@@ -2678,7 +2754,7 @@ Q 5.03125 9.71875 4.15625 18.75
 z
 " id="ArialMT-53"/&gt;
       &lt;/defs&gt;
-      &lt;g style="fill:#262626;" transform="translate(22.174375 62.520228)scale(0.11 -0.11)"&gt;
+      &lt;g style="fill:#262626;" transform="translate(22.174375 73.047963)scale(0.11 -0.11)"&gt;
        &lt;use xlink:href="#ArialMT-53"/&gt;
        &lt;use x="55.615234" xlink:href="#ArialMT-48"/&gt;
        &lt;use x="111.230469" xlink:href="#ArialMT-48"/&gt;
@@ -2686,7 +2762,58 @@ z
       &lt;/g&gt;
      &lt;/g&gt;
     &lt;/g&gt;
-    &lt;g id="text_14"&gt;
+    &lt;g id="ytick_7"&gt;
+     &lt;g id="line2d_16"&gt;
+      &lt;path clip-path="url(#pdce5c0e6f0)" d="M 56.1425 26.655684 
+L 411.233409 26.655684 
+" style="fill:none;stroke:#ffffff;stroke-linecap:round;"/&gt;
+     &lt;/g&gt;
+     &lt;g id="text_15"&gt;
+      &lt;!-- 6000 --&gt;
+      &lt;defs&gt;
+       &lt;path d="M 49.75 54.046875 
+L 41.015625 53.375 
+Q 39.84375 58.546875 37.703125 60.890625 
+Q 34.125 64.65625 28.90625 64.65625 
+Q 24.703125 64.65625 21.53125 62.3125 
+Q 17.390625 59.28125 14.984375 53.46875 
+Q 12.59375 47.65625 12.5 36.921875 
+Q 15.671875 41.75 20.265625 44.09375 
+Q 24.859375 46.4375 29.890625 46.4375 
+Q 38.671875 46.4375 44.84375 39.96875 
+Q 51.03125 33.5 51.03125 23.25 
+Q 51.03125 16.5 48.125 10.71875 
+Q 45.21875 4.9375 40.140625 1.859375 
+Q 35.0625 -1.21875 28.609375 -1.21875 
+Q 17.625 -1.21875 10.6875 6.859375 
+Q 3.765625 14.9375 3.765625 33.5 
+Q 3.765625 54.25 11.421875 63.671875 
+Q 18.109375 71.875 29.4375 71.875 
+Q 37.890625 71.875 43.28125 67.140625 
+Q 48.6875 62.40625 49.75 54.046875 
+z
+M 13.875 23.1875 
+Q 13.875 18.65625 15.796875 14.5 
+Q 17.71875 10.359375 21.1875 8.171875 
+Q 24.65625 6 28.46875 6 
+Q 34.03125 6 38.03125 10.484375 
+Q 42.046875 14.984375 42.046875 22.703125 
+Q 42.046875 30.125 38.078125 34.390625 
+Q 34.125 38.671875 28.125 38.671875 
+Q 22.171875 38.671875 18.015625 34.390625 
+Q 13.875 30.125 13.875 23.1875 
+z
+" id="ArialMT-54"/&gt;
+      &lt;/defs&gt;
+      &lt;g style="fill:#262626;" transform="translate(22.174375 30.59248)scale(0.11 -0.11)"&gt;
+       &lt;use xlink:href="#ArialMT-54"/&gt;
+       &lt;use x="55.615234" xlink:href="#ArialMT-48"/&gt;
+       &lt;use x="111.230469" xlink:href="#ArialMT-48"/&gt;
+       &lt;use x="166.845703" xlink:href="#ArialMT-48"/&gt;
+      &lt;/g&gt;
+     &lt;/g&gt;
+    &lt;/g&gt;
+    &lt;g id="text_16"&gt;
      &lt;!-- Total Deaths --&gt;
      &lt;defs&gt;
       &lt;path d="M 25.921875 0 
@@ -2794,68 +2921,73 @@ z
      &lt;/g&gt;
     &lt;/g&gt;
    &lt;/g&gt;
-   &lt;g id="line2d_15"&gt;
-    &lt;path clip-path="url(#p11ca064fec)" d="M 56.1425 281.38858 
-L 164.302375 281.299457 
-L 174.506136 280.98753 
-L 176.546889 280.809286 
-L 178.587641 280.809286 
-L 180.628393 280.319115 
-L 182.669146 279.962627 
-L 184.709898 279.873505 
-L 186.75065 279.561577 
-L 192.872908 278.180185 
-L 194.91366 277.95738 
-L 198.995165 276.754232 
-L 201.035917 275.907573 
-L 203.076669 275.194596 
-L 205.117422 274.214254 
-L 207.158174 273.412155 
-L 209.198926 273.055667 
-L 215.321183 270.827616 
-L 217.361936 270.382005 
-L 225.524945 268.064832 
-L 229.60645 267.084489 
-L 231.647202 266.416074 
-L 237.769459 265.168365 
-L 239.810212 264.900999 
-L 241.850964 264.277144 
-L 245.932469 263.430485 
-L 247.973221 262.762069 
-L 252.054726 262.36102 
-L 256.13623 261.648043 
-L 260.217735 260.890506 
-L 262.258487 260.22209 
-L 268.380745 258.974382 
-L 270.421497 258.840699 
-L 274.503002 258.127722 
-L 280.625259 257.637551 
-L 282.666011 257.904917 
-L 286.747516 257.459307 
-L 288.788268 257.459307 
-L 292.869773 257.013696 
-L 296.951277 256.835452 
-L 298.99203 256.701769 
-L 301.032782 256.389842 
-L 311.236544 256.30072 
-L 323.481058 255.721427 
-L 325.52181 255.543182 
-L 329.603315 255.45406 
-L 331.644067 255.275816 
-L 335.725572 255.142133 
-L 337.766324 254.963889 
-L 345.929334 254.919328 
-L 347.970086 254.785645 
-L 356.133096 254.741084 
-L 360.2146 254.651962 
-L 366.336857 254.56284 
-L 374.499867 254.473718 
-L 392.866638 254.384596 
-L 403.0704 254.250913 
-L 405.111152 254.250913 
-L 407.151904 227.113246 
-L 411.233409 227.024123 
-L 411.233409 227.024123 
+   &lt;g id="line2d_17"&gt;
+    &lt;path clip-path="url(#pdce5c0e6f0)" d="M 56.1425 281.38858 
+L 142.471941 281.303669 
+L 150.616228 281.00648 
+L 152.245085 280.836658 
+L 153.873943 280.836658 
+L 155.5028 280.369648 
+L 157.131658 280.030004 
+L 158.760515 279.945093 
+L 160.389372 279.647905 
+L 165.275945 278.331785 
+L 166.904802 278.119507 
+L 170.162517 276.973209 
+L 171.791374 276.166555 
+L 173.420231 275.487267 
+L 175.049089 274.553247 
+L 176.677946 273.789048 
+L 178.306804 273.449404 
+L 183.193376 271.32663 
+L 184.822233 270.902075 
+L 191.337663 268.69439 
+L 194.595377 267.76037 
+L 196.224235 267.123537 
+L 201.110807 265.934784 
+L 202.739664 265.680051 
+L 204.368522 265.085674 
+L 207.626236 264.27902 
+L 209.255094 263.642188 
+L 212.512809 263.260088 
+L 215.770523 262.580801 
+L 219.028238 261.859058 
+L 220.657095 261.222225 
+L 225.543668 260.033472 
+L 227.172525 259.906105 
+L 230.43024 259.226818 
+L 235.316812 258.759807 
+L 236.945669 259.01454 
+L 240.203384 258.589985 
+L 241.832241 258.589985 
+L 245.089956 258.165431 
+L 248.347671 257.995609 
+L 249.976528 257.868242 
+L 251.605386 257.571054 
+L 259.749673 257.486143 
+L 269.522817 256.934222 
+L 271.151674 256.7644 
+L 274.409389 256.679489 
+L 276.038246 256.509667 
+L 279.295961 256.3823 
+L 280.924819 256.212478 
+L 287.440248 256.170023 
+L 289.069106 256.042656 
+L 295.584535 256.000201 
+L 298.84225 255.91529 
+L 303.728822 255.830379 
+L 310.244251 255.745468 
+L 324.903968 255.660557 
+L 333.048255 255.533191 
+L 352.594543 255.44828 
+L 359.109973 255.363369 
+L 370.511975 255.278458 
+L 377.027404 255.193547 
+L 381.913976 255.193547 
+L 385.171691 255.023725 
+L 409.604552 254.938814 
+L 411.233409 254.896358 
+L 411.233409 254.896358 
 " style="fill:none;stroke:#8dd3c7;stroke-linecap:round;stroke-width:3;"/&gt;
    &lt;/g&gt;
    &lt;g id="patch_3"&gt;
@@ -2878,7 +3010,7 @@ L 411.233409 293.743125
 L 411.233409 21.943125 
 " style="fill:none;stroke:#ffffff;stroke-linecap:square;stroke-linejoin:miter;stroke-width:1.25;"/&gt;
    &lt;/g&gt;
-   &lt;g id="text_15"&gt;
+   &lt;g id="text_17"&gt;
     &lt;!-- Total Deaths caused by COVID19 over time in Denmark --&gt;
     &lt;defs&gt;
      &lt;path d="M 40.4375 19 
@@ -3166,13 +3298,13 @@ Q 331.282315 46.302969 333.482315 46.302969
 z
 " style="fill:#eaeaf2;opacity:0.8;stroke:#cccccc;stroke-linejoin:miter;"/&gt;
     &lt;/g&gt;
-    &lt;g id="line2d_16"&gt;
+    &lt;g id="line2d_18"&gt;
      &lt;path d="M 335.682315 35.866719 
 L 357.682315 35.866719 
 " style="fill:none;stroke:#8dd3c7;stroke-linecap:round;stroke-width:3;"/&gt;
     &lt;/g&gt;
-    &lt;g id="line2d_17"/&gt;
-    &lt;g id="text_16"&gt;
+    &lt;g id="line2d_19"/&gt;
+    &lt;g id="text_18"&gt;
      &lt;!-- Deaths --&gt;
      &lt;g style="fill:#262626;" transform="translate(366.482315 39.716719)scale(0.11 -0.11)"&gt;
       &lt;use xlink:href="#ArialMT-68"/&gt;
@@ -3195,28 +3327,28 @@ z
 " style="fill:#eaeaf2;"/&gt;
    &lt;/g&gt;
    &lt;g id="matplotlib.axis_3"&gt;
-    &lt;g id="xtick_33"&gt;
-     &lt;g id="line2d_18"&gt;
-      &lt;path clip-path="url(#pb7bd69d301)" d="M 482.251591 293.743125 
+    &lt;g id="xtick_40"&gt;
+     &lt;g id="line2d_20"&gt;
+      &lt;path clip-path="url(#p04093f624a)" d="M 482.251591 293.743125 
 L 482.251591 21.943125 
 " style="fill:none;stroke:#ffffff;stroke-linecap:round;"/&gt;
      &lt;/g&gt;
     &lt;/g&gt;
-    &lt;g id="xtick_34"&gt;
-     &lt;g id="line2d_19"&gt;
-      &lt;path clip-path="url(#pb7bd69d301)" d="M 502.659114 293.743125 
-L 502.659114 21.943125 
+    &lt;g id="xtick_41"&gt;
+     &lt;g id="line2d_21"&gt;
+      &lt;path clip-path="url(#p04093f624a)" d="M 498.540165 293.743125 
+L 498.540165 21.943125 
 " style="fill:none;stroke:#ffffff;stroke-linecap:round;"/&gt;
      &lt;/g&gt;
-     &lt;g id="text_17"&gt;
+     &lt;g id="text_19"&gt;
       &lt;!-- Feb --&gt;
-      &lt;g style="fill:#262626;" transform="translate(493.182786 311.116719)scale(0.11 -0.11)"&gt;
+      &lt;g style="fill:#262626;" transform="translate(489.063837 311.116719)scale(0.11 -0.11)"&gt;
        &lt;use xlink:href="#ArialMT-70"/&gt;
        &lt;use x="61.083984" xlink:href="#ArialMT-101"/&gt;
        &lt;use x="116.699219" xlink:href="#ArialMT-98"/&gt;
       &lt;/g&gt;
       &lt;!-- 2020 --&gt;
-      &lt;g style="fill:#262626;" transform="translate(490.425052 322.751281)scale(0.11 -0.11)"&gt;
+      &lt;g style="fill:#262626;" transform="translate(486.306102 322.751281)scale(0.11 -0.11)"&gt;
        &lt;use xlink:href="#ArialMT-50"/&gt;
        &lt;use x="55.615234" xlink:href="#ArialMT-48"/&gt;
        &lt;use x="111.230469" xlink:href="#ArialMT-50"/&gt;
@@ -3224,96 +3356,103 @@ L 502.659114 21.943125
       &lt;/g&gt;
      &lt;/g&gt;
     &lt;/g&gt;
-    &lt;g id="xtick_35"&gt;
-     &lt;g id="line2d_20"&gt;
-      &lt;path clip-path="url(#pb7bd69d301)" d="M 561.840933 293.743125 
-L 561.840933 21.943125 
+    &lt;g id="xtick_42"&gt;
+     &lt;g id="line2d_22"&gt;
+      &lt;path clip-path="url(#p04093f624a)" d="M 545.777029 293.743125 
+L 545.777029 21.943125 
 " style="fill:none;stroke:#ffffff;stroke-linecap:round;"/&gt;
      &lt;/g&gt;
-     &lt;g id="text_18"&gt;
+     &lt;g id="text_20"&gt;
       &lt;!-- Mar --&gt;
-      &lt;g style="fill:#262626;" transform="translate(552.369761 311.116719)scale(0.11 -0.11)"&gt;
+      &lt;g style="fill:#262626;" transform="translate(536.305857 311.116719)scale(0.11 -0.11)"&gt;
        &lt;use xlink:href="#ArialMT-77"/&gt;
        &lt;use x="83.300781" xlink:href="#ArialMT-97"/&gt;
        &lt;use x="138.916016" xlink:href="#ArialMT-114"/&gt;
       &lt;/g&gt;
      &lt;/g&gt;
     &lt;/g&gt;
-    &lt;g id="xtick_36"&gt;
-     &lt;g id="line2d_21"&gt;
-      &lt;path clip-path="url(#pb7bd69d301)" d="M 625.104255 293.743125 
-L 625.104255 21.943125 
+    &lt;g id="xtick_43"&gt;
+     &lt;g id="line2d_23"&gt;
+      &lt;path clip-path="url(#p04093f624a)" d="M 596.271608 293.743125 
+L 596.271608 21.943125 
 " style="fill:none;stroke:#ffffff;stroke-linecap:round;"/&gt;
      &lt;/g&gt;
-     &lt;g id="text_19"&gt;
+     &lt;g id="text_21"&gt;
       &lt;!-- Apr --&gt;
-      &lt;g style="fill:#262626;" transform="translate(616.54574 311.116719)scale(0.11 -0.11)"&gt;
+      &lt;g style="fill:#262626;" transform="translate(587.713092 311.116719)scale(0.11 -0.11)"&gt;
        &lt;use xlink:href="#ArialMT-65"/&gt;
        &lt;use x="66.699219" xlink:href="#ArialMT-112"/&gt;
        &lt;use x="122.314453" xlink:href="#ArialMT-114"/&gt;
       &lt;/g&gt;
      &lt;/g&gt;
     &lt;/g&gt;
-    &lt;g id="xtick_37"&gt;
-     &lt;g id="line2d_22"&gt;
-      &lt;path clip-path="url(#pb7bd69d301)" d="M 686.326826 293.743125 
-L 686.326826 21.943125 
+    &lt;g id="xtick_44"&gt;
+     &lt;g id="line2d_24"&gt;
+      &lt;path clip-path="url(#p04093f624a)" d="M 645.137329 293.743125 
+L 645.137329 21.943125 
 " style="fill:none;stroke:#ffffff;stroke-linecap:round;"/&gt;
      &lt;/g&gt;
-     &lt;g id="text_20"&gt;
+     &lt;g id="text_22"&gt;
       &lt;!-- May --&gt;
-      &lt;g style="fill:#262626;" transform="translate(675.936982 311.116719)scale(0.11 -0.11)"&gt;
+      &lt;g style="fill:#262626;" transform="translate(634.747485 311.116719)scale(0.11 -0.11)"&gt;
        &lt;use xlink:href="#ArialMT-77"/&gt;
        &lt;use x="83.300781" xlink:href="#ArialMT-97"/&gt;
        &lt;use x="138.916016" xlink:href="#ArialMT-121"/&gt;
       &lt;/g&gt;
      &lt;/g&gt;
     &lt;/g&gt;
-    &lt;g id="xtick_38"&gt;
-     &lt;g id="line2d_23"&gt;
-      &lt;path clip-path="url(#pb7bd69d301)" d="M 749.590149 293.743125 
-L 749.590149 21.943125 
+    &lt;g id="xtick_45"&gt;
+     &lt;g id="line2d_25"&gt;
+      &lt;path clip-path="url(#p04093f624a)" d="M 695.631908 293.743125 
+L 695.631908 21.943125 
 " style="fill:none;stroke:#ffffff;stroke-linecap:round;"/&gt;
      &lt;/g&gt;
-     &lt;g id="text_21"&gt;
+     &lt;g id="text_23"&gt;
       &lt;!-- Jun --&gt;
-      &lt;g style="fill:#262626;" transform="translate(740.723118 311.116719)scale(0.11 -0.11)"&gt;
+      &lt;g style="fill:#262626;" transform="translate(686.764877 311.116719)scale(0.11 -0.11)"&gt;
        &lt;use xlink:href="#ArialMT-74"/&gt;
        &lt;use x="50" xlink:href="#ArialMT-117"/&gt;
        &lt;use x="105.615234" xlink:href="#ArialMT-110"/&gt;
       &lt;/g&gt;
      &lt;/g&gt;
     &lt;/g&gt;
-    &lt;g id="xtick_39"&gt;
-     &lt;g id="line2d_24"&gt;
-      &lt;path clip-path="url(#pb7bd69d301)" d="M 810.812719 293.743125 
-L 810.812719 21.943125 
+    &lt;g id="xtick_46"&gt;
+     &lt;g id="line2d_26"&gt;
+      &lt;path clip-path="url(#p04093f624a)" d="M 744.497629 293.743125 
+L 744.497629 21.943125 
 " style="fill:none;stroke:#ffffff;stroke-linecap:round;"/&gt;
      &lt;/g&gt;
-     &lt;g id="text_22"&gt;
+     &lt;g id="text_24"&gt;
       &lt;!-- Jul --&gt;
-      &lt;g style="fill:#262626;" transform="translate(803.782173 311.116719)scale(0.11 -0.11)"&gt;
+      &lt;g style="fill:#262626;" transform="translate(737.467082 311.116719)scale(0.11 -0.11)"&gt;
        &lt;use xlink:href="#ArialMT-74"/&gt;
        &lt;use x="50" xlink:href="#ArialMT-117"/&gt;
        &lt;use x="105.615234" xlink:href="#ArialMT-108"/&gt;
       &lt;/g&gt;
      &lt;/g&gt;
     &lt;/g&gt;
-    &lt;g id="xtick_40"&gt;
-     &lt;g id="line2d_25"&gt;
-      &lt;path clip-path="url(#pb7bd69d301)" d="M 837.3425 293.743125 
+    &lt;g id="xtick_47"&gt;
+     &lt;g id="line2d_27"&gt;
+      &lt;path clip-path="url(#p04093f624a)" d="M 794.992208 293.743125 
+L 794.992208 21.943125 
+" style="fill:none;stroke:#ffffff;stroke-linecap:round;"/&gt;
+     &lt;/g&gt;
+     &lt;g id="text_25"&gt;
+      &lt;!-- Aug --&gt;
+      &lt;g style="fill:#262626;" transform="translate(785.206505 311.116719)scale(0.11 -0.11)"&gt;
+       &lt;use xlink:href="#ArialMT-65"/&gt;
+       &lt;use x="66.699219" xlink:href="#ArialMT-117"/&gt;
+       &lt;use x="122.314453" xlink:href="#ArialMT-103"/&gt;
+      &lt;/g&gt;
+     &lt;/g&gt;
+    &lt;/g&gt;
+    &lt;g id="xtick_48"&gt;
+     &lt;g id="line2d_28"&gt;
+      &lt;path clip-path="url(#p04093f624a)" d="M 837.3425 293.743125 
 L 837.3425 21.943125 
 " style="fill:none;stroke:#ffffff;stroke-linecap:round;"/&gt;
      &lt;/g&gt;
     &lt;/g&gt;
-    &lt;g id="xtick_41"/&gt;
-    &lt;g id="xtick_42"/&gt;
-    &lt;g id="xtick_43"/&gt;
-    &lt;g id="xtick_44"/&gt;
-    &lt;g id="xtick_45"/&gt;
-    &lt;g id="xtick_46"/&gt;
-    &lt;g id="xtick_47"/&gt;
-    &lt;g id="xtick_48"/&gt;
     &lt;g id="xtick_49"/&gt;
     &lt;g id="xtick_50"/&gt;
     &lt;g id="xtick_51"/&gt;
@@ -3330,7 +3469,21 @@ L 837.3425 21.943125
     &lt;g id="xtick_62"/&gt;
     &lt;g id="xtick_63"/&gt;
     &lt;g id="xtick_64"/&gt;
-    &lt;g id="text_23"&gt;
+    &lt;g id="xtick_65"/&gt;
+    &lt;g id="xtick_66"/&gt;
+    &lt;g id="xtick_67"/&gt;
+    &lt;g id="xtick_68"/&gt;
+    &lt;g id="xtick_69"/&gt;
+    &lt;g id="xtick_70"/&gt;
+    &lt;g id="xtick_71"/&gt;
+    &lt;g id="xtick_72"/&gt;
+    &lt;g id="xtick_73"/&gt;
+    &lt;g id="xtick_74"/&gt;
+    &lt;g id="xtick_75"/&gt;
+    &lt;g id="xtick_76"/&gt;
+    &lt;g id="xtick_77"/&gt;
+    &lt;g id="xtick_78"/&gt;
+    &lt;g id="text_26"&gt;
      &lt;!-- Date --&gt;
      &lt;g style="fill:#262626;" transform="translate(647.12392 337.526906)scale(0.12 -0.12)"&gt;
       &lt;use xlink:href="#ArialMT-68"/&gt;
@@ -3341,156 +3494,191 @@ L 837.3425 21.943125
     &lt;/g&gt;
    &lt;/g&gt;
    &lt;g id="matplotlib.axis_4"&gt;
-    &lt;g id="ytick_7"&gt;
-     &lt;g id="line2d_26"&gt;
-      &lt;path clip-path="url(#pb7bd69d301)" d="M 482.251591 281.38858 
+    &lt;g id="ytick_8"&gt;
+     &lt;g id="line2d_29"&gt;
+      &lt;path clip-path="url(#p04093f624a)" d="M 482.251591 281.38858 
 L 837.3425 281.38858 
 " style="fill:none;stroke:#ffffff;stroke-linecap:round;"/&gt;
      &lt;/g&gt;
     &lt;/g&gt;
-    &lt;g id="ytick_8"&gt;
-     &lt;g id="line2d_27"&gt;
-      &lt;path clip-path="url(#pb7bd69d301)" d="M 482.251591 236.82755 
-L 837.3425 236.82755 
-" style="fill:none;stroke:#ffffff;stroke-linecap:round;"/&gt;
-     &lt;/g&gt;
-    &lt;/g&gt;
     &lt;g id="ytick_9"&gt;
-     &lt;g id="line2d_28"&gt;
-      &lt;path clip-path="url(#pb7bd69d301)" d="M 482.251591 192.26652 
-L 837.3425 192.26652 
+     &lt;g id="line2d_30"&gt;
+      &lt;path clip-path="url(#p04093f624a)" d="M 482.251591 238.933097 
+L 837.3425 238.933097 
 " style="fill:none;stroke:#ffffff;stroke-linecap:round;"/&gt;
      &lt;/g&gt;
     &lt;/g&gt;
     &lt;g id="ytick_10"&gt;
-     &lt;g id="line2d_29"&gt;
-      &lt;path clip-path="url(#pb7bd69d301)" d="M 482.251591 147.705491 
-L 837.3425 147.705491 
+     &lt;g id="line2d_31"&gt;
+      &lt;path clip-path="url(#p04093f624a)" d="M 482.251591 196.477614 
+L 837.3425 196.477614 
 " style="fill:none;stroke:#ffffff;stroke-linecap:round;"/&gt;
      &lt;/g&gt;
     &lt;/g&gt;
     &lt;g id="ytick_11"&gt;
-     &lt;g id="line2d_30"&gt;
-      &lt;path clip-path="url(#pb7bd69d301)" d="M 482.251591 103.144461 
-L 837.3425 103.144461 
+     &lt;g id="line2d_32"&gt;
+      &lt;path clip-path="url(#p04093f624a)" d="M 482.251591 154.022132 
+L 837.3425 154.022132 
 " style="fill:none;stroke:#ffffff;stroke-linecap:round;"/&gt;
      &lt;/g&gt;
     &lt;/g&gt;
     &lt;g id="ytick_12"&gt;
-     &lt;g id="line2d_31"&gt;
-      &lt;path clip-path="url(#pb7bd69d301)" d="M 482.251591 58.583432 
-L 837.3425 58.583432 
+     &lt;g id="line2d_33"&gt;
+      &lt;path clip-path="url(#p04093f624a)" d="M 482.251591 111.566649 
+L 837.3425 111.566649 
+" style="fill:none;stroke:#ffffff;stroke-linecap:round;"/&gt;
+     &lt;/g&gt;
+    &lt;/g&gt;
+    &lt;g id="ytick_13"&gt;
+     &lt;g id="line2d_34"&gt;
+      &lt;path clip-path="url(#p04093f624a)" d="M 482.251591 69.111166 
+L 837.3425 69.111166 
+" style="fill:none;stroke:#ffffff;stroke-linecap:round;"/&gt;
+     &lt;/g&gt;
+    &lt;/g&gt;
+    &lt;g id="ytick_14"&gt;
+     &lt;g id="line2d_35"&gt;
+      &lt;path clip-path="url(#p04093f624a)" d="M 482.251591 26.655684 
+L 837.3425 26.655684 
 " style="fill:none;stroke:#ffffff;stroke-linecap:round;"/&gt;
      &lt;/g&gt;
     &lt;/g&gt;
    &lt;/g&gt;
-   &lt;g id="line2d_32"&gt;
-    &lt;path clip-path="url(#pb7bd69d301)" d="M 482.251591 281.38858 
-L 588.370713 281.299457 
-L 594.49297 281.076652 
-L 606.737484 280.274554 
-L 608.778237 279.784382 
-L 610.818989 278.625796 
-L 612.859741 277.95738 
-L 614.900494 276.709671 
-L 616.941246 276.709671 
-L 618.981998 276.486866 
-L 623.063503 273.367594 
-L 625.104255 270.738493 
-L 627.145008 267.663782 
-L 629.18576 265.435731 
-L 631.226513 264.767316 
-L 633.267265 263.519607 
-L 635.308017 260.132968 
-L 637.34877 255.053011 
-L 639.389522 250.775152 
-L 641.430274 246.051683 
-L 643.471027 242.620484 
-L 645.511779 241.862946 
-L 647.552531 241.328214 
-L 649.593284 240.436993 
-L 651.634036 235.357036 
-L 653.674788 227.781661 
-L 655.715541 221.988727 
-L 657.756293 219.003138 
-L 659.797045 214.056864 
-L 661.837798 212.764594 
-L 663.87855 210.982153 
-L 665.919303 202.738362 
-L 667.960055 195.073865 
-L 670.000807 191.330739 
-L 672.04156 185.493244 
-L 674.082312 183.710803 
-L 676.123064 183.621681 
-L 680.204569 176.447355 
-L 682.245321 171.679325 
-L 684.286074 166.153757 
-L 686.326826 163.168168 
-L 688.367578 162.455192 
-L 690.408331 162.009581 
-L 694.489835 154.211401 
-L 696.530588 150.334592 
-L 698.57134 145.92305 
-L 700.612092 139.907311 
-L 702.652845 137.902064 
-L 704.693597 137.679259 
-L 706.73435 136.297867 
-L 708.775102 133.757889 
-L 710.815854 127.207417 
-L 712.856607 124.132706 
-L 714.897359 118.919066 
-L 716.938111 117.671357 
-L 718.978864 117.448552 
-L 721.019616 116.601892 
-L 723.060368 114.596646 
-L 725.101121 110.675275 
-L 727.141873 108.892834 
-L 729.182625 106.486538 
-L 731.223378 103.500949 
-L 733.26413 103.233583 
-L 735.304882 101.852191 
-L 739.386387 93.341035 
-L 741.427139 91.291227 
-L 743.467892 87.548101 
-L 745.508644 85.542854 
-L 747.549397 85.542854 
-L 749.590149 85.186366 
-L 751.630901 82.289899 
-L 753.671654 78.992383 
-L 755.712406 78.101163 
-L 757.753158 74.669963 
-L 759.793911 73.912426 
-L 761.834663 73.778743 
-L 763.875415 72.219107 
-L 765.916168 71.194203 
-L 767.95692 67.718443 
-L 769.997672 66.871783 
-L 772.038425 65.089342 
-L 774.079177 64.198121 
-L 776.119929 64.198121 
-L 778.160682 63.440584 
-L 780.201434 61.301654 
-L 782.242187 56.756429 
-L 784.282939 56.221697 
-L 786.323691 53.904523 
-L 790.405196 53.637157 
-L 792.445948 53.146986 
-L 794.486701 51.409106 
-L 796.527453 49.270176 
-L 798.568205 48.334395 
-L 800.608958 46.106343 
-L 804.690462 46.106343 
-L 806.731215 44.769512 
-L 808.771967 43.744609 
-L 810.812719 42.095851 
-L 812.853472 40.268848 
-L 814.894224 39.867799 
-L 818.975729 39.867799 
-L 823.057234 38.664651 
-L 825.097986 37.105015 
-L 827.138738 36.302917 
-L 829.179491 35.14433 
-L 833.260995 35.14433 
+   &lt;g id="line2d_36"&gt;
+    &lt;path clip-path="url(#p04093f624a)" d="M 482.251591 281.38858 
+L 566.952175 281.303669 
+L 571.838747 281.091391 
+L 581.611891 280.327192 
+L 583.240749 279.860182 
+L 584.869606 278.75634 
+L 586.498463 278.119507 
+L 588.127321 276.930754 
+L 589.756178 276.930754 
+L 591.385035 276.718476 
+L 594.64275 273.746593 
+L 596.271608 271.241719 
+L 597.900465 268.312291 
+L 599.529322 266.189517 
+L 601.15818 265.552685 
+L 602.787037 264.363931 
+L 604.415894 261.137314 
+L 606.044752 256.297389 
+L 607.673609 252.221663 
+L 609.302467 247.721382 
+L 610.931324 244.45231 
+L 612.560181 243.730566 
+L 614.189039 243.221101 
+L 615.817896 242.371991 
+L 617.446754 237.532066 
+L 619.075611 230.314634 
+L 620.704468 224.795421 
+L 622.333326 221.950904 
+L 623.962183 217.238345 
+L 625.59104 216.007136 
+L 627.219898 214.308917 
+L 628.848755 206.454653 
+L 630.477613 199.15231 
+L 632.10647 195.586049 
+L 633.735327 190.024381 
+L 635.364185 188.326162 
+L 636.993042 188.241251 
+L 640.250757 181.405918 
+L 641.879614 176.863181 
+L 643.508472 171.598701 
+L 645.137329 168.754184 
+L 646.766186 168.074896 
+L 648.395044 167.650341 
+L 651.652759 160.220632 
+L 653.281616 156.527005 
+L 654.910473 152.323912 
+L 656.539331 146.592422 
+L 658.168188 144.681925 
+L 659.797045 144.469648 
+L 661.425903 143.153528 
+L 663.05476 140.733565 
+L 664.683618 134.49261 
+L 666.312475 131.563181 
+L 667.941332 126.59589 
+L 669.57019 125.407136 
+L 671.199047 125.194859 
+L 672.827905 124.388205 
+L 674.456762 122.477708 
+L 676.085619 118.741625 
+L 677.714477 117.043406 
+L 679.343334 114.75081 
+L 680.972191 111.906293 
+L 682.601049 111.65156 
+L 684.229906 110.33544 
+L 687.487621 102.226443 
+L 689.116478 100.273491 
+L 690.745336 96.70723 
+L 692.374193 94.796733 
+L 694.00305 94.796733 
+L 695.631908 94.457089 
+L 697.260765 91.697483 
+L 698.889623 88.555777 
+L 700.51848 87.706668 
+L 702.147337 84.437595 
+L 703.776195 83.715852 
+L 705.405052 83.588486 
+L 707.03391 82.102544 
+L 708.662767 81.126068 
+L 710.291624 77.81454 
+L 711.920482 77.007886 
+L 713.549339 75.309667 
+L 715.178196 74.460557 
+L 716.807054 74.460557 
+L 718.435911 73.738814 
+L 720.064769 71.700951 
+L 721.693626 67.370491 
+L 723.322483 66.861026 
+L 724.951341 64.653341 
+L 728.209055 64.398608 
+L 729.837913 63.931597 
+L 731.46677 62.275834 
+L 733.095628 60.23797 
+L 734.724485 59.346405 
+L 736.353342 57.223631 
+L 739.611057 57.223631 
+L 741.239915 55.949967 
+L 742.868772 54.973491 
+L 744.497629 53.402638 
+L 746.126487 51.661963 
+L 747.755344 51.279864 
+L 751.013059 51.279864 
+L 754.270774 50.133565 
+L 755.899631 48.647624 
+L 757.528488 47.883425 
+L 759.157346 46.779582 
+L 762.41506 46.779582 
+L 765.672775 45.972928 
+L 767.301633 44.82663 
+L 768.93049 43.935065 
+L 770.559347 42.831222 
+L 773.817062 42.831222 
+L 775.44592 41.982113 
+L 777.074777 41.684924 
+L 778.703634 40.793359 
+L 780.332492 40.41126 
+L 781.961349 39.519695 
+L 785.219064 39.519695 
+L 788.476779 39.307417 
+L 790.105636 38.118664 
+L 791.734493 37.736565 
+L 793.363351 37.566743 
+L 798.249923 37.524287 
+L 799.87878 37.396921 
+L 801.507638 36.844999 
+L 803.136495 36.590267 
+L 804.765352 36.717633 
+L 808.023067 36.717633 
+L 814.538497 36.165712 
+L 816.167354 35.868523 
+L 819.425069 35.868523 
+L 822.682784 35.571335 
+L 824.311641 35.061869 
+L 829.198213 34.722225 
+L 830.82707 34.722225 
 L 837.3425 34.29767 
 L 837.3425 34.29767 
 " style="fill:none;stroke:#80b1d3;stroke-linecap:round;stroke-width:3;"/&gt;
@@ -3515,7 +3703,7 @@ L 837.3425 293.743125
 L 837.3425 21.943125 
 " style="fill:none;stroke:#ffffff;stroke-linecap:square;stroke-linejoin:miter;stroke-width:1.25;"/&gt;
    &lt;/g&gt;
-   &lt;g id="text_24"&gt;
+   &lt;g id="text_27"&gt;
     &lt;!-- Total Deaths caused by COVID19 over time in Sweden --&gt;
     &lt;defs&gt;
      &lt;path d="M 4.5 23 
@@ -3644,13 +3832,13 @@ Q 487.751591 46.302969 489.951591 46.302969
 z
 " style="fill:#eaeaf2;opacity:0.8;stroke:#cccccc;stroke-linejoin:miter;"/&gt;
     &lt;/g&gt;
-    &lt;g id="line2d_33"&gt;
+    &lt;g id="line2d_37"&gt;
      &lt;path d="M 492.151591 35.866719 
 L 514.151591 35.866719 
 " style="fill:none;stroke:#80b1d3;stroke-linecap:round;stroke-width:3;"/&gt;
     &lt;/g&gt;
-    &lt;g id="line2d_34"/&gt;
-    &lt;g id="text_25"&gt;
+    &lt;g id="line2d_38"/&gt;
+    &lt;g id="text_28"&gt;
      &lt;!-- Deaths --&gt;
      &lt;g style="fill:#262626;" transform="translate(522.951591 39.716719)scale(0.11 -0.11)"&gt;
       &lt;use xlink:href="#ArialMT-68"/&gt;
@@ -3665,10 +3853,10 @@ L 514.151591 35.866719
   &lt;/g&gt;
  &lt;/g&gt;
  &lt;defs&gt;
-  &lt;clipPath id="p11ca064fec"&gt;
+  &lt;clipPath id="pdce5c0e6f0"&gt;
    &lt;rect height="271.8" width="355.090909" x="56.1425" y="21.943125"/&gt;
   &lt;/clipPath&gt;
-  &lt;clipPath id="pb7bd69d301"&gt;
+  &lt;clipPath id="p04093f624a"&gt;
    &lt;rect height="271.8" width="355.090909" x="482.251591" y="21.943125"/&gt;
   &lt;/clipPath&gt;
  &lt;/defs&gt;
@@ -3684,20 +3872,20 @@ L 514.151591 35.866719
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[66]:&lt;/div&gt;
+&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[14]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
     &lt;div class="input_area"&gt;
 &lt;div class=" highlight hl-python"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;fig&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;axes&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;plt&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;subplots&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;figsize&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;14&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt;&lt;span class="mi"&gt;5&lt;/span&gt;&lt;span class="p"&gt;))&lt;/span&gt;
 
 &lt;span class="c1"&gt;# Find the country with the most total deaths&lt;/span&gt;
-&lt;span class="n"&gt;john_hopkins_df&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;groupby&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;Country&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)[&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;Deaths&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;max&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;sort_values&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;ascending&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="kc"&gt;False&lt;/span&gt;&lt;span class="p"&gt;)[:&lt;/span&gt;&lt;span class="mi"&gt;10&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;plot&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;kind&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;bar&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;ax&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;axes&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;])&lt;/span&gt;
+&lt;span class="n"&gt;johns_hopkins_df&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;groupby&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;Country&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)[&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;Deaths&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;max&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;sort_values&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;ascending&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="kc"&gt;False&lt;/span&gt;&lt;span class="p"&gt;)[:&lt;/span&gt;&lt;span class="mi"&gt;10&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;plot&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;kind&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;bar&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;ax&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;axes&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;])&lt;/span&gt;
 &lt;span class="n"&gt;axes&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;set_title&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;Total deaths across countries&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;span class="n"&gt;axes&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;set_ylabel&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;Total deaths&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;span class="n"&gt;axes&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;set_xlabel&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;Country&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 
 
 &lt;span class="c1"&gt;# Find the Country with the most total deaths per mio capita&lt;/span&gt;
-&lt;span class="n"&gt;john_hopkins_df&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;groupby&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;Country&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)[&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;Deaths_per_mio&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;max&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;sort_values&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;ascending&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="kc"&gt;False&lt;/span&gt;&lt;span class="p"&gt;)[:&lt;/span&gt;&lt;span class="mi"&gt;10&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;plot&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;kind&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;bar&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;ax&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;axes&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt; &lt;span class="n"&gt;color&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;sns&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;color_palette&lt;/span&gt;&lt;span class="p"&gt;()[&lt;/span&gt;&lt;span class="mi"&gt;4&lt;/span&gt;&lt;span class="p"&gt;])&lt;/span&gt;
+&lt;span class="n"&gt;johns_hopkins_df&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;groupby&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;Country&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)[&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;Deaths_per_mio&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;max&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;sort_values&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;ascending&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="kc"&gt;False&lt;/span&gt;&lt;span class="p"&gt;)[:&lt;/span&gt;&lt;span class="mi"&gt;10&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;plot&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;kind&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;bar&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="n"&gt;ax&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;axes&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;],&lt;/span&gt; &lt;span class="n"&gt;color&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="n"&gt;sns&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;color_palette&lt;/span&gt;&lt;span class="p"&gt;()[&lt;/span&gt;&lt;span class="mi"&gt;4&lt;/span&gt;&lt;span class="p"&gt;])&lt;/span&gt;
 &lt;span class="n"&gt;axes&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;set_title&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;Total deaths across countries per million citizens across countries&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;span class="n"&gt;axes&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;set_ylabel&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;Total deaths per million population count&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
 &lt;span class="n"&gt;axes&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;set_xlabel&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;Country&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
@@ -3751,7 +3939,7 @@ z
    &lt;g id="matplotlib.axis_1"&gt;
     &lt;g id="xtick_1"&gt;
      &lt;g id="line2d_1"&gt;
-      &lt;path clip-path="url(#p381b30d6ca)" d="M 86.131108 293.589375 
+      &lt;path clip-path="url(#p71f6f6400c)" d="M 86.131108 293.589375 
 L 86.131108 21.789375 
 " style="fill:none;stroke:#ffffff;stroke-linecap:round;"/&gt;
      &lt;/g&gt;
@@ -4155,7 +4343,7 @@ z
     &lt;/g&gt;
     &lt;g id="xtick_2"&gt;
      &lt;g id="line2d_2"&gt;
-      &lt;path clip-path="url(#p381b30d6ca)" d="M 121.640199 293.589375 
+      &lt;path clip-path="url(#p71f6f6400c)" d="M 121.640199 293.589375 
 L 121.640199 21.789375 
 " style="fill:none;stroke:#ffffff;stroke-linecap:round;"/&gt;
      &lt;/g&gt;
@@ -4233,11 +4421,90 @@ z
     &lt;/g&gt;
     &lt;g id="xtick_3"&gt;
      &lt;g id="line2d_3"&gt;
-      &lt;path clip-path="url(#p381b30d6ca)" d="M 157.14929 293.589375 
+      &lt;path clip-path="url(#p71f6f6400c)" d="M 157.14929 293.589375 
 L 157.14929 21.789375 
 " style="fill:none;stroke:#ffffff;stroke-linecap:round;"/&gt;
      &lt;/g&gt;
      &lt;g id="text_3"&gt;
+      &lt;!-- Mexico --&gt;
+      &lt;defs&gt;
+       &lt;path d="M 7.421875 0 
+L 7.421875 71.578125 
+L 21.6875 71.578125 
+L 38.625 20.90625 
+Q 40.96875 13.8125 42.046875 10.296875 
+Q 43.265625 14.203125 45.84375 21.78125 
+L 62.984375 71.578125 
+L 75.734375 71.578125 
+L 75.734375 0 
+L 66.609375 0 
+L 66.609375 59.90625 
+L 45.796875 0 
+L 37.25 0 
+L 16.546875 60.9375 
+L 16.546875 0 
+z
+" id="ArialMT-77"/&gt;
+       &lt;path d="M 0.734375 0 
+L 19.671875 26.953125 
+L 2.15625 51.859375 
+L 13.140625 51.859375 
+L 21.09375 39.703125 
+Q 23.34375 36.234375 24.703125 33.890625 
+Q 26.859375 37.109375 28.65625 39.59375 
+L 37.40625 51.859375 
+L 47.90625 51.859375 
+L 29.984375 27.4375 
+L 49.265625 0 
+L 38.484375 0 
+L 27.828125 16.109375 
+L 25 20.453125 
+L 11.375 0 
+z
+" id="ArialMT-120"/&gt;
+      &lt;/defs&gt;
+      &lt;g style="fill:#262626;" transform="translate(159.992962 337.930156)rotate(-90)scale(0.11 -0.11)"&gt;
+       &lt;use xlink:href="#ArialMT-77"/&gt;
+       &lt;use x="83.300781" xlink:href="#ArialMT-101"/&gt;
+       &lt;use x="138.916016" xlink:href="#ArialMT-120"/&gt;
+       &lt;use x="188.916016" xlink:href="#ArialMT-105"/&gt;
+       &lt;use x="211.132812" xlink:href="#ArialMT-99"/&gt;
+       &lt;use x="261.132812" xlink:href="#ArialMT-111"/&gt;
+      &lt;/g&gt;
+     &lt;/g&gt;
+    &lt;/g&gt;
+    &lt;g id="xtick_4"&gt;
+     &lt;g id="line2d_4"&gt;
+      &lt;path clip-path="url(#p71f6f6400c)" d="M 192.658381 293.589375 
+L 192.658381 21.789375 
+" style="fill:none;stroke:#ffffff;stroke-linecap:round;"/&gt;
+     &lt;/g&gt;
+     &lt;g id="text_4"&gt;
+      &lt;!-- India --&gt;
+      &lt;defs&gt;
+       &lt;path d="M 9.328125 0 
+L 9.328125 71.578125 
+L 18.796875 71.578125 
+L 18.796875 0 
+z
+" id="ArialMT-73"/&gt;
+      &lt;/defs&gt;
+      &lt;g style="fill:#262626;" transform="translate(195.502053 326.940469)rotate(-90)scale(0.11 -0.11)"&gt;
+       &lt;use xlink:href="#ArialMT-73"/&gt;
+       &lt;use x="27.783203" xlink:href="#ArialMT-110"/&gt;
+       &lt;use x="83.398438" xlink:href="#ArialMT-100"/&gt;
+       &lt;use x="139.013672" xlink:href="#ArialMT-105"/&gt;
+       &lt;use x="161.230469" xlink:href="#ArialMT-97"/&gt;
+      &lt;/g&gt;
+     &lt;/g&gt;
+    &lt;/g&gt;
+    &lt;g id="xtick_5"&gt;
+     &lt;g id="line2d_5"&gt;
+      &lt;path clip-path="url(#p71f6f6400c)" d="M 228.167472 293.589375 
+L 228.167472 21.789375 
+" style="fill:none;stroke:#ffffff;stroke-linecap:round;"/&gt;
+     &lt;/g&gt;
+     &lt;g id="text_5"&gt;
       &lt;!-- United Kingdom --&gt;
       &lt;defs&gt;
        &lt;path d="M 7.328125 0 
@@ -4289,7 +4556,7 @@ Q 12.25 36.234375 12.25 26.859375
 z
 " id="ArialMT-103"/&gt;
       &lt;/defs&gt;
-      &lt;g style="fill:#262626;" transform="translate(159.928509 381.352656)rotate(-90)scale(0.11 -0.11)"&gt;
+      &lt;g style="fill:#262626;" transform="translate(230.94669 381.352656)rotate(-90)scale(0.11 -0.11)"&gt;
        &lt;use xlink:href="#ArialMT-85"/&gt;
        &lt;use x="72.216797" xlink:href="#ArialMT-110"/&gt;
        &lt;use x="127.832031" xlink:href="#ArialMT-105"/&gt;
@@ -4307,75 +4574,15 @@ z
       &lt;/g&gt;
      &lt;/g&gt;
     &lt;/g&gt;
-    &lt;g id="xtick_4"&gt;
-     &lt;g id="line2d_4"&gt;
-      &lt;path clip-path="url(#p381b30d6ca)" d="M 192.658381 293.589375 
-L 192.658381 21.789375 
+    &lt;g id="xtick_6"&gt;
+     &lt;g id="line2d_6"&gt;
+      &lt;path clip-path="url(#p71f6f6400c)" d="M 263.676562 293.589375 
+L 263.676562 21.789375 
 " style="fill:none;stroke:#ffffff;stroke-linecap:round;"/&gt;
      &lt;/g&gt;
-     &lt;g id="text_4"&gt;
-      &lt;!-- Mexico --&gt;
-      &lt;defs&gt;
-       &lt;path d="M 7.421875 0 
-L 7.421875 71.578125 
-L 21.6875 71.578125 
-L 38.625 20.90625 
-Q 40.96875 13.8125 42.046875 10.296875 
-Q 43.265625 14.203125 45.84375 21.78125 
-L 62.984375 71.578125 
-L 75.734375 71.578125 
-L 75.734375 0 
-L 66.609375 0 
-L 66.609375 59.90625 
-L 45.796875 0 
-L 37.25 0 
-L 16.546875 60.9375 
-L 16.546875 0 
-z
-" id="ArialMT-77"/&gt;
-       &lt;path d="M 0.734375 0 
-L 19.671875 26.953125 
-L 2.15625 51.859375 
-L 13.140625 51.859375 
-L 21.09375 39.703125 
-Q 23.34375 36.234375 24.703125 33.890625 
-Q 26.859375 37.109375 28.65625 39.59375 
-L 37.40625 51.859375 
-L 47.90625 51.859375 
-L 29.984375 27.4375 
-L 49.265625 0 
-L 38.484375 0 
-L 27.828125 16.109375 
-L 25 20.453125 
-L 11.375 0 
-z
-" id="ArialMT-120"/&gt;
-      &lt;/defs&gt;
-      &lt;g style="fill:#262626;" transform="translate(195.502053 337.930156)rotate(-90)scale(0.11 -0.11)"&gt;
-       &lt;use xlink:href="#ArialMT-77"/&gt;
-       &lt;use x="83.300781" xlink:href="#ArialMT-101"/&gt;
-       &lt;use x="138.916016" xlink:href="#ArialMT-120"/&gt;
-       &lt;use x="188.916016" xlink:href="#ArialMT-105"/&gt;
-       &lt;use x="211.132812" xlink:href="#ArialMT-99"/&gt;
-       &lt;use x="261.132812" xlink:href="#ArialMT-111"/&gt;
-      &lt;/g&gt;
-     &lt;/g&gt;
-    &lt;/g&gt;
-    &lt;g id="xtick_5"&gt;
-     &lt;g id="line2d_5"&gt;
-      &lt;path clip-path="url(#p381b30d6ca)" d="M 228.167472 293.589375 
-L 228.167472 21.789375 
-" style="fill:none;stroke:#ffffff;stroke-linecap:round;"/&gt;
-     &lt;/g&gt;
-     &lt;g id="text_5"&gt;
+     &lt;g id="text_6"&gt;
       &lt;!-- Italy --&gt;
       &lt;defs&gt;
-       &lt;path d="M 9.328125 0 
-L 9.328125 71.578125 
-L 18.796875 71.578125 
-L 18.796875 0 
-z
-" id="ArialMT-73"/&gt;
        &lt;path d="M 6.203125 -19.96875 
 L 5.21875 -11.71875 
 Q 8.109375 -12.5 10.25 -12.5 
@@ -4398,7 +4605,7 @@ Q 9.328125 -21.046875 6.203125 -19.96875
 z
 " id="ArialMT-121"/&gt;
       &lt;/defs&gt;
-      &lt;g style="fill:#262626;" transform="translate(230.94669 323.262344)rotate(-90)scale(0.11 -0.11)"&gt;
+      &lt;g style="fill:#262626;" transform="translate(266.455781 323.262344)rotate(-90)scale(0.11 -0.11)"&gt;
        &lt;use xlink:href="#ArialMT-73"/&gt;
        &lt;use x="27.783203" xlink:href="#ArialMT-116"/&gt;
        &lt;use x="55.566406" xlink:href="#ArialMT-97"/&gt;
@@ -4407,13 +4614,13 @@ z
       &lt;/g&gt;
      &lt;/g&gt;
     &lt;/g&gt;
-    &lt;g id="xtick_6"&gt;
-     &lt;g id="line2d_6"&gt;
-      &lt;path clip-path="url(#p381b30d6ca)" d="M 263.676562 293.589375 
-L 263.676562 21.789375 
+    &lt;g id="xtick_7"&gt;
+     &lt;g id="line2d_7"&gt;
+      &lt;path clip-path="url(#p71f6f6400c)" d="M 299.185653 293.589375 
+L 299.185653 21.789375 
 " style="fill:none;stroke:#ffffff;stroke-linecap:round;"/&gt;
      &lt;/g&gt;
-     &lt;g id="text_6"&gt;
+     &lt;g id="text_7"&gt;
       &lt;!-- France --&gt;
       &lt;defs&gt;
        &lt;path d="M 8.203125 0 
@@ -4429,7 +4636,7 @@ L 17.671875 0
 z
 " id="ArialMT-70"/&gt;
       &lt;/defs&gt;
-      &lt;g style="fill:#262626;" transform="translate(266.520234 337.321719)rotate(-90)scale(0.11 -0.11)"&gt;
+      &lt;g style="fill:#262626;" transform="translate(302.029325 337.321719)rotate(-90)scale(0.11 -0.11)"&gt;
        &lt;use xlink:href="#ArialMT-70"/&gt;
        &lt;use x="61.083984" xlink:href="#ArialMT-114"/&gt;
        &lt;use x="94.384766" xlink:href="#ArialMT-97"/&gt;
@@ -4439,13 +4646,13 @@ z
       &lt;/g&gt;
      &lt;/g&gt;
     &lt;/g&gt;
-    &lt;g id="xtick_7"&gt;
-     &lt;g id="line2d_7"&gt;
-      &lt;path clip-path="url(#p381b30d6ca)" d="M 299.185653 293.589375 
-L 299.185653 21.789375 
+    &lt;g id="xtick_8"&gt;
+     &lt;g id="line2d_8"&gt;
+      &lt;path clip-path="url(#p71f6f6400c)" d="M 334.694744 293.589375 
+L 334.694744 21.789375 
 " style="fill:none;stroke:#ffffff;stroke-linecap:round;"/&gt;
      &lt;/g&gt;
-     &lt;g id="text_7"&gt;
+     &lt;g id="text_8"&gt;
       &lt;!-- Spain --&gt;
       &lt;defs&gt;
        &lt;path d="M 6.59375 -19.875 
@@ -4476,7 +4683,7 @@ Q 14.546875 35.640625 14.546875 25.640625
 z
 " id="ArialMT-112"/&gt;
       &lt;/defs&gt;
-      &lt;g style="fill:#262626;" transform="translate(302.096357 331.221875)rotate(-90)scale(0.11 -0.11)"&gt;
+      &lt;g style="fill:#262626;" transform="translate(337.605447 331.221875)rotate(-90)scale(0.11 -0.11)"&gt;
        &lt;use xlink:href="#ArialMT-83"/&gt;
        &lt;use x="66.699219" xlink:href="#ArialMT-112"/&gt;
        &lt;use x="122.314453" xlink:href="#ArialMT-97"/&gt;
@@ -4485,30 +4692,74 @@ z
       &lt;/g&gt;
      &lt;/g&gt;
     &lt;/g&gt;
-    &lt;g id="xtick_8"&gt;
-     &lt;g id="line2d_8"&gt;
-      &lt;path clip-path="url(#p381b30d6ca)" d="M 334.694744 293.589375 
-L 334.694744 21.789375 
-" style="fill:none;stroke:#ffffff;stroke-linecap:round;"/&gt;
-     &lt;/g&gt;
-     &lt;g id="text_8"&gt;
-      &lt;!-- India --&gt;
-      &lt;g style="fill:#262626;" transform="translate(337.538416 326.940469)rotate(-90)scale(0.11 -0.11)"&gt;
-       &lt;use xlink:href="#ArialMT-73"/&gt;
-       &lt;use x="27.783203" xlink:href="#ArialMT-110"/&gt;
-       &lt;use x="83.398438" xlink:href="#ArialMT-100"/&gt;
-       &lt;use x="139.013672" xlink:href="#ArialMT-105"/&gt;
-       &lt;use x="161.230469" xlink:href="#ArialMT-97"/&gt;
-      &lt;/g&gt;
-     &lt;/g&gt;
-    &lt;/g&gt;
     &lt;g id="xtick_9"&gt;
      &lt;g id="line2d_9"&gt;
-      &lt;path clip-path="url(#p381b30d6ca)" d="M 370.203835 293.589375 
+      &lt;path clip-path="url(#p71f6f6400c)" d="M 370.203835 293.589375 
 L 370.203835 21.789375 
 " style="fill:none;stroke:#ffffff;stroke-linecap:round;"/&gt;
      &lt;/g&gt;
      &lt;g id="text_9"&gt;
+      &lt;!-- Peru --&gt;
+      &lt;defs&gt;
+       &lt;path d="M 7.71875 0 
+L 7.71875 71.578125 
+L 34.71875 71.578125 
+Q 41.84375 71.578125 45.609375 70.90625 
+Q 50.875 70.015625 54.4375 67.546875 
+Q 58.015625 65.09375 60.1875 60.640625 
+Q 62.359375 56.203125 62.359375 50.875 
+Q 62.359375 41.75 56.546875 35.421875 
+Q 50.734375 29.109375 35.546875 29.109375 
+L 17.1875 29.109375 
+L 17.1875 0 
+z
+M 17.1875 37.546875 
+L 35.6875 37.546875 
+Q 44.875 37.546875 48.734375 40.96875 
+Q 52.59375 44.390625 52.59375 50.59375 
+Q 52.59375 55.078125 50.3125 58.265625 
+Q 48.046875 61.46875 44.34375 62.5 
+Q 41.9375 63.140625 35.5 63.140625 
+L 17.1875 63.140625 
+z
+" id="ArialMT-80"/&gt;
+       &lt;path d="M 40.578125 0 
+L 40.578125 7.625 
+Q 34.515625 -1.171875 24.125 -1.171875 
+Q 19.53125 -1.171875 15.546875 0.578125 
+Q 11.578125 2.34375 9.640625 5 
+Q 7.71875 7.671875 6.9375 11.53125 
+Q 6.390625 14.109375 6.390625 19.734375 
+L 6.390625 51.859375 
+L 15.1875 51.859375 
+L 15.1875 23.09375 
+Q 15.1875 16.21875 15.71875 13.8125 
+Q 16.546875 10.359375 19.234375 8.375 
+Q 21.921875 6.390625 25.875 6.390625 
+Q 29.828125 6.390625 33.296875 8.421875 
+Q 36.765625 10.453125 38.203125 13.9375 
+Q 39.65625 17.4375 39.65625 24.078125 
+L 39.65625 51.859375 
+L 48.4375 51.859375 
+L 48.4375 0 
+z
+" id="ArialMT-117"/&gt;
+      &lt;/defs&gt;
+      &lt;g style="fill:#262626;" transform="translate(373.047507 326.323437)rotate(-90)scale(0.11 -0.11)"&gt;
+       &lt;use xlink:href="#ArialMT-80"/&gt;
+       &lt;use x="66.699219" xlink:href="#ArialMT-101"/&gt;
+       &lt;use x="122.314453" xlink:href="#ArialMT-114"/&gt;
+       &lt;use x="155.615234" xlink:href="#ArialMT-117"/&gt;
+      &lt;/g&gt;
+     &lt;/g&gt;
+    &lt;/g&gt;
+    &lt;g id="xtick_10"&gt;
+     &lt;g id="line2d_10"&gt;
+      &lt;path clip-path="url(#p71f6f6400c)" d="M 405.712926 293.589375 
+L 405.712926 21.789375 
+" style="fill:none;stroke:#ffffff;stroke-linecap:round;"/&gt;
+     &lt;/g&gt;
+     &lt;g id="text_10"&gt;
       &lt;!-- Iran, Islamic Republic of --&gt;
       &lt;defs&gt;
        &lt;path d="M 8.890625 0 
@@ -4552,27 +4803,6 @@ Q 47.953125 63.671875 39.984375 63.671875
 L 17.328125 63.671875 
 z
 " id="ArialMT-82"/&gt;
-       &lt;path d="M 40.578125 0 
-L 40.578125 7.625 
-Q 34.515625 -1.171875 24.125 -1.171875 
-Q 19.53125 -1.171875 15.546875 0.578125 
-Q 11.578125 2.34375 9.640625 5 
-Q 7.71875 7.671875 6.9375 11.53125 
-Q 6.390625 14.109375 6.390625 19.734375 
-L 6.390625 51.859375 
-L 15.1875 51.859375 
-L 15.1875 23.09375 
-Q 15.1875 16.21875 15.71875 13.8125 
-Q 16.546875 10.359375 19.234375 8.375 
-Q 21.921875 6.390625 25.875 6.390625 
-Q 29.828125 6.390625 33.296875 8.421875 
-Q 36.765625 10.453125 38.203125 13.9375 
-Q 39.65625 17.4375 39.65625 24.078125 
-L 39.65625 51.859375 
-L 48.4375 51.859375 
-L 48.4375 0 
-z
-" id="ArialMT-117"/&gt;
        &lt;path d="M 14.703125 0 
 L 6.546875 0 
 L 6.546875 71.578125 
@@ -4599,7 +4829,7 @@ Q 14.59375 35.796875 14.59375 26.3125
 z
 " id="ArialMT-98"/&gt;
       &lt;/defs&gt;
-      &lt;g style="fill:#262626;" transform="translate(373.114538 420.462812)rotate(-90)scale(0.11 -0.11)"&gt;
+      &lt;g style="fill:#262626;" transform="translate(408.623629 420.462812)rotate(-90)scale(0.11 -0.11)"&gt;
        &lt;use xlink:href="#ArialMT-73"/&gt;
        &lt;use x="27.783203" xlink:href="#ArialMT-114"/&gt;
        &lt;use x="61.083984" xlink:href="#ArialMT-97"/&gt;
@@ -4625,46 +4855,6 @@ z
        &lt;use x="955.908203" xlink:href="#ArialMT-32"/&gt;
        &lt;use x="983.691406" xlink:href="#ArialMT-111"/&gt;
        &lt;use x="1039.306641" xlink:href="#ArialMT-102"/&gt;
-      &lt;/g&gt;
-     &lt;/g&gt;
-    &lt;/g&gt;
-    &lt;g id="xtick_10"&gt;
-     &lt;g id="line2d_10"&gt;
-      &lt;path clip-path="url(#p381b30d6ca)" d="M 405.712926 293.589375 
-L 405.712926 21.789375 
-" style="fill:none;stroke:#ffffff;stroke-linecap:round;"/&gt;
-     &lt;/g&gt;
-     &lt;g id="text_10"&gt;
-      &lt;!-- Peru --&gt;
-      &lt;defs&gt;
-       &lt;path d="M 7.71875 0 
-L 7.71875 71.578125 
-L 34.71875 71.578125 
-Q 41.84375 71.578125 45.609375 70.90625 
-Q 50.875 70.015625 54.4375 67.546875 
-Q 58.015625 65.09375 60.1875 60.640625 
-Q 62.359375 56.203125 62.359375 50.875 
-Q 62.359375 41.75 56.546875 35.421875 
-Q 50.734375 29.109375 35.546875 29.109375 
-L 17.1875 29.109375 
-L 17.1875 0 
-z
-M 17.1875 37.546875 
-L 35.6875 37.546875 
-Q 44.875 37.546875 48.734375 40.96875 
-Q 52.59375 44.390625 52.59375 50.59375 
-Q 52.59375 55.078125 50.3125 58.265625 
-Q 48.046875 61.46875 44.34375 62.5 
-Q 41.9375 63.140625 35.5 63.140625 
-L 17.1875 63.140625 
-z
-" id="ArialMT-80"/&gt;
-      &lt;/defs&gt;
-      &lt;g style="fill:#262626;" transform="translate(408.556598 326.323437)rotate(-90)scale(0.11 -0.11)"&gt;
-       &lt;use xlink:href="#ArialMT-80"/&gt;
-       &lt;use x="66.699219" xlink:href="#ArialMT-101"/&gt;
-       &lt;use x="122.314453" xlink:href="#ArialMT-114"/&gt;
-       &lt;use x="155.615234" xlink:href="#ArialMT-117"/&gt;
       &lt;/g&gt;
      &lt;/g&gt;
     &lt;/g&gt;
@@ -4711,7 +4901,7 @@ z
    &lt;g id="matplotlib.axis_2"&gt;
     &lt;g id="ytick_1"&gt;
      &lt;g id="line2d_11"&gt;
-      &lt;path clip-path="url(#p381b30d6ca)" d="M 68.376563 293.589375 
+      &lt;path clip-path="url(#p71f6f6400c)" d="M 68.376563 293.589375 
 L 423.467472 293.589375 
 " style="fill:none;stroke:#ffffff;stroke-linecap:round;"/&gt;
      &lt;/g&gt;
@@ -4751,12 +4941,12 @@ z
     &lt;/g&gt;
     &lt;g id="ytick_2"&gt;
      &lt;g id="line2d_12"&gt;
-      &lt;path clip-path="url(#p381b30d6ca)" d="M 68.376563 255.652139 
-L 423.467472 255.652139 
+      &lt;path clip-path="url(#p71f6f6400c)" d="M 68.376563 257.800826 
+L 423.467472 257.800826 
 " style="fill:none;stroke:#ffffff;stroke-linecap:round;"/&gt;
      &lt;/g&gt;
      &lt;g id="text_13"&gt;
-      &lt;!-- 20000 --&gt;
+      &lt;!-- 25000 --&gt;
       &lt;defs&gt;
        &lt;path d="M 50.34375 8.453125 
 L 50.34375 0 
@@ -4782,10 +4972,35 @@ Q 21.1875 15.578125 18.9375 13.203125
 Q 16.703125 10.84375 15.234375 8.453125 
 z
 " id="ArialMT-50"/&gt;
+       &lt;path d="M 4.15625 18.75 
+L 13.375 19.53125 
+Q 14.40625 12.796875 18.140625 9.390625 
+Q 21.875 6 27.15625 6 
+Q 33.5 6 37.890625 10.78125 
+Q 42.28125 15.578125 42.28125 23.484375 
+Q 42.28125 31 38.0625 35.34375 
+Q 33.84375 39.703125 27 39.703125 
+Q 22.75 39.703125 19.328125 37.765625 
+Q 15.921875 35.84375 13.96875 32.765625 
+L 5.71875 33.84375 
+L 12.640625 70.609375 
+L 48.25 70.609375 
+L 48.25 62.203125 
+L 19.671875 62.203125 
+L 15.828125 42.96875 
+Q 22.265625 47.46875 29.34375 47.46875 
+Q 38.71875 47.46875 45.15625 40.96875 
+Q 51.609375 34.46875 51.609375 24.265625 
+Q 51.609375 14.546875 45.953125 7.46875 
+Q 39.0625 -1.21875 27.15625 -1.21875 
+Q 17.390625 -1.21875 11.203125 4.25 
+Q 5.03125 9.71875 4.15625 18.75 
+z
+" id="ArialMT-53"/&gt;
       &lt;/defs&gt;
-      &lt;g style="fill:#262626;" transform="translate(28.291406 259.588936)scale(0.11 -0.11)"&gt;
+      &lt;g style="fill:#262626;" transform="translate(28.291406 261.737623)scale(0.11 -0.11)"&gt;
        &lt;use xlink:href="#ArialMT-50"/&gt;
-       &lt;use x="55.615234" xlink:href="#ArialMT-48"/&gt;
+       &lt;use x="55.615234" xlink:href="#ArialMT-53"/&gt;
        &lt;use x="111.230469" xlink:href="#ArialMT-48"/&gt;
        &lt;use x="166.845703" xlink:href="#ArialMT-48"/&gt;
        &lt;use x="222.460938" xlink:href="#ArialMT-48"/&gt;
@@ -4794,33 +5009,14 @@ z
     &lt;/g&gt;
     &lt;g id="ytick_3"&gt;
      &lt;g id="line2d_13"&gt;
-      &lt;path clip-path="url(#p381b30d6ca)" d="M 68.376563 217.714903 
-L 423.467472 217.714903 
+      &lt;path clip-path="url(#p71f6f6400c)" d="M 68.376563 222.012277 
+L 423.467472 222.012277 
 " style="fill:none;stroke:#ffffff;stroke-linecap:round;"/&gt;
      &lt;/g&gt;
      &lt;g id="text_14"&gt;
-      &lt;!-- 40000 --&gt;
-      &lt;defs&gt;
-       &lt;path d="M 32.328125 0 
-L 32.328125 17.140625 
-L 1.265625 17.140625 
-L 1.265625 25.203125 
-L 33.9375 71.578125 
-L 41.109375 71.578125 
-L 41.109375 25.203125 
-L 50.78125 25.203125 
-L 50.78125 17.140625 
-L 41.109375 17.140625 
-L 41.109375 0 
-z
-M 32.328125 25.203125 
-L 32.328125 57.46875 
-L 9.90625 25.203125 
-z
-" id="ArialMT-52"/&gt;
-      &lt;/defs&gt;
-      &lt;g style="fill:#262626;" transform="translate(28.291406 221.6517)scale(0.11 -0.11)"&gt;
-       &lt;use xlink:href="#ArialMT-52"/&gt;
+      &lt;!-- 50000 --&gt;
+      &lt;g style="fill:#262626;" transform="translate(28.291406 225.949074)scale(0.11 -0.11)"&gt;
+       &lt;use xlink:href="#ArialMT-53"/&gt;
        &lt;use x="55.615234" xlink:href="#ArialMT-48"/&gt;
        &lt;use x="111.230469" xlink:href="#ArialMT-48"/&gt;
        &lt;use x="166.845703" xlink:href="#ArialMT-48"/&gt;
@@ -4830,50 +5026,30 @@ z
     &lt;/g&gt;
     &lt;g id="ytick_4"&gt;
      &lt;g id="line2d_14"&gt;
-      &lt;path clip-path="url(#p381b30d6ca)" d="M 68.376563 179.777667 
-L 423.467472 179.777667 
+      &lt;path clip-path="url(#p71f6f6400c)" d="M 68.376563 186.223728 
+L 423.467472 186.223728 
 " style="fill:none;stroke:#ffffff;stroke-linecap:round;"/&gt;
      &lt;/g&gt;
      &lt;g id="text_15"&gt;
-      &lt;!-- 60000 --&gt;
+      &lt;!-- 75000 --&gt;
       &lt;defs&gt;
-       &lt;path d="M 49.75 54.046875 
-L 41.015625 53.375 
-Q 39.84375 58.546875 37.703125 60.890625 
-Q 34.125 64.65625 28.90625 64.65625 
-Q 24.703125 64.65625 21.53125 62.3125 
-Q 17.390625 59.28125 14.984375 53.46875 
-Q 12.59375 47.65625 12.5 36.921875 
-Q 15.671875 41.75 20.265625 44.09375 
-Q 24.859375 46.4375 29.890625 46.4375 
-Q 38.671875 46.4375 44.84375 39.96875 
-Q 51.03125 33.5 51.03125 23.25 
-Q 51.03125 16.5 48.125 10.71875 
-Q 45.21875 4.9375 40.140625 1.859375 
-Q 35.0625 -1.21875 28.609375 -1.21875 
-Q 17.625 -1.21875 10.6875 6.859375 
-Q 3.765625 14.9375 3.765625 33.5 
-Q 3.765625 54.25 11.421875 63.671875 
-Q 18.109375 71.875 29.4375 71.875 
-Q 37.890625 71.875 43.28125 67.140625 
-Q 48.6875 62.40625 49.75 54.046875 
+       &lt;path d="M 4.734375 62.203125 
+L 4.734375 70.65625 
+L 51.078125 70.65625 
+L 51.078125 63.8125 
+Q 44.234375 56.546875 37.515625 44.484375 
+Q 30.8125 32.421875 27.15625 19.671875 
+Q 24.515625 10.6875 23.78125 0 
+L 14.75 0 
+Q 14.890625 8.453125 18.0625 20.40625 
+Q 21.234375 32.375 27.171875 43.484375 
+Q 33.109375 54.59375 39.796875 62.203125 
 z
-M 13.875 23.1875 
-Q 13.875 18.65625 15.796875 14.5 
-Q 17.71875 10.359375 21.1875 8.171875 
-Q 24.65625 6 28.46875 6 
-Q 34.03125 6 38.03125 10.484375 
-Q 42.046875 14.984375 42.046875 22.703125 
-Q 42.046875 30.125 38.078125 34.390625 
-Q 34.125 38.671875 28.125 38.671875 
-Q 22.171875 38.671875 18.015625 34.390625 
-Q 13.875 30.125 13.875 23.1875 
-z
-" id="ArialMT-54"/&gt;
+" id="ArialMT-55"/&gt;
       &lt;/defs&gt;
-      &lt;g style="fill:#262626;" transform="translate(28.291406 183.714464)scale(0.11 -0.11)"&gt;
-       &lt;use xlink:href="#ArialMT-54"/&gt;
-       &lt;use x="55.615234" xlink:href="#ArialMT-48"/&gt;
+      &lt;g style="fill:#262626;" transform="translate(28.291406 190.160525)scale(0.11 -0.11)"&gt;
+       &lt;use xlink:href="#ArialMT-55"/&gt;
+       &lt;use x="55.615234" xlink:href="#ArialMT-53"/&gt;
        &lt;use x="111.230469" xlink:href="#ArialMT-48"/&gt;
        &lt;use x="166.845703" xlink:href="#ArialMT-48"/&gt;
        &lt;use x="222.460938" xlink:href="#ArialMT-48"/&gt;
@@ -4882,70 +5058,11 @@ z
     &lt;/g&gt;
     &lt;g id="ytick_5"&gt;
      &lt;g id="line2d_15"&gt;
-      &lt;path clip-path="url(#p381b30d6ca)" d="M 68.376563 141.840431 
-L 423.467472 141.840431 
+      &lt;path clip-path="url(#p71f6f6400c)" d="M 68.376563 150.435179 
+L 423.467472 150.435179 
 " style="fill:none;stroke:#ffffff;stroke-linecap:round;"/&gt;
      &lt;/g&gt;
      &lt;g id="text_16"&gt;
-      &lt;!-- 80000 --&gt;
-      &lt;defs&gt;
-       &lt;path d="M 17.671875 38.8125 
-Q 12.203125 40.828125 9.5625 44.53125 
-Q 6.9375 48.25 6.9375 53.421875 
-Q 6.9375 61.234375 12.546875 66.546875 
-Q 18.171875 71.875 27.484375 71.875 
-Q 36.859375 71.875 42.578125 66.421875 
-Q 48.296875 60.984375 48.296875 53.171875 
-Q 48.296875 48.1875 45.671875 44.5 
-Q 43.0625 40.828125 37.75 38.8125 
-Q 44.34375 36.671875 47.78125 31.875 
-Q 51.21875 27.09375 51.21875 20.453125 
-Q 51.21875 11.28125 44.71875 5.03125 
-Q 38.234375 -1.21875 27.640625 -1.21875 
-Q 17.046875 -1.21875 10.546875 5.046875 
-Q 4.046875 11.328125 4.046875 20.703125 
-Q 4.046875 27.6875 7.59375 32.390625 
-Q 11.140625 37.109375 17.671875 38.8125 
-z
-M 15.921875 53.71875 
-Q 15.921875 48.640625 19.1875 45.40625 
-Q 22.46875 42.1875 27.6875 42.1875 
-Q 32.765625 42.1875 36.015625 45.375 
-Q 39.265625 48.578125 39.265625 53.21875 
-Q 39.265625 58.0625 35.90625 61.359375 
-Q 32.5625 64.65625 27.59375 64.65625 
-Q 22.5625 64.65625 19.234375 61.421875 
-Q 15.921875 58.203125 15.921875 53.71875 
-z
-M 13.09375 20.65625 
-Q 13.09375 16.890625 14.875 13.375 
-Q 16.65625 9.859375 20.171875 7.921875 
-Q 23.6875 6 27.734375 6 
-Q 34.03125 6 38.125 10.046875 
-Q 42.234375 14.109375 42.234375 20.359375 
-Q 42.234375 26.703125 38.015625 30.859375 
-Q 33.796875 35.015625 27.4375 35.015625 
-Q 21.234375 35.015625 17.15625 30.90625 
-Q 13.09375 26.8125 13.09375 20.65625 
-z
-" id="ArialMT-56"/&gt;
-      &lt;/defs&gt;
-      &lt;g style="fill:#262626;" transform="translate(28.291406 145.777228)scale(0.11 -0.11)"&gt;
-       &lt;use xlink:href="#ArialMT-56"/&gt;
-       &lt;use x="55.615234" xlink:href="#ArialMT-48"/&gt;
-       &lt;use x="111.230469" xlink:href="#ArialMT-48"/&gt;
-       &lt;use x="166.845703" xlink:href="#ArialMT-48"/&gt;
-       &lt;use x="222.460938" xlink:href="#ArialMT-48"/&gt;
-      &lt;/g&gt;
-     &lt;/g&gt;
-    &lt;/g&gt;
-    &lt;g id="ytick_6"&gt;
-     &lt;g id="line2d_16"&gt;
-      &lt;path clip-path="url(#p381b30d6ca)" d="M 68.376563 103.903195 
-L 423.467472 103.903195 
-" style="fill:none;stroke:#ffffff;stroke-linecap:round;"/&gt;
-     &lt;/g&gt;
-     &lt;g id="text_17"&gt;
       &lt;!-- 100000 --&gt;
       &lt;defs&gt;
        &lt;path d="M 37.25 0 
@@ -4960,7 +5077,7 @@ L 37.25 71.875
 z
 " id="ArialMT-49"/&gt;
       &lt;/defs&gt;
-      &lt;g style="fill:#262626;" transform="translate(22.174375 107.839992)scale(0.11 -0.11)"&gt;
+      &lt;g style="fill:#262626;" transform="translate(22.174375 154.371976)scale(0.11 -0.11)"&gt;
        &lt;use xlink:href="#ArialMT-49"/&gt;
        &lt;use x="55.615234" xlink:href="#ArialMT-48"/&gt;
        &lt;use x="111.230469" xlink:href="#ArialMT-48"/&gt;
@@ -4970,17 +5087,35 @@ z
       &lt;/g&gt;
      &lt;/g&gt;
     &lt;/g&gt;
+    &lt;g id="ytick_6"&gt;
+     &lt;g id="line2d_16"&gt;
+      &lt;path clip-path="url(#p71f6f6400c)" d="M 68.376563 114.64663 
+L 423.467472 114.64663 
+" style="fill:none;stroke:#ffffff;stroke-linecap:round;"/&gt;
+     &lt;/g&gt;
+     &lt;g id="text_17"&gt;
+      &lt;!-- 125000 --&gt;
+      &lt;g style="fill:#262626;" transform="translate(22.174375 118.583427)scale(0.11 -0.11)"&gt;
+       &lt;use xlink:href="#ArialMT-49"/&gt;
+       &lt;use x="55.615234" xlink:href="#ArialMT-50"/&gt;
+       &lt;use x="111.230469" xlink:href="#ArialMT-53"/&gt;
+       &lt;use x="166.845703" xlink:href="#ArialMT-48"/&gt;
+       &lt;use x="222.460938" xlink:href="#ArialMT-48"/&gt;
+       &lt;use x="278.076172" xlink:href="#ArialMT-48"/&gt;
+      &lt;/g&gt;
+     &lt;/g&gt;
+    &lt;/g&gt;
     &lt;g id="ytick_7"&gt;
      &lt;g id="line2d_17"&gt;
-      &lt;path clip-path="url(#p381b30d6ca)" d="M 68.376563 65.965959 
-L 423.467472 65.965959 
+      &lt;path clip-path="url(#p71f6f6400c)" d="M 68.376563 78.858081 
+L 423.467472 78.858081 
 " style="fill:none;stroke:#ffffff;stroke-linecap:round;"/&gt;
      &lt;/g&gt;
      &lt;g id="text_18"&gt;
-      &lt;!-- 120000 --&gt;
-      &lt;g style="fill:#262626;" transform="translate(22.174375 69.902755)scale(0.11 -0.11)"&gt;
+      &lt;!-- 150000 --&gt;
+      &lt;g style="fill:#262626;" transform="translate(22.174375 82.794878)scale(0.11 -0.11)"&gt;
        &lt;use xlink:href="#ArialMT-49"/&gt;
-       &lt;use x="55.615234" xlink:href="#ArialMT-50"/&gt;
+       &lt;use x="55.615234" xlink:href="#ArialMT-53"/&gt;
        &lt;use x="111.230469" xlink:href="#ArialMT-48"/&gt;
        &lt;use x="166.845703" xlink:href="#ArialMT-48"/&gt;
        &lt;use x="222.460938" xlink:href="#ArialMT-48"/&gt;
@@ -4990,16 +5125,16 @@ L 423.467472 65.965959
     &lt;/g&gt;
     &lt;g id="ytick_8"&gt;
      &lt;g id="line2d_18"&gt;
-      &lt;path clip-path="url(#p381b30d6ca)" d="M 68.376563 28.028723 
-L 423.467472 28.028723 
+      &lt;path clip-path="url(#p71f6f6400c)" d="M 68.376563 43.069533 
+L 423.467472 43.069533 
 " style="fill:none;stroke:#ffffff;stroke-linecap:round;"/&gt;
      &lt;/g&gt;
      &lt;g id="text_19"&gt;
-      &lt;!-- 140000 --&gt;
-      &lt;g style="fill:#262626;" transform="translate(22.174375 31.965519)scale(0.11 -0.11)"&gt;
+      &lt;!-- 175000 --&gt;
+      &lt;g style="fill:#262626;" transform="translate(22.174375 47.006329)scale(0.11 -0.11)"&gt;
        &lt;use xlink:href="#ArialMT-49"/&gt;
-       &lt;use x="55.615234" xlink:href="#ArialMT-52"/&gt;
-       &lt;use x="111.230469" xlink:href="#ArialMT-48"/&gt;
+       &lt;use x="55.615234" xlink:href="#ArialMT-55"/&gt;
+       &lt;use x="111.230469" xlink:href="#ArialMT-53"/&gt;
        &lt;use x="166.845703" xlink:href="#ArialMT-48"/&gt;
        &lt;use x="222.460938" xlink:href="#ArialMT-48"/&gt;
        &lt;use x="278.076172" xlink:href="#ArialMT-48"/&gt;
@@ -5056,7 +5191,7 @@ z
     &lt;/g&gt;
    &lt;/g&gt;
    &lt;g id="patch_3"&gt;
-    &lt;path clip-path="url(#p381b30d6ca)" d="M 77.253835 293.589375 
+    &lt;path clip-path="url(#p71f6f6400c)" d="M 77.253835 293.589375 
 L 95.008381 293.589375 
 L 95.008381 34.732232 
 L 77.253835 34.732232 
@@ -5064,74 +5199,74 @@ z
 " style="fill:#8dd3c7;stroke:#ffffff;stroke-linejoin:miter;"/&gt;
    &lt;/g&gt;
    &lt;g id="patch_4"&gt;
-    &lt;path clip-path="url(#p381b30d6ca)" d="M 112.762926 293.589375 
+    &lt;path clip-path="url(#p71f6f6400c)" d="M 112.762926 293.589375 
 L 130.517472 293.589375 
-L 130.517472 152.969319 
-L 112.762926 152.969319 
+L 130.517472 123.738353 
+L 112.762926 123.738353 
 z
 " style="fill:#8dd3c7;stroke:#ffffff;stroke-linejoin:miter;"/&gt;
    &lt;/g&gt;
    &lt;g id="patch_5"&gt;
-    &lt;path clip-path="url(#p381b30d6ca)" d="M 148.272017 293.589375 
+    &lt;path clip-path="url(#p71f6f6400c)" d="M 148.272017 293.589375 
 L 166.026563 293.589375 
-L 166.026563 208.291293 
-L 148.272017 208.291293 
+L 166.026563 203.983438 
+L 148.272017 203.983438 
 z
 " style="fill:#8dd3c7;stroke:#ffffff;stroke-linejoin:miter;"/&gt;
    &lt;/g&gt;
    &lt;g id="patch_6"&gt;
-    &lt;path clip-path="url(#p381b30d6ca)" d="M 183.781108 293.589375 
+    &lt;path clip-path="url(#p71f6f6400c)" d="M 183.781108 293.589375 
 L 201.535653 293.589375 
-L 201.535653 224.682076 
-L 183.781108 224.682076 
+L 201.535653 205.50803 
+L 183.781108 205.50803 
 z
 " style="fill:#8dd3c7;stroke:#ffffff;stroke-linejoin:miter;"/&gt;
    &lt;/g&gt;
    &lt;g id="patch_7"&gt;
-    &lt;path clip-path="url(#p381b30d6ca)" d="M 219.290199 293.589375 
+    &lt;path clip-path="url(#p71f6f6400c)" d="M 219.290199 293.589375 
 L 237.044744 293.589375 
-L 237.044744 227.229562 
-L 219.290199 227.229562 
+L 237.044744 230.608687 
+L 219.290199 230.608687 
 z
 " style="fill:#8dd3c7;stroke:#ffffff;stroke-linejoin:miter;"/&gt;
    &lt;/g&gt;
    &lt;g id="patch_8"&gt;
-    &lt;path clip-path="url(#p381b30d6ca)" d="M 254.79929 293.589375 
+    &lt;path clip-path="url(#p71f6f6400c)" d="M 254.79929 293.589375 
 L 272.553835 293.589375 
-L 272.553835 236.814404 
-L 254.79929 236.814404 
+L 272.553835 242.822603 
+L 254.79929 242.822603 
 z
 " style="fill:#8dd3c7;stroke:#ffffff;stroke-linejoin:miter;"/&gt;
    &lt;/g&gt;
    &lt;g id="patch_9"&gt;
-    &lt;path clip-path="url(#p381b30d6ca)" d="M 290.308381 293.589375 
+    &lt;path clip-path="url(#p71f6f6400c)" d="M 290.308381 293.589375 
 L 308.062926 293.589375 
-L 308.062926 239.050804 
-L 290.308381 239.050804 
+L 308.062926 250.011806 
+L 290.308381 250.011806 
 z
 " style="fill:#8dd3c7;stroke:#ffffff;stroke-linejoin:miter;"/&gt;
    &lt;/g&gt;
    &lt;g id="patch_10"&gt;
-    &lt;path clip-path="url(#p381b30d6ca)" d="M 325.817472 293.589375 
+    &lt;path clip-path="url(#p71f6f6400c)" d="M 325.817472 293.589375 
 L 343.572017 293.589375 
-L 343.572017 247.478561 
-L 325.817472 247.478561 
+L 343.572017 252.080384 
+L 325.817472 252.080384 
 z
 " style="fill:#8dd3c7;stroke:#ffffff;stroke-linejoin:miter;"/&gt;
    &lt;/g&gt;
    &lt;g id="patch_11"&gt;
-    &lt;path clip-path="url(#p381b30d6ca)" d="M 361.326563 293.589375 
+    &lt;path clip-path="url(#p71f6f6400c)" d="M 361.326563 293.589375 
 L 379.081108 293.589375 
-L 379.081108 268.529934 
-L 361.326563 268.529934 
+L 379.081108 253.328689 
+L 361.326563 253.328689 
 z
 " style="fill:#8dd3c7;stroke:#ffffff;stroke-linejoin:miter;"/&gt;
    &lt;/g&gt;
    &lt;g id="patch_12"&gt;
-    &lt;path clip-path="url(#p381b30d6ca)" d="M 396.835653 293.589375 
+    &lt;path clip-path="url(#p71f6f6400c)" d="M 396.835653 293.589375 
 L 414.590199 293.589375 
-L 414.590199 270.392652 
-L 396.835653 270.392652 
+L 414.590199 263.330873 
+L 396.835653 263.330873 
 z
 " style="fill:#8dd3c7;stroke:#ffffff;stroke-linejoin:miter;"/&gt;
    &lt;/g&gt;
@@ -5202,7 +5337,7 @@ z
    &lt;g id="matplotlib.axis_3"&gt;
     &lt;g id="xtick_11"&gt;
      &lt;g id="line2d_19"&gt;
-      &lt;path clip-path="url(#pcd548d4cc6)" d="M 512.240199 293.589375 
+      &lt;path clip-path="url(#pa6f60f0003)" d="M 512.240199 293.589375 
 L 512.240199 21.789375 
 " style="fill:none;stroke:#ffffff;stroke-linecap:round;"/&gt;
      &lt;/g&gt;
@@ -5224,13 +5359,29 @@ L 512.240199 21.789375
     &lt;/g&gt;
     &lt;g id="xtick_12"&gt;
      &lt;g id="line2d_20"&gt;
-      &lt;path clip-path="url(#pcd548d4cc6)" d="M 547.74929 293.589375 
+      &lt;path clip-path="url(#pa6f60f0003)" d="M 547.74929 293.589375 
 L 547.74929 21.789375 
 " style="fill:none;stroke:#ffffff;stroke-linecap:round;"/&gt;
      &lt;/g&gt;
      &lt;g id="text_23"&gt;
+      &lt;!-- Peru --&gt;
+      &lt;g style="fill:#262626;" transform="translate(550.592962 326.323437)rotate(-90)scale(0.11 -0.11)"&gt;
+       &lt;use xlink:href="#ArialMT-80"/&gt;
+       &lt;use x="66.699219" xlink:href="#ArialMT-101"/&gt;
+       &lt;use x="122.314453" xlink:href="#ArialMT-114"/&gt;
+       &lt;use x="155.615234" xlink:href="#ArialMT-117"/&gt;
+      &lt;/g&gt;
+     &lt;/g&gt;
+    &lt;/g&gt;
+    &lt;g id="xtick_13"&gt;
+     &lt;g id="line2d_21"&gt;
+      &lt;path clip-path="url(#pa6f60f0003)" d="M 583.258381 293.589375 
+L 583.258381 21.789375 
+" style="fill:none;stroke:#ffffff;stroke-linecap:round;"/&gt;
+     &lt;/g&gt;
+     &lt;g id="text_24"&gt;
       &lt;!-- Belgium --&gt;
-      &lt;g style="fill:#262626;" transform="translate(550.528509 342.828594)rotate(-90)scale(0.11 -0.11)"&gt;
+      &lt;g style="fill:#262626;" transform="translate(586.037599 342.828594)rotate(-90)scale(0.11 -0.11)"&gt;
        &lt;use xlink:href="#ArialMT-66"/&gt;
        &lt;use x="66.699219" xlink:href="#ArialMT-101"/&gt;
        &lt;use x="122.314453" xlink:href="#ArialMT-108"/&gt;
@@ -5241,35 +5392,9 @@ L 547.74929 21.789375
       &lt;/g&gt;
      &lt;/g&gt;
     &lt;/g&gt;
-    &lt;g id="xtick_13"&gt;
-     &lt;g id="line2d_21"&gt;
-      &lt;path clip-path="url(#pcd548d4cc6)" d="M 583.258381 293.589375 
-L 583.258381 21.789375 
-" style="fill:none;stroke:#ffffff;stroke-linecap:round;"/&gt;
-     &lt;/g&gt;
-     &lt;g id="text_24"&gt;
-      &lt;!-- United Kingdom --&gt;
-      &lt;g style="fill:#262626;" transform="translate(586.037599 381.352656)rotate(-90)scale(0.11 -0.11)"&gt;
-       &lt;use xlink:href="#ArialMT-85"/&gt;
-       &lt;use x="72.216797" xlink:href="#ArialMT-110"/&gt;
-       &lt;use x="127.832031" xlink:href="#ArialMT-105"/&gt;
-       &lt;use x="150.048828" xlink:href="#ArialMT-116"/&gt;
-       &lt;use x="177.832031" xlink:href="#ArialMT-101"/&gt;
-       &lt;use x="233.447266" xlink:href="#ArialMT-100"/&gt;
-       &lt;use x="289.0625" xlink:href="#ArialMT-32"/&gt;
-       &lt;use x="316.845703" xlink:href="#ArialMT-75"/&gt;
-       &lt;use x="383.544922" xlink:href="#ArialMT-105"/&gt;
-       &lt;use x="405.761719" xlink:href="#ArialMT-110"/&gt;
-       &lt;use x="461.376953" xlink:href="#ArialMT-103"/&gt;
-       &lt;use x="516.992188" xlink:href="#ArialMT-100"/&gt;
-       &lt;use x="572.607422" xlink:href="#ArialMT-111"/&gt;
-       &lt;use x="628.222656" xlink:href="#ArialMT-109"/&gt;
-      &lt;/g&gt;
-     &lt;/g&gt;
-    &lt;/g&gt;
     &lt;g id="xtick_14"&gt;
      &lt;g id="line2d_22"&gt;
-      &lt;path clip-path="url(#pcd548d4cc6)" d="M 618.767472 293.589375 
+      &lt;path clip-path="url(#pa6f60f0003)" d="M 618.767472 293.589375 
 L 618.767472 21.789375 
 " style="fill:none;stroke:#ffffff;stroke-linecap:round;"/&gt;
      &lt;/g&gt;
@@ -5288,13 +5413,39 @@ L 618.767472 21.789375
     &lt;/g&gt;
     &lt;g id="xtick_15"&gt;
      &lt;g id="line2d_23"&gt;
-      &lt;path clip-path="url(#pcd548d4cc6)" d="M 654.276562 293.589375 
+      &lt;path clip-path="url(#pa6f60f0003)" d="M 654.276562 293.589375 
 L 654.276562 21.789375 
 " style="fill:none;stroke:#ffffff;stroke-linecap:round;"/&gt;
      &lt;/g&gt;
      &lt;g id="text_26"&gt;
+      &lt;!-- United Kingdom --&gt;
+      &lt;g style="fill:#262626;" transform="translate(657.055781 381.352656)rotate(-90)scale(0.11 -0.11)"&gt;
+       &lt;use xlink:href="#ArialMT-85"/&gt;
+       &lt;use x="72.216797" xlink:href="#ArialMT-110"/&gt;
+       &lt;use x="127.832031" xlink:href="#ArialMT-105"/&gt;
+       &lt;use x="150.048828" xlink:href="#ArialMT-116"/&gt;
+       &lt;use x="177.832031" xlink:href="#ArialMT-101"/&gt;
+       &lt;use x="233.447266" xlink:href="#ArialMT-100"/&gt;
+       &lt;use x="289.0625" xlink:href="#ArialMT-32"/&gt;
+       &lt;use x="316.845703" xlink:href="#ArialMT-75"/&gt;
+       &lt;use x="383.544922" xlink:href="#ArialMT-105"/&gt;
+       &lt;use x="405.761719" xlink:href="#ArialMT-110"/&gt;
+       &lt;use x="461.376953" xlink:href="#ArialMT-103"/&gt;
+       &lt;use x="516.992188" xlink:href="#ArialMT-100"/&gt;
+       &lt;use x="572.607422" xlink:href="#ArialMT-111"/&gt;
+       &lt;use x="628.222656" xlink:href="#ArialMT-109"/&gt;
+      &lt;/g&gt;
+     &lt;/g&gt;
+    &lt;/g&gt;
+    &lt;g id="xtick_16"&gt;
+     &lt;g id="line2d_24"&gt;
+      &lt;path clip-path="url(#pa6f60f0003)" d="M 689.785653 293.589375 
+L 689.785653 21.789375 
+" style="fill:none;stroke:#ffffff;stroke-linecap:round;"/&gt;
+     &lt;/g&gt;
+     &lt;g id="text_27"&gt;
       &lt;!-- Spain --&gt;
-      &lt;g style="fill:#262626;" transform="translate(657.187266 331.221875)rotate(-90)scale(0.11 -0.11)"&gt;
+      &lt;g style="fill:#262626;" transform="translate(692.696357 331.221875)rotate(-90)scale(0.11 -0.11)"&gt;
        &lt;use xlink:href="#ArialMT-83"/&gt;
        &lt;use x="66.699219" xlink:href="#ArialMT-112"/&gt;
        &lt;use x="122.314453" xlink:href="#ArialMT-97"/&gt;
@@ -5303,15 +5454,32 @@ L 654.276562 21.789375
       &lt;/g&gt;
      &lt;/g&gt;
     &lt;/g&gt;
-    &lt;g id="xtick_16"&gt;
-     &lt;g id="line2d_24"&gt;
-      &lt;path clip-path="url(#pcd548d4cc6)" d="M 689.785653 293.589375 
-L 689.785653 21.789375 
+    &lt;g id="xtick_17"&gt;
+     &lt;g id="line2d_25"&gt;
+      &lt;path clip-path="url(#pa6f60f0003)" d="M 725.294744 293.589375 
+L 725.294744 21.789375 
 " style="fill:none;stroke:#ffffff;stroke-linecap:round;"/&gt;
      &lt;/g&gt;
-     &lt;g id="text_27"&gt;
+     &lt;g id="text_28"&gt;
+      &lt;!-- Chile --&gt;
+      &lt;g style="fill:#262626;" transform="translate(728.138416 328.155625)rotate(-90)scale(0.11 -0.11)"&gt;
+       &lt;use xlink:href="#ArialMT-67"/&gt;
+       &lt;use x="72.216797" xlink:href="#ArialMT-104"/&gt;
+       &lt;use x="127.832031" xlink:href="#ArialMT-105"/&gt;
+       &lt;use x="150.048828" xlink:href="#ArialMT-108"/&gt;
+       &lt;use x="172.265625" xlink:href="#ArialMT-101"/&gt;
+      &lt;/g&gt;
+     &lt;/g&gt;
+    &lt;/g&gt;
+    &lt;g id="xtick_18"&gt;
+     &lt;g id="line2d_26"&gt;
+      &lt;path clip-path="url(#pa6f60f0003)" d="M 760.803835 293.589375 
+L 760.803835 21.789375 
+" style="fill:none;stroke:#ffffff;stroke-linecap:round;"/&gt;
+     &lt;/g&gt;
+     &lt;g id="text_29"&gt;
       &lt;!-- Italy --&gt;
-      &lt;g style="fill:#262626;" transform="translate(692.564872 323.262344)rotate(-90)scale(0.11 -0.11)"&gt;
+      &lt;g style="fill:#262626;" transform="translate(763.583054 323.262344)rotate(-90)scale(0.11 -0.11)"&gt;
        &lt;use xlink:href="#ArialMT-73"/&gt;
        &lt;use x="27.783203" xlink:href="#ArialMT-116"/&gt;
        &lt;use x="55.566406" xlink:href="#ArialMT-97"/&gt;
@@ -5320,13 +5488,13 @@ L 689.785653 21.789375
       &lt;/g&gt;
      &lt;/g&gt;
     &lt;/g&gt;
-    &lt;g id="xtick_17"&gt;
-     &lt;g id="line2d_25"&gt;
-      &lt;path clip-path="url(#pcd548d4cc6)" d="M 725.294744 293.589375 
-L 725.294744 21.789375 
+    &lt;g id="xtick_19"&gt;
+     &lt;g id="line2d_27"&gt;
+      &lt;path clip-path="url(#pa6f60f0003)" d="M 796.312926 293.589375 
+L 796.312926 21.789375 
 " style="fill:none;stroke:#ffffff;stroke-linecap:round;"/&gt;
      &lt;/g&gt;
-     &lt;g id="text_28"&gt;
+     &lt;g id="text_30"&gt;
       &lt;!-- Sweden --&gt;
       &lt;defs&gt;
        &lt;path d="M 16.15625 0 
@@ -5350,7 +5518,7 @@ L 25.34375 0
 z
 " id="ArialMT-119"/&gt;
       &lt;/defs&gt;
-      &lt;g style="fill:#262626;" transform="translate(728.138416 342.838906)rotate(-90)scale(0.11 -0.11)"&gt;
+      &lt;g style="fill:#262626;" transform="translate(799.156598 342.838906)rotate(-90)scale(0.11 -0.11)"&gt;
        &lt;use xlink:href="#ArialMT-83"/&gt;
        &lt;use x="66.699219" xlink:href="#ArialMT-119"/&gt;
        &lt;use x="138.916016" xlink:href="#ArialMT-101"/&gt;
@@ -5360,54 +5528,21 @@ z
       &lt;/g&gt;
      &lt;/g&gt;
     &lt;/g&gt;
-    &lt;g id="xtick_18"&gt;
-     &lt;g id="line2d_26"&gt;
-      &lt;path clip-path="url(#pcd548d4cc6)" d="M 760.803835 293.589375 
-L 760.803835 21.789375 
-" style="fill:none;stroke:#ffffff;stroke-linecap:round;"/&gt;
-     &lt;/g&gt;
-     &lt;g id="text_29"&gt;
-      &lt;!-- France --&gt;
-      &lt;g style="fill:#262626;" transform="translate(763.647507 337.321719)rotate(-90)scale(0.11 -0.11)"&gt;
-       &lt;use xlink:href="#ArialMT-70"/&gt;
-       &lt;use x="61.083984" xlink:href="#ArialMT-114"/&gt;
-       &lt;use x="94.384766" xlink:href="#ArialMT-97"/&gt;
-       &lt;use x="150" xlink:href="#ArialMT-110"/&gt;
-       &lt;use x="205.615234" xlink:href="#ArialMT-99"/&gt;
-       &lt;use x="255.615234" xlink:href="#ArialMT-101"/&gt;
-      &lt;/g&gt;
-     &lt;/g&gt;
-    &lt;/g&gt;
-    &lt;g id="xtick_19"&gt;
-     &lt;g id="line2d_27"&gt;
-      &lt;path clip-path="url(#pcd548d4cc6)" d="M 796.312926 293.589375 
-L 796.312926 21.789375 
-" style="fill:none;stroke:#ffffff;stroke-linecap:round;"/&gt;
-     &lt;/g&gt;
-     &lt;g id="text_30"&gt;
-      &lt;!-- Peru --&gt;
-      &lt;g style="fill:#262626;" transform="translate(799.156598 326.323437)rotate(-90)scale(0.11 -0.11)"&gt;
-       &lt;use xlink:href="#ArialMT-80"/&gt;
-       &lt;use x="66.699219" xlink:href="#ArialMT-101"/&gt;
-       &lt;use x="122.314453" xlink:href="#ArialMT-114"/&gt;
-       &lt;use x="155.615234" xlink:href="#ArialMT-117"/&gt;
-      &lt;/g&gt;
-     &lt;/g&gt;
-    &lt;/g&gt;
     &lt;g id="xtick_20"&gt;
      &lt;g id="line2d_28"&gt;
-      &lt;path clip-path="url(#pcd548d4cc6)" d="M 831.822017 293.589375 
+      &lt;path clip-path="url(#pa6f60f0003)" d="M 831.822017 293.589375 
 L 831.822017 21.789375 
 " style="fill:none;stroke:#ffffff;stroke-linecap:round;"/&gt;
      &lt;/g&gt;
      &lt;g id="text_31"&gt;
-      &lt;!-- Chile --&gt;
-      &lt;g style="fill:#262626;" transform="translate(834.665689 328.155625)rotate(-90)scale(0.11 -0.11)"&gt;
-       &lt;use xlink:href="#ArialMT-67"/&gt;
-       &lt;use x="72.216797" xlink:href="#ArialMT-104"/&gt;
-       &lt;use x="127.832031" xlink:href="#ArialMT-105"/&gt;
-       &lt;use x="150.048828" xlink:href="#ArialMT-108"/&gt;
-       &lt;use x="172.265625" xlink:href="#ArialMT-101"/&gt;
+      &lt;!-- Brazil --&gt;
+      &lt;g style="fill:#262626;" transform="translate(834.665689 330.594531)rotate(-90)scale(0.11 -0.11)"&gt;
+       &lt;use xlink:href="#ArialMT-66"/&gt;
+       &lt;use x="66.699219" xlink:href="#ArialMT-114"/&gt;
+       &lt;use x="100" xlink:href="#ArialMT-97"/&gt;
+       &lt;use x="155.615234" xlink:href="#ArialMT-122"/&gt;
+       &lt;use x="205.615234" xlink:href="#ArialMT-105"/&gt;
+       &lt;use x="227.832031" xlink:href="#ArialMT-108"/&gt;
       &lt;/g&gt;
      &lt;/g&gt;
     &lt;/g&gt;
@@ -5427,7 +5562,7 @@ L 831.822017 21.789375
    &lt;g id="matplotlib.axis_4"&gt;
     &lt;g id="ytick_9"&gt;
      &lt;g id="line2d_29"&gt;
-      &lt;path clip-path="url(#pcd548d4cc6)" d="M 494.485653 293.589375 
+      &lt;path clip-path="url(#pa6f60f0003)" d="M 494.485653 293.589375 
 L 849.576562 293.589375 
 " style="fill:none;stroke:#ffffff;stroke-linecap:round;"/&gt;
      &lt;/g&gt;
@@ -5440,7 +5575,7 @@ L 849.576562 293.589375
     &lt;/g&gt;
     &lt;g id="ytick_10"&gt;
      &lt;g id="line2d_30"&gt;
-      &lt;path clip-path="url(#pcd548d4cc6)" d="M 494.485653 251.944191 
+      &lt;path clip-path="url(#pa6f60f0003)" d="M 494.485653 251.944191 
 L 849.576562 251.944191 
 " style="fill:none;stroke:#ffffff;stroke-linecap:round;"/&gt;
      &lt;/g&gt;
@@ -5455,12 +5590,31 @@ L 849.576562 251.944191
     &lt;/g&gt;
     &lt;g id="ytick_11"&gt;
      &lt;g id="line2d_31"&gt;
-      &lt;path clip-path="url(#pcd548d4cc6)" d="M 494.485653 210.299008 
+      &lt;path clip-path="url(#pa6f60f0003)" d="M 494.485653 210.299008 
 L 849.576562 210.299008 
 " style="fill:none;stroke:#ffffff;stroke-linecap:round;"/&gt;
      &lt;/g&gt;
      &lt;g id="text_35"&gt;
       &lt;!-- 400 --&gt;
+      &lt;defs&gt;
+       &lt;path d="M 32.328125 0 
+L 32.328125 17.140625 
+L 1.265625 17.140625 
+L 1.265625 25.203125 
+L 33.9375 71.578125 
+L 41.109375 71.578125 
+L 41.109375 25.203125 
+L 50.78125 25.203125 
+L 50.78125 17.140625 
+L 41.109375 17.140625 
+L 41.109375 0 
+z
+M 32.328125 25.203125 
+L 32.328125 57.46875 
+L 9.90625 25.203125 
+z
+" id="ArialMT-52"/&gt;
+      &lt;/defs&gt;
       &lt;g style="fill:#262626;" transform="translate(466.63456 214.235805)scale(0.11 -0.11)"&gt;
        &lt;use xlink:href="#ArialMT-52"/&gt;
        &lt;use x="55.615234" xlink:href="#ArialMT-48"/&gt;
@@ -5470,12 +5624,47 @@ L 849.576562 210.299008
     &lt;/g&gt;
     &lt;g id="ytick_12"&gt;
      &lt;g id="line2d_32"&gt;
-      &lt;path clip-path="url(#pcd548d4cc6)" d="M 494.485653 168.653824 
+      &lt;path clip-path="url(#pa6f60f0003)" d="M 494.485653 168.653824 
 L 849.576562 168.653824 
 " style="fill:none;stroke:#ffffff;stroke-linecap:round;"/&gt;
      &lt;/g&gt;
      &lt;g id="text_36"&gt;
       &lt;!-- 600 --&gt;
+      &lt;defs&gt;
+       &lt;path d="M 49.75 54.046875 
+L 41.015625 53.375 
+Q 39.84375 58.546875 37.703125 60.890625 
+Q 34.125 64.65625 28.90625 64.65625 
+Q 24.703125 64.65625 21.53125 62.3125 
+Q 17.390625 59.28125 14.984375 53.46875 
+Q 12.59375 47.65625 12.5 36.921875 
+Q 15.671875 41.75 20.265625 44.09375 
+Q 24.859375 46.4375 29.890625 46.4375 
+Q 38.671875 46.4375 44.84375 39.96875 
+Q 51.03125 33.5 51.03125 23.25 
+Q 51.03125 16.5 48.125 10.71875 
+Q 45.21875 4.9375 40.140625 1.859375 
+Q 35.0625 -1.21875 28.609375 -1.21875 
+Q 17.625 -1.21875 10.6875 6.859375 
+Q 3.765625 14.9375 3.765625 33.5 
+Q 3.765625 54.25 11.421875 63.671875 
+Q 18.109375 71.875 29.4375 71.875 
+Q 37.890625 71.875 43.28125 67.140625 
+Q 48.6875 62.40625 49.75 54.046875 
+z
+M 13.875 23.1875 
+Q 13.875 18.65625 15.796875 14.5 
+Q 17.71875 10.359375 21.1875 8.171875 
+Q 24.65625 6 28.46875 6 
+Q 34.03125 6 38.03125 10.484375 
+Q 42.046875 14.984375 42.046875 22.703125 
+Q 42.046875 30.125 38.078125 34.390625 
+Q 34.125 38.671875 28.125 38.671875 
+Q 22.171875 38.671875 18.015625 34.390625 
+Q 13.875 30.125 13.875 23.1875 
+z
+" id="ArialMT-54"/&gt;
+      &lt;/defs&gt;
       &lt;g style="fill:#262626;" transform="translate(466.63456 172.590621)scale(0.11 -0.11)"&gt;
        &lt;use xlink:href="#ArialMT-54"/&gt;
        &lt;use x="55.615234" xlink:href="#ArialMT-48"/&gt;
@@ -5485,12 +5674,54 @@ L 849.576562 168.653824
     &lt;/g&gt;
     &lt;g id="ytick_13"&gt;
      &lt;g id="line2d_33"&gt;
-      &lt;path clip-path="url(#pcd548d4cc6)" d="M 494.485653 127.00864 
+      &lt;path clip-path="url(#pa6f60f0003)" d="M 494.485653 127.00864 
 L 849.576562 127.00864 
 " style="fill:none;stroke:#ffffff;stroke-linecap:round;"/&gt;
      &lt;/g&gt;
      &lt;g id="text_37"&gt;
       &lt;!-- 800 --&gt;
+      &lt;defs&gt;
+       &lt;path d="M 17.671875 38.8125 
+Q 12.203125 40.828125 9.5625 44.53125 
+Q 6.9375 48.25 6.9375 53.421875 
+Q 6.9375 61.234375 12.546875 66.546875 
+Q 18.171875 71.875 27.484375 71.875 
+Q 36.859375 71.875 42.578125 66.421875 
+Q 48.296875 60.984375 48.296875 53.171875 
+Q 48.296875 48.1875 45.671875 44.5 
+Q 43.0625 40.828125 37.75 38.8125 
+Q 44.34375 36.671875 47.78125 31.875 
+Q 51.21875 27.09375 51.21875 20.453125 
+Q 51.21875 11.28125 44.71875 5.03125 
+Q 38.234375 -1.21875 27.640625 -1.21875 
+Q 17.046875 -1.21875 10.546875 5.046875 
+Q 4.046875 11.328125 4.046875 20.703125 
+Q 4.046875 27.6875 7.59375 32.390625 
+Q 11.140625 37.109375 17.671875 38.8125 
+z
+M 15.921875 53.71875 
+Q 15.921875 48.640625 19.1875 45.40625 
+Q 22.46875 42.1875 27.6875 42.1875 
+Q 32.765625 42.1875 36.015625 45.375 
+Q 39.265625 48.578125 39.265625 53.21875 
+Q 39.265625 58.0625 35.90625 61.359375 
+Q 32.5625 64.65625 27.59375 64.65625 
+Q 22.5625 64.65625 19.234375 61.421875 
+Q 15.921875 58.203125 15.921875 53.71875 
+z
+M 13.09375 20.65625 
+Q 13.09375 16.890625 14.875 13.375 
+Q 16.65625 9.859375 20.171875 7.921875 
+Q 23.6875 6 27.734375 6 
+Q 34.03125 6 38.125 10.046875 
+Q 42.234375 14.109375 42.234375 20.359375 
+Q 42.234375 26.703125 38.015625 30.859375 
+Q 33.796875 35.015625 27.4375 35.015625 
+Q 21.234375 35.015625 17.15625 30.90625 
+Q 13.09375 26.8125 13.09375 20.65625 
+z
+" id="ArialMT-56"/&gt;
+      &lt;/defs&gt;
       &lt;g style="fill:#262626;" transform="translate(466.63456 130.945437)scale(0.11 -0.11)"&gt;
        &lt;use xlink:href="#ArialMT-56"/&gt;
        &lt;use x="55.615234" xlink:href="#ArialMT-48"/&gt;
@@ -5500,7 +5731,7 @@ L 849.576562 127.00864
     &lt;/g&gt;
     &lt;g id="ytick_14"&gt;
      &lt;g id="line2d_34"&gt;
-      &lt;path clip-path="url(#pcd548d4cc6)" d="M 494.485653 85.363457 
+      &lt;path clip-path="url(#pa6f60f0003)" d="M 494.485653 85.363457 
 L 849.576562 85.363457 
 " style="fill:none;stroke:#ffffff;stroke-linecap:round;"/&gt;
      &lt;/g&gt;
@@ -5516,7 +5747,7 @@ L 849.576562 85.363457
     &lt;/g&gt;
     &lt;g id="ytick_15"&gt;
      &lt;g id="line2d_35"&gt;
-      &lt;path clip-path="url(#pcd548d4cc6)" d="M 494.485653 43.718273 
+      &lt;path clip-path="url(#pa6f60f0003)" d="M 494.485653 43.718273 
 L 849.576562 43.718273 
 " style="fill:none;stroke:#ffffff;stroke-linecap:round;"/&gt;
      &lt;/g&gt;
@@ -5578,7 +5809,7 @@ L 849.576562 43.718273
     &lt;/g&gt;
    &lt;/g&gt;
    &lt;g id="patch_18"&gt;
-    &lt;path clip-path="url(#pcd548d4cc6)" d="M 503.362926 293.589375 
+    &lt;path clip-path="url(#pa6f60f0003)" d="M 503.362926 293.589375 
 L 521.117472 293.589375 
 L 521.117472 34.732232 
 L 503.362926 34.732232 
@@ -5586,74 +5817,74 @@ z
 " style="fill:#80b1d3;stroke:#ffffff;stroke-linejoin:miter;"/&gt;
    &lt;/g&gt;
    &lt;g id="patch_19"&gt;
-    &lt;path clip-path="url(#pcd548d4cc6)" d="M 538.872017 293.589375 
+    &lt;path clip-path="url(#pa6f60f0003)" d="M 538.872017 293.589375 
 L 556.626562 293.589375 
-L 556.626562 115.248828 
-L 538.872017 115.248828 
+L 556.626562 110.523357 
+L 538.872017 110.523357 
 z
 " style="fill:#80b1d3;stroke:#ffffff;stroke-linejoin:miter;"/&gt;
    &lt;/g&gt;
    &lt;g id="patch_20"&gt;
-    &lt;path clip-path="url(#pcd548d4cc6)" d="M 574.381108 293.589375 
+    &lt;path clip-path="url(#pa6f60f0003)" d="M 574.381108 293.589375 
 L 592.135653 293.589375 
-L 592.135653 152.700801 
-L 574.381108 152.700801 
+L 592.135653 111.440391 
+L 574.381108 111.440391 
 z
 " style="fill:#80b1d3;stroke:#ffffff;stroke-linejoin:miter;"/&gt;
    &lt;/g&gt;
    &lt;g id="patch_21"&gt;
-    &lt;path clip-path="url(#pcd548d4cc6)" d="M 609.890199 293.589375 
+    &lt;path clip-path="url(#pa6f60f0003)" d="M 609.890199 293.589375 
 L 627.644744 293.589375 
-L 627.644744 152.980231 
-L 609.890199 152.980231 
+L 627.644744 150.276209 
+L 609.890199 150.276209 
 z
 " style="fill:#80b1d3;stroke:#ffffff;stroke-linejoin:miter;"/&gt;
    &lt;/g&gt;
    &lt;g id="patch_22"&gt;
-    &lt;path clip-path="url(#pcd548d4cc6)" d="M 645.39929 293.589375 
+    &lt;path clip-path="url(#pa6f60f0003)" d="M 645.39929 293.589375 
 L 663.153835 293.589375 
-L 663.153835 165.657774 
-L 645.39929 165.657774 
+L 663.153835 155.749293 
+L 645.39929 155.749293 
 z
 " style="fill:#80b1d3;stroke:#ffffff;stroke-linejoin:miter;"/&gt;
    &lt;/g&gt;
    &lt;g id="patch_23"&gt;
-    &lt;path clip-path="url(#pcd548d4cc6)" d="M 680.908381 293.589375 
+    &lt;path clip-path="url(#pa6f60f0003)" d="M 680.908381 293.589375 
 L 698.662926 293.589375 
-L 698.662926 173.027254 
-L 680.908381 173.027254 
+L 698.662926 164.572099 
+L 680.908381 164.572099 
 z
 " style="fill:#80b1d3;stroke:#ffffff;stroke-linejoin:miter;"/&gt;
    &lt;/g&gt;
    &lt;g id="patch_24"&gt;
-    &lt;path clip-path="url(#pcd548d4cc6)" d="M 716.417472 293.589375 
+    &lt;path clip-path="url(#pa6f60f0003)" d="M 716.417472 293.589375 
 L 734.172017 293.589375 
-L 734.172017 180.11631 
-L 716.417472 180.11631 
+L 734.172017 170.493765 
+L 716.417472 170.493765 
 z
 " style="fill:#80b1d3;stroke:#ffffff;stroke-linejoin:miter;"/&gt;
    &lt;/g&gt;
    &lt;g id="patch_25"&gt;
-    &lt;path clip-path="url(#pcd548d4cc6)" d="M 751.926563 293.589375 
+    &lt;path clip-path="url(#pa6f60f0003)" d="M 751.926563 293.589375 
 L 769.681108 293.589375 
-L 769.681108 200.52098 
-L 751.926563 200.52098 
+L 769.681108 171.376521 
+L 751.926563 171.376521 
 z
 " style="fill:#80b1d3;stroke:#ffffff;stroke-linejoin:miter;"/&gt;
    &lt;/g&gt;
    &lt;g id="patch_26"&gt;
-    &lt;path clip-path="url(#pcd548d4cc6)" d="M 787.435653 293.589375 
+    &lt;path clip-path="url(#pa6f60f0003)" d="M 787.435653 293.589375 
 L 805.190199 293.589375 
-L 805.190199 213.987813 
-L 787.435653 213.987813 
+L 805.190199 174.488701 
+L 787.435653 174.488701 
 z
 " style="fill:#80b1d3;stroke:#ffffff;stroke-linejoin:miter;"/&gt;
    &lt;/g&gt;
    &lt;g id="patch_27"&gt;
-    &lt;path clip-path="url(#pcd548d4cc6)" d="M 822.944744 293.589375 
+    &lt;path clip-path="url(#pa6f60f0003)" d="M 822.944744 293.589375 
 L 840.69929 293.589375 
-L 840.69929 214.998076 
-L 822.944744 214.998076 
+L 840.69929 175.644678 
+L 822.944744 175.644678 
 z
 " style="fill:#80b1d3;stroke:#ffffff;stroke-linejoin:miter;"/&gt;
    &lt;/g&gt;
@@ -5752,10 +5983,10 @@ L 849.576562 21.789375
   &lt;/g&gt;
  &lt;/g&gt;
  &lt;defs&gt;
-  &lt;clipPath id="p381b30d6ca"&gt;
+  &lt;clipPath id="p71f6f6400c"&gt;
    &lt;rect height="271.8" width="355.090909" x="68.376563" y="21.789375"/&gt;
   &lt;/clipPath&gt;
-  &lt;clipPath id="pcd548d4cc6"&gt;
+  &lt;clipPath id="pa6f60f0003"&gt;
    &lt;rect height="271.8" width="355.090909" x="494.485653" y="21.789375"/&gt;
   &lt;/clipPath&gt;
  &lt;/defs&gt;
@@ -5771,12 +6002,12 @@ L 849.576562 21.789375
 &lt;/div&gt;
 &lt;div class="cell border-box-sizing code_cell rendered"&gt;
 &lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[68]:&lt;/div&gt;
+&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[56]:&lt;/div&gt;
 &lt;div class="inner_cell"&gt;
     &lt;div class="input_area"&gt;
 &lt;div class=" highlight hl-python"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c1"&gt;# Find the mean death per day for the country with the most deaths&lt;/span&gt;
-&lt;span class="n"&gt;country_max_deaths&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;john_hopkins_df&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;john_hopkins_df&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;Deaths&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="n"&gt;john_hopkins_df&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;Deaths&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;max&lt;/span&gt;&lt;span class="p"&gt;()][&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;Country&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
-&lt;span class="n"&gt;country_max_deaths_df&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;john_hopkins_df&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;john_hopkins_df&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;Country&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="n"&gt;country_max_deaths&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;iloc&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;]]&lt;/span&gt;
+&lt;span class="n"&gt;country_max_deaths&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;johns_hopkins_df&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;johns_hopkins_df&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;Deaths&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="n"&gt;johns_hopkins_df&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;Deaths&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;max&lt;/span&gt;&lt;span class="p"&gt;()][&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;Country&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
+&lt;span class="n"&gt;country_max_deaths_df&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;johns_hopkins_df&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;johns_hopkins_df&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;Country&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="n"&gt;country_max_deaths&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;iloc&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;]]&lt;/span&gt;
 
 &lt;span class="c1"&gt;# Filter days where there have been confirmed cases&lt;/span&gt;
 &lt;span class="n"&gt;country_max_deaths_df&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;country_max_deaths_df&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;country_max_deaths_df&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;Confirmed&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;&amp;gt;=&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;
@@ -5799,11 +6030,59 @@ L 849.576562 21.789375
 
 
 &lt;div class="output_subarea output_stream output_stdout output_text"&gt;
-&lt;pre&gt;The country with the most deaths is United States of America, with 0.4164840597933236 deaths per day since the first case of COVID19 was confirmed in the country.
+&lt;pre&gt;The country with the most deaths is United States of America, with 0.38126885796878984 deaths per day since the first case of COVID19 was confirmed in the country.
 &lt;/pre&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+&lt;div class="input"&gt;
+&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[195]:&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+    &lt;div class="input_area"&gt;
+&lt;div class=" highlight hl-python"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;dk_df_deaths&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;dk_df&lt;/span&gt;&lt;span class="p"&gt;[[&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;Date&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;Deaths&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;]]&lt;/span&gt;
+&lt;span class="n"&gt;dk_df_deaths&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;Deaths_this_date&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;dk_df_deaths&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;Deaths&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;-&lt;/span&gt; &lt;span class="n"&gt;dk_df_deaths&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;Deaths&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;shift&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;span class="n"&gt;max_deaths_row&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;dk_df_deaths&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;dk_df_deaths&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;Deaths_this_date&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="n"&gt;dk_df_deaths&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;Deaths_this_date&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;max&lt;/span&gt;&lt;span class="p"&gt;()]&lt;/span&gt;
+
+&lt;span class="nb"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="sa"&gt;f&lt;/span&gt;&lt;span class="s1"&gt;&amp;#39;The day with the most deaths in Denmark was the &lt;/span&gt;&lt;span class="si"&gt;{&lt;/span&gt;&lt;span class="n"&gt;max_deaths_row&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;Date&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;iloc&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="mi"&gt;0&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;date&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;&lt;span class="s1"&gt; where &lt;/span&gt;&lt;span class="si"&gt;{&lt;/span&gt;&lt;span class="nb"&gt;int&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;dk_df_deaths&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;Deaths_this_date&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;max&lt;/span&gt;&lt;span class="p"&gt;())&lt;/span&gt;&lt;span class="si"&gt;}&lt;/span&gt;&lt;span class="s1"&gt; people died.&amp;#39;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="output_wrapper"&gt;
+&lt;div class="output"&gt;
+
+
+&lt;div class="output_area"&gt;
+
+    &lt;div class="prompt"&gt;&lt;/div&gt;
+
+
+&lt;div class="output_subarea output_stream output_stdout output_text"&gt;
+&lt;pre&gt;The day with the most deaths in Denmark was the 2020-04-04 where 22 people died.
+&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+&lt;div class="input"&gt;
+&lt;div class="prompt input_prompt"&gt;In&amp;nbsp;[&amp;nbsp;]:&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+    &lt;div class="input_area"&gt;
+&lt;div class=" highlight hl-python"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+    &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 
