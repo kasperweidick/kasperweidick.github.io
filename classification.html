@@ -1257,8 +1257,7 @@ h6:hover .anchor-link {
 <div class="prompt input_prompt">In&nbsp;[29]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Visualize the data - based on handout code from assignment 5</span>
-<span class="k">def</span> <span class="nf">__visualizeLabels</span><span class="p">(</span><span class="n">features</span><span class="p">,</span> <span class="n">referenceLabels</span><span class="p">):</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">__visualizeLabels</span><span class="p">(</span><span class="n">features</span><span class="p">,</span> <span class="n">referenceLabels</span><span class="p">):</span>
     <span class="n">cmap_light</span> <span class="o">=</span> <span class="n">ListedColormap</span><span class="p">([</span><span class="s1">&#39;#FFAAAA&#39;</span><span class="p">,</span> <span class="s1">&#39;#AAFFAA&#39;</span><span class="p">,</span> <span class="s1">&#39;#AAAAFF&#39;</span><span class="p">,</span> <span class="s1">&#39;#FF0000&#39;</span><span class="p">,</span> <span class="s1">&#39;#00FF00&#39;</span><span class="p">,</span> <span class="s1">&#39;#0000FF&#39;</span><span class="p">])</span>
     <span class="n">cmap_bold</span>  <span class="o">=</span> <span class="n">ListedColormap</span><span class="p">([</span><span class="s1">&#39;#FF0000&#39;</span><span class="p">,</span> <span class="s1">&#39;#00FF00&#39;</span><span class="p">,</span> <span class="s1">&#39;#0000FF&#39;</span><span class="p">])</span>
     <span class="n">y</span> <span class="o">=</span> <span class="n">referenceLabels</span>
@@ -2866,8 +2865,7 @@ z
 <div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Function that perform random forest classification - based on handout code from assignment 5</span>
-<span class="k">def</span> <span class="nf">__randomForests</span><span class="p">(</span><span class="n">training_features</span><span class="p">,</span> <span class="n">training_labels</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">__randomForests</span><span class="p">(</span><span class="n">training_features</span><span class="p">,</span> <span class="n">training_labels</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
     <span class="n">classifier</span> <span class="o">=</span> <span class="n">RandomForestClassifier</span><span class="p">(</span><span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
     <span class="n">predictor</span> <span class="o">=</span> <span class="n">classifier</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">training_features</span><span class="p">,</span> <span class="n">training_labels</span><span class="p">)</span><span class="o">.</span><span class="n">predict</span>
     <span class="n">prob_predictor</span> <span class="o">=</span> <span class="n">classifier</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">training_features</span><span class="p">,</span> <span class="n">training_labels</span><span class="p">)</span><span class="o">.</span><span class="n">predict_proba</span>
