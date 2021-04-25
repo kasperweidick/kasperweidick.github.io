@@ -14027,7 +14027,7 @@ z
     (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
 }
 &lt;/script&gt;
-</content><category term="posts"></category><category term="Clustering"></category><category term="k-Means"></category><category term="PCA"></category></entry><entry><title>Multivariate Bayesian regression</title><link href="https://weidick.eu/regression.html" rel="alternate"></link><published>2021-04-15T00:00:00+02:00</published><updated>2021-04-15T00:00:00+02:00</updated><author><name>Kasper Weidick</name></author><id>tag:weidick.eu,2021-04-15:/regression.html</id><summary type="html">&lt;p&gt;Bayesian regression and visualization of the results.&lt;/p&gt;</summary><content type="html">&lt;style type="text/css"&gt;/*!
+</content><category term="posts"></category><category term="Clustering"></category><category term="k-Means"></category><category term="PCA"></category></entry><entry><title>Multivariate Bayesian regression</title><link href="https://weidick.eu/regression.html" rel="alternate"></link><published>2021-04-15T00:00:00+02:00</published><updated>2021-04-15T00:00:00+02:00</updated><author><name>Kasper Weidick</name></author><id>tag:weidick.eu,2021-04-15:/regression.html</id><summary type="html">&lt;p&gt;Non-linear regression, Bayesian regression and visualization of the results.&lt;/p&gt;</summary><content type="html">&lt;style type="text/css"&gt;/*!
 *
 * IPython notebook
 *
@@ -20576,7 +20576,7 @@ z
     (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
 }
 &lt;/script&gt;
-</content><category term="posts"></category><category term="Bayesian regression"></category><category term="visualization"></category></entry><entry><title>Data cleaning example project</title><link href="https://weidick.eu/data%20cleaning.html" rel="alternate"></link><published>2020-03-06T00:00:00+01:00</published><updated>2020-03-06T00:00:00+01:00</updated><author><name>Kasper Weidick</name></author><id>tag:weidick.eu,2020-03-06:/data cleaning.html</id><summary type="html">&lt;p&gt;This project serves only as a showcase of my capabilities within data cleaning and data manipulation in Pandas.&lt;/p&gt;</summary><content type="html">&lt;style type="text/css"&gt;/*!
+</content><category term="posts"></category><category term="Bayesian regression"></category><category term="Non-linear regression"></category><category term="visualization"></category></entry><entry><title>Data cleaning example project</title><link href="https://weidick.eu/data%20cleaning.html" rel="alternate"></link><published>2020-03-06T00:00:00+01:00</published><updated>2020-03-06T00:00:00+01:00</updated><author><name>Kasper Weidick</name></author><id>tag:weidick.eu,2020-03-06:/data cleaning.html</id><summary type="html">&lt;p&gt;This project serves only as a showcase of my capabilities within data cleaning and data manipulation in Pandas.&lt;/p&gt;</summary><content type="html">&lt;style type="text/css"&gt;/*!
 *
 * IPython notebook
 *
